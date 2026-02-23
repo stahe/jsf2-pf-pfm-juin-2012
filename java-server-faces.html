@@ -1850,8 +1850,8 @@
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000005B70000020DAD843D1D.png" style="display:inline-block; margin:4px;width:17.997cm;height:6.458cm;" class="odt-zoomable" data-zoom-src="images/10000000000005B70000020DAD843D1D.png" /></td></tr></table>
 
 <p>Lorsque les bases seront acquises, nous étudierons des exemples plus complexes avec des architectures multi-couche.</p>
-<p><a id="generer-projetjsf"></a>
-<a id="refheading87695112820228"></a></p>
+<p><a id="refheading87695112820228"></a>
+<a id="generer-projetjsf"></a></p>
 <h3 id="231-generation-du-projet">2.3.1. Génération du projet</h3>
 <p>Nous générons notre premier projet JSF2 avec Netbeans 7.</p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000006340000016172A3243F.png" style="display:inline-block; margin:4px;width:16.81cm;height:3.739cm;" class="odt-zoomable" data-zoom-src="images/10000000000006340000016172A3243F.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
@@ -2049,8 +2049,8 @@
 <li>[4] : le dossier [target] est créé par la construction (build) du projet,</li>
 <li>[5] : ici, la construction du projet a créé une archive [mv-jsf2-01-1.0-SNAPSHOT.war]. C&#x27;est cette archive qui a été exécutée par le serveur Tomcat.</li>
 </ul>
-<p><a id="refheading1433301675182081"></a>
-<a id="configurer-nb-jsf"></a></p>
+<p><a id="configurer-nb-jsf"></a>
+<a id="refheading1433301675182081"></a></p>
 <h3 id="234-configurer-un-projet-pour-jsf">2.3.4. Configurer un projet pour JSF</h3>
 <p>Notre projet actuel n&#x27;est pas un projet JSF. Il lui manque les bibliothèques du framework JSF. Pour faire du projet courant, un projet JSF on procède de la façon suivante :</p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000007450000029A12E1D640.png" style="display:inline-block; margin:4px;width:17.997cm;height:6.44cm;" class="odt-zoomable" data-zoom-src="images/10000000000007450000029A12E1D640.png" /></td></tr></table>
@@ -3442,8 +3442,8 @@
 <li><span style="color: #000000">des classes Java [B] qui traitent les événements qui se produisent sur le navigateur client [2a, 2b] et / ou qui servent de modèles aux pages JSF [3]. Le plus souvent, les couches [métier] et [DAO] sont développées et testées séparément. La couche [web] est alors testée avec une couche [métier] fictive. Si les couches [métier] et [DAO] sont disponibles, on travaille le plus souvent avec leurs archives .jar.</span></li>
 <li><span style="color: #000000">des fichiers de configuration [D] pour lier ces divers éléments entre-eux. Le fichier [web.xml] a été décrit page <a href="#jsf-02-web-xml">44</a>, et sera peu souvent modifié. De même pour [faces-config] où nous utiliserons toujours la version simplifiée.</span></li>
 </ul>
-<p><a id="jsf-exemple3"></a>
-<a id="refheading87731112820228"></a></p>
+<p><a id="refheading87731112820228"></a>
+<a id="jsf-exemple3"></a></p>
 <h2 id="25-exemple-mv-jsf2-03-formulaire-de-saisie-composants-jsf">2.5. Exemple mv-jsf2-03 : formulaire de saisie - composants JSF</h2>
 <p><span style="color: #000000">A partir de maintenant, nous ne montrerons plus la construction du projet. Nous présentons des projets tout faits et nous en expliquons le fonctionnement. Le lecteur peut récupérer l&#x27;ensemble des exemples sur le site de ce document (cf paragraphe <a href="introduction.html#dossier-exemples">1.2</a>).</span></p>
 <p><a id="refheading87733112820228"></a></p>
@@ -4901,8 +4901,8 @@
 <p><span style="color: #000000">La valeur postée pour le champ [1] est la suivante :</span></p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a>formulaire%3AselectOneRadio=4
 </code></pre></div>
-<p><a id="jsf-exemple4"></a>
-<a id="refheading87773112820228"></a></p>
+<p><a id="refheading87773112820228"></a>
+<a id="jsf-exemple4"></a></p>
 <h2 id="26-exemple-mv-jsf2-04-listes-dynamiques">2.6. Exemple mv-jsf2-04 : listes dynamiques</h2>
 <p><a id="refheading87775112820228"></a></p>
 <h3 id="261-lapplication">2.6.1. L&#x27;application</h3>
@@ -5145,8 +5145,8 @@
 <li><span style="color: #000000">la page JSF est demandée [1],</span></li>
 <li><span style="color: #000000">le contrôleur [Faces Servlet] demande son affichage en [3]. Le moteur JSF qui traite la page fait appel au modèle [Form.java] de celle-ci, par exemple à la méthode </span><strong><span style="color: #000000">getSelectOneListBox1Items</span></strong><span style="color: #000000">. Cette méthode pourrait très bien rendre un tableau d&#x27;éléments de type </span><em><span style="color: #000000">SelectItem</span></em><span style="color: #000000">, à partir d&#x27;informations enregistrées dans une base de données. Pour cela, elle ferait appel à la couche [métier] [2b].</span></li>
 </ul>
-<p><a id="jsf-exemple5"></a>
-<a id="refheading87785112820228"></a></p>
+<p><a id="refheading87785112820228"></a>
+<a id="jsf-exemple5"></a></p>
 <h2 id="27-exemple-mv-jsf2-05-navigation-session-gestion-des-exceptions">2.7. Exemple mv-jsf2-05 : navigation – session – gestion des exceptions</h2>
 <p><a id="refheading87787112820228"></a></p>
 <h3 id="271-lapplication">2.7.1. L&#x27;application</h3>
@@ -5336,8 +5336,8 @@
 </code></pre></div>
 
 <p>La ligne 8 donne au bean une portée <strong>session</strong>.</p>
-<p><a id="refheading87797112820228"></a>
-<a id="jsf-exceptions"></a></p>
+<p><a id="jsf-exceptions"></a>
+<a id="refheading87797112820228"></a></p>
 <h3 id="274-gestion-des-exceptions">2.7.4. Gestion des exceptions</h3>
 <p>Revenons sur l&#x27;architecture générale d&#x27;une application JSF :</p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000046300000163DF1C7CBA.png" style="display:inline-block; margin:4px;width:14.857cm;height:4.697cm;" class="odt-zoomable" data-zoom-src="images/100000000000046300000163DF1C7CBA.png" /></td></tr></table>
@@ -5574,8 +5574,8 @@
 <span class="odt-code-line"><span style="color:#000000">exception.servletName=</span><span style="color:#2a00ff">Servlet</span><span style="color:#000000"> </span><span style="color:#2a00ff">requested</span><span style="color:#000000"> </span><span style="color:#2a00ff">when</span><span style="color:#000000"> </span><span style="color:#2a00ff">error</span><span style="color:#000000"> </span><span style="color:#2a00ff">occurred</span></span>
 </code></pre></div>
 
-<p><a id="jsf-exemple6"></a>
-<a id="refheading87807112820228"></a></p>
+<p><a id="refheading87807112820228"></a>
+<a id="jsf-exemple6"></a></p>
 <h2 id="28-exemple-mv-jsf2-06-validation-et-conversion-des-saisies">2.8. Exemple mv-jsf2-06 : validation et conversion des saisies</h2>
 <p><a id="refheading87809112820228"></a></p>
 <h3 id="281-lapplication">2.8.1. L&#x27;application</h3>
@@ -6635,8 +6635,8 @@
 <li>lors d&#x27;un GET de [index.xhtml], le composant <em>saisie1</em> affichera la valeur du modèle <em>form.saisie1,</em></li>
 <li>lors d&#x27;un POST de [index.xhtml], la valeur postée pour le composant <em>saisie1</em> n&#x27;est affectée au modèle <em>form.saisie1</em> que<em> </em>si l&#x27;ensemble des validations et conversions du formulaire réussissent. Que le modèle ait été mis à jour ou non par les valeurs postées, si le formulaire est renvoyé à l&#x27;issue du POST, les composants affichent la valeur qui a été postée et non pas la valeur du modèle qui leur est associé. C&#x27;est ce que montre la copie d&#x27;écran ci-dessus, où les colonnes [2] et [3] n&#x27;ont pas les mêmes valeurs.</li>
 </ul>
-<p><a id="jsf-exemple7"></a>
-<a id="refheading87835112820228"></a></p>
+<p><a id="refheading87835112820228"></a>
+<a id="jsf-exemple7"></a></p>
 <h2 id="29-exemple-mv-jsf2-07-evenements-lies-au-changement-detat-de-composants-jsf">2.9. Exemple mv-jsf2-07 : événements liés au changement d&#x27;état de composants JSF</h2>
 <p><a id="refheading87837112820228"></a></p>
 <h3 id="291-lapplication">2.9.1. L&#x27;application</h3>
