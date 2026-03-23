@@ -893,9 +893,12 @@
 
 <p><span style="color: #000000">Nous avons développé deux applications avec Glassfish :</span></p>
 <ul>
-<li><span style="color: #000000">l&#x27;application 01 utilisait JSF / EJB et avait une interface assez rustique,</span></li>
-<li><span style="color: #000000">l&#x27;application 03 utilisait PF / EJB et avait une interface riche.</span></li>
+  <li><span style="color: #000000">l&#x27;application 01 utilisait JSF / EJB et avait une interface assez rustique,</span>
+  </li>
+  <li><span style="color: #000000">l&#x27;application 03 utilisait PF / EJB et avait une interface riche.</span>
+  </li>
 </ul>
+
 <p><span style="color: #000000">Du fait du faible nombre de composants disponibles dans Primefaces mobile, nous allons revenir à l&#x27;interface rustique de l&#x27;application 01. Par ailleurs, les vues devront pouvoir s&#x27;adapter à la taille réduite des écrans de mobiles.</span></p>
 <p><a id="refheading1267551553644564"></a></p>
 <h2 id="91-les-vues">9.1. <span style="color: #000000">Les vues</span></h2>
@@ -903,31 +906,50 @@
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004390000030481D74D5F.png" style="display:inline-block; margin:4px;width:14.302cm;height:10.213cm;" class="odt-zoomable" data-zoom-src="images/10000000000004390000030481D74D5F.png" /></td></tr></table>
 
 <ul>
-<li><span style="color: #000000">en [1], la page d&#x27;accueil. On notera qu&#x27;il a fallu cette fois donner le nom de la machine (on peut aussi donner son adresse IP), parce qu&#x27;avec la machine <em>localhost</em>, ça n&#x27;affichait rien,</span></li>
-<li><span style="color: #000000">en [2], le combo des médecins,</span></li>
-<li><span style="color: #000000">en [3], la date désirée pour le rendez-vous,</span></li>
-<li><span style="color: #000000">en [4], le bouton pour demander l&#x27;agenda du jour,</span></li>
-<li><span style="color: #000000">en [5], la nouvelle vue affiche les créneaux horaires du médecin,</span></li>
-<li><span style="color: #000000">en [6], une série de boutons pour naviguer dans le calendrier,</span></li>
-<li><span style="color: #000000">en [7], un message pour rappeler le médecin et le jour,</span></li>
-<li><span style="color: #000000">en [8], un créneau horaire pour réserver. On le fait,</span></li>
+  <li><span style="color: #000000">en [1], la page d&#x27;accueil. On notera qu&#x27;il a fallu cette fois donner le nom de la machine (on peut aussi donner son adresse IP), parce qu&#x27;avec la machine <i>localhost</i>, ça n&#x27;affichait rien,</span>
+  </li>
+  <li><span style="color: #000000">en [2], le combo des médecins,</span>
+  </li>
+  <li><span style="color: #000000">en [3], la date désirée pour le rendez-vous,</span>
+  </li>
+  <li><span style="color: #000000">en [4], le bouton pour demander l&#x27;agenda du jour,</span>
+  </li>
+  <li><span style="color: #000000">en [5], la nouvelle vue affiche les créneaux horaires du médecin,</span>
+  </li>
+  <li><span style="color: #000000">en [6], une série de boutons pour naviguer dans le calendrier,</span>
+  </li>
+  <li><span style="color: #000000">en [7], un message pour rappeler le médecin et le jour,</span>
+  </li>
+  <li><span style="color: #000000">en [8], un créneau horaire pour réserver. On le fait,</span>
+  </li>
 </ul>
+
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000044A0000030594A9B311.png" style="display:inline-block; margin:4px;width:14.526cm;height:10.227cm;" class="odt-zoomable" data-zoom-src="images/100000000000044A0000030594A9B311.png" /></td></tr></table>
 
 <ul>
-<li><span style="color: #000000">en [9], la vue de choix du client,</span></li>
-<li><span style="color: #000000">en [10], un message rappelant le médecin, le jour et le créneau horaire concernés par le rendez-vous,</span></li>
-<li><span style="color: #000000">en [11], le combo des clients,</span></li>
-<li><span style="color: #000000">en [12], le bouton de validation,</span></li>
-<li><span style="color: #000000">en [13], la validation nous fait revenir sur l&#x27;agenda,</span></li>
-<li><span style="color: #000000">en [14], le créneau horaire occupé est désormais réservé. On va maintenant supprimer la réservation,</span></li>
+  <li><span style="color: #000000">en [9], la vue de choix du client,</span>
+  </li>
+  <li><span style="color: #000000">en [10], un message rappelant le médecin, le jour et le créneau horaire concernés par le rendez-vous,</span>
+  </li>
+  <li><span style="color: #000000">en [11], le combo des clients,</span>
+  </li>
+  <li><span style="color: #000000">en [12], le bouton de validation,</span>
+  </li>
+  <li><span style="color: #000000">en [13], la validation nous fait revenir sur l&#x27;agenda,</span>
+  </li>
+  <li><span style="color: #000000">en [14], le créneau horaire occupé est désormais réservé. On va maintenant supprimer la réservation,</span>
+  </li>
 </ul>
+
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000019D0000030B1977D2D1.png" style="display:inline-block; margin:4px;width:5.465cm;height:10.306cm;" class="odt-zoomable" data-zoom-src="images/100000000000019D0000030B1977D2D1.png" /></td></tr></table>
 
 <ul>
-<li><span style="color: #000000">en [15], on reste sur la même vue,</span></li>
-<li><span style="color: #000000">mais en [16], le rendez-vous a été supprimé,</span></li>
+  <li><span style="color: #000000">en [15], on reste sur la même vue,</span>
+  </li>
+  <li><span style="color: #000000">mais en [16], le rendez-vous a été supprimé,</span>
+  </li>
 </ul>
+
 <p><span style="color: #000000">Il est possible dans la page d&#x27;accueil de changer de langue [17], [18], [19] :</span></p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000050D000002F09809CABB.png" style="display:inline-block; margin:4px;width:17.106cm;height:9.948cm;" class="odt-zoomable" data-zoom-src="images/100000000000050D000002F09809CABB.png" /></td></tr></table>
 
@@ -940,11 +962,16 @@
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000001090000007F2F83AC67.png" style="display:inline-block; margin:4px;width:4.911cm;height:2.35cm;" class="odt-zoomable" data-zoom-src="images/10000000000001090000007F2F83AC67.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
 
 <ul>
-<li><span style="color: #000000">[mv-rdvmedecins-ejb-dao-jpa] : projet EJB des couches [DAO] et [JPA] de l&#x27;exemple 01,</span></li>
-<li><span style="color: #000000">[mv-rdvmedecins-ejb-metier] : projet EJB de la couche [métier] de l&#x27;exemple 01,</span></li>
-<li><span style="color: #000000">[mv-rdvmedecins-pfmobile] : projet de la couche [web] / Primefaces mobile – nouveau,</span></li>
-<li><span style="color: #000000">[mv-rdvmedecins-pfmobile-app-ear] : projet d&#x27;entreprise pour déployer l&#x27;application sur le serveur Glassfish – nouveau.</span></li>
+  <li><span style="color: #000000">[mv-rdvmedecins-ejb-dao-jpa] : projet EJB des couches [DAO] et [JPA] de l&#x27;exemple 01,</span>
+  </li>
+  <li><span style="color: #000000">[mv-rdvmedecins-ejb-metier] : projet EJB de la couche [métier] de l&#x27;exemple 01,</span>
+  </li>
+  <li><span style="color: #000000">[mv-rdvmedecins-pfmobile] : projet de la couche [web] / Primefaces mobile – nouveau,</span>
+  </li>
+  <li><span style="color: #000000">[mv-rdvmedecins-pfmobile-app-ear] : projet d&#x27;entreprise pour déployer l&#x27;application sur le serveur Glassfish – nouveau.</span>
+  </li>
 </ul>
+
 <p><a id="refheading105097100051761"></a></p>
 <h2 id="93-le-projet-dentreprise">9.3. <span style="color: #000000">Le projet d&#x27;entreprise</span></h2>
 <p><span style="color: #000000">Le projet d&#x27;entreprise ne sert qu&#x27;au déploiement des trois modules [mv-rdvmedecins-ejb-dao-jpa], [mv-rdvmedecins-ejb-metier], [mv-rdvmedecins-pfmobile] sur le serveur Glassfish. Le projet Netbeans est le suivant :</span></p>
@@ -989,9 +1016,12 @@
 </code></pre></div>
 
 <ul>
-<li><span style="color: #000000">lignes 6-9 : l&#x27;artifact Maven du projet d&#x27;entreprise,</span></li>
-<li><span style="color: #000000">lignes 14-33 : les trois dépendances du projet. On notera bien le type de celles-ci (lignes 19, 25, 31).</span></li>
+  <li><span style="color: #000000">lignes 6-9 : l&#x27;artifact Maven du projet d&#x27;entreprise,</span>
+  </li>
+  <li><span style="color: #000000">lignes 14-33 : les trois dépendances du projet. On notera bien le type de celles-ci (lignes 19, 25, 31).</span>
+  </li>
 </ul>
+
 <p><span style="color: #000000">Pour exécuter l&#x27;application web, il faudra exécuter ce projet d&#x27;entreprise.</span></p>
 <p><a id="refheading105099100051761"></a></p>
 <h2 id="94-le-projet-web-primefaces-mobile">9.4. <span style="color: #000000">Le projet web Primefaces mobile</span></h2>
@@ -999,11 +1029,16 @@
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004E6000001BCFC7FD876.png" style="display:inline-block; margin:4px;width:16.589cm;height:5.874cm;" class="odt-zoomable" data-zoom-src="images/10000000000004E6000001BCFC7FD876.png" /></td></tr></table>
 
 <ul>
-<li><span style="color: #000000">en [1], les pages du projet. La page [index.xhtml] est l&#x27;unique page du projet. Elle comporte cinq vues [vue1.xhtml], [vue2.xhtml], [vue3.xhtml], [vueErreurs.xhtml] et [config.xhtml],</span></li>
-<li><span style="color: #000000">en [2], les beans Java. Le bean [Application] de portée </span><em><span style="color: #000000">application</span></em><span style="color: #000000">, le bean [Form] de portée </span><em><span style="color: #000000">session</span></em><span style="color: #000000">. La classe [Erreur] encapsule une erreur,</span></li>
-<li><span style="color: #000000">en [3], les fichiers de messages pour l&#x27;internationalisation,</span></li>
-<li><span style="color: #000000">en [4], les dépendances. Le projet web a des dépendances sur le projet EJB de la couche [DAO], le projet EJB de la couche [métier] et Primefaces mobile pour la couche [web].</span></li>
+  <li><span style="color: #000000">en [1], les pages du projet. La page [index.xhtml] est l&#x27;unique page du projet. Elle comporte cinq vues [vue1.xhtml], [vue2.xhtml], [vue3.xhtml], [vueErreurs.xhtml] et [config.xhtml],</span>
+  </li>
+  <li><span style="color: #000000">en [2], les beans Java. Le bean [Application] de portée </span><i><span style="color: #000000">application</span></i><span style="color: #000000">, le bean [Form] de portée </span><i><span style="color: #000000">session</span></i><span style="color: #000000">. La classe [Erreur] encapsule une erreur,</span>
+  </li>
+  <li><span style="color: #000000">en [3], les fichiers de messages pour l&#x27;internationalisation,</span>
+  </li>
+  <li><span style="color: #000000">en [4], les dépendances. Le projet web a des dépendances sur le projet EJB de la couche [DAO], le projet EJB de la couche [métier] et Primefaces mobile pour la couche [web].</span>
+  </li>
 </ul>
+
 <p><a id="refheading773823011462511"></a></p>
 <h2 id="95-la-configuration-du-projet">9.5. La configuration du projet</h2>
 <p>La configuration du projet est celle des projets Primefaces ou JSF que nous avons étudiés. Nous listons les fichiers de configuration sans les réexpliquer.</p>
@@ -1235,9 +1270,12 @@
 </code></pre></div>
 
 <ul>
-<li><span style="color: #000000">ligne 8 : la page est internationalisée (attribut <strong>locale</strong>),</span></li>
-<li><span style="color: #000000">ligne 10 : la page contient cinq vues : <strong>vue1</strong> ligne 11, <strong>vue2</strong> ligne 19, <strong>vue3</strong> ligne 24, <strong>vueErreurs</strong> ligne 29, <strong>config</strong> ligne 34. A un moment donné seule l&#x27;une de ces vues est visible. Au démarrage de l&#x27;application, c&#x27;est la vue <strong>vue1</strong> qui est affichée. Ici, on a rencontré la difficulté suivante : si l&#x27;initialisation de l&#x27;application s&#x27;est bien passée, on doit afficher [vue1.xhtml], sinon c&#x27;est [vueErreurs.xhtml] qui doit être affichée. On a réglé le problème en faisant en sorte que le contenu de la vue <strong>vue1</strong> soit géré par le modèle qui donne des valeurs aux booléens <em>[Form].form1rendered</em> (ligne 12) et <em>[Form].erreurInit</em> (ligne 15) pour fixer le contenu de <strong>vue1</strong> (ligne 11),</span></li>
+  <li><span style="color: #000000">ligne 8 : la page est internationalisée (attribut <b>locale</b>),</span>
+  </li>
+  <li><span style="color: #000000">ligne 10 : la page contient cinq vues : <b>vue1</b> ligne 11, <b>vue2</b> ligne 19, <b>vue3</b> ligne 24, <b>vueErreurs</b> ligne 29, <b>config</b> ligne 34. A un moment donné seule l&#x27;une de ces vues est visible. Au démarrage de l&#x27;application, c&#x27;est la vue <b>vue1</b> qui est affichée. Ici, on a rencontré la difficulté suivante : si l&#x27;initialisation de l&#x27;application s&#x27;est bien passée, on doit afficher [vue1.xhtml], sinon c&#x27;est [vueErreurs.xhtml] qui doit être affichée. On a réglé le problème en faisant en sorte que le contenu de la vue <b>vue1</b> soit géré par le modèle qui donne des valeurs aux booléens <i>[Form].form1rendered</i> (ligne 12) et <i>[Form].erreurInit</i> (ligne 15) pour fixer le contenu de <b>vue1</b> (ligne 11),</span>
+  </li>
 </ul>
+
 <p><span style="color: #000000">Dans un simulateur, la vue [vue1.xhtml] a le rendu [1], la vue [vue2.xhtml] le rendu [2], la vue [vue3.xhtml] le rendu [3] :</span></p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004E5000001E2FD0038FB.png" style="display:inline-block; margin:4px;width:16.577cm;height:6.376cm;" class="odt-zoomable" data-zoom-src="images/10000000000004E5000001E2FD0038FB.png" /></td></tr></table>
 
@@ -1281,10 +1319,14 @@
 </code></pre></div>
 
 <ul>
-<li><span style="color: #000000">ligne 8 : on donne au bean le nom </span><strong><span style="color: #000000">application</span></strong><span style="color: #000000">,</span></li>
-<li><span style="color: #000000">ligne 9 : il est de portée </span><strong><span style="color: #000000">application</span></strong><span style="color: #000000">,</span></li>
-<li><span style="color: #000000">lignes 13-14 : une référence sur l&#x27;interface locale de la couche [métier] lui sera injectée par le conteneur EJB du serveur d&#x27;application. </span>Rappelons-nous l&#x27;architecture de l&#x27;application :</li>
+  <li><span style="color: #000000">ligne 8 : on donne au bean le nom </span><b><span style="color: #000000">application</span></b><span style="color: #000000">,</span>
+  </li>
+  <li><span style="color: #000000">ligne 9 : il est de portée </span><b><span style="color: #000000">application</span></b><span style="color: #000000">,</span>
+  </li>
+  <li><span style="color: #000000">lignes 13-14 : une référence sur l&#x27;interface locale de la couche [métier] lui sera injectée par le conteneur EJB du serveur d&#x27;application. </span>Rappelons-nous l&#x27;architecture de l&#x27;application :
+  </li>
 </ul>
+
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004E50000010E7FC6C68F.png" style="display:inline-block; margin:4px;width:16.577cm;height:3.572cm;" class="odt-zoomable" data-zoom-src="images/10000000000004E50000010E7FC6C68F.png" /></td></tr></table>
 
 <p>L&#x27;application PFM et l&#x27;EJB [Metier] vont s&#x27;exécuter dans la même JVM (Java Virtual Machine). Donc la couche [PFM] va utiliser l&#x27;interface locale de l&#x27;EJB. C&#x27;est tout. Le bean [Application] ne contient rien d&#x27;autre. Pour avoir accès à la couche [métier], les autres beans iront la chercher dans ce bean.</p>
@@ -1315,9 +1357,12 @@
 </code></pre></div>
 
 <ul>
-<li>ligne 9, le nom d&#x27;une classe d&#x27;exception si une exception a été lancée,</li>
-<li>ligne 10 : un message d&#x27;erreur.</li>
+  <li>ligne 9, le nom d&#x27;une classe d&#x27;exception si une exception a été lancée,
+  </li>
+  <li>ligne 10 : un message d&#x27;erreur.
+  </li>
 </ul>
+
 <p><a id="refheading773903011462511"></a></p>
 <h3 id="973-le-bean-form">9.7.3. Le bean [Form]</h3>
 <p>Son code est le suivant :</p>
@@ -1444,26 +1489,40 @@
 </code></pre></div>
 
 <ul>
-<li><span style="color: #000000">lignes 5-7 : la classe [Form] est un bean de nom </span><strong><span style="color: #000000">form</span></strong><span style="color: #000000"> et de portée </span><strong><span style="color: #000000">session</span></strong><span style="color: #000000">. On rappelle qu&#x27;alors la classe doit être sérialisable,</span></li>
-<li><span style="color: #000000">lignes 12-13 : le bean </span><strong><span style="color: #000000">form</span></strong><span style="color: #000000"> a une référence sur le bean </span><strong><span style="color: #000000">application</span></strong><span style="color: #000000">. Celle-ci sera injectée par le conteneur de servlets dans lequel s&#x27;exécute l&#x27;application (présence de l&#x27;annotation @</span><strong><span style="color: #000000">Inject</span></strong><span style="color: #000000">).</span></li>
-<li><span style="color: #000000">lignes 24-27 : contrôlent l&#x27;affichage des vues <strong>vue1</strong> (ligne 24), <strong>vue2</strong> (ligne 25), <strong>vue3</strong> (ligne 26), <strong>vueErreurs</strong> (ligne 27),</span></li>
-<li><span style="color: #000000">lignes 43-44 : la méthode </span><strong><span style="color: #000000">init</span></strong><span style="color: #000000"> est exécutée juste après l&#x27;instanciation de la classe (présence de l&#x27;annotation @</span><em><span style="color: #000000">PostConstruct</span></em><span style="color: #000000">),</span></li>
-<li><span style="color: #000000">lignes 49-50 : gèrent le format des dates. Primefaces mobile n&#x27;offre pas de calendrier. Par ailleurs, les validateurs JSF ne sont pas utilisables dans une page PFM. Aussi devrons-nous gérer à la main la saisie de la date de l&#x27;agenda,</span></li>
-<li><span style="color: #000000">ligne 49 : fixe le format des dates. Ce format est pris dans les fichiers internationalisés :</span></li>
+  <li><span style="color: #000000">lignes 5-7 : la classe [Form] est un bean de nom </span><b><span style="color: #000000">form</span></b><span style="color: #000000"> et de portée </span><b><span style="color: #000000">session</span></b><span style="color: #000000">. On rappelle qu&#x27;alors la classe doit être sérialisable,</span>
+  </li>
+  <li><span style="color: #000000">lignes 12-13 : le bean </span><b><span style="color: #000000">form</span></b><span style="color: #000000"> a une référence sur le bean </span><b><span style="color: #000000">application</span></b><span style="color: #000000">. Celle-ci sera injectée par le conteneur de servlets dans lequel s&#x27;exécute l&#x27;application (présence de l&#x27;annotation @</span><b><span style="color: #000000">Inject</span></b><span style="color: #000000">).</span>
+  </li>
+  <li><span style="color: #000000">lignes 24-27 : contrôlent l&#x27;affichage des vues <b>vue1</b> (ligne 24), <b>vue2</b> (ligne 25), <b>vue3</b> (ligne 26), <b>vueErreurs</b> (ligne 27),</span>
+  </li>
+  <li><span style="color: #000000">lignes 43-44 : la méthode </span><b><span style="color: #000000">init</span></b><span style="color: #000000"> est exécutée juste après l&#x27;instanciation de la classe (présence de l&#x27;annotation @</span><i><span style="color: #000000">PostConstruct</span></i><span style="color: #000000">),</span>
+  </li>
+  <li><span style="color: #000000">lignes 49-50 : gèrent le format des dates. Primefaces mobile n&#x27;offre pas de calendrier. Par ailleurs, les validateurs JSF ne sont pas utilisables dans une page PFM. Aussi devrons-nous gérer à la main la saisie de la date de l&#x27;agenda,</span>
+  </li>
+  <li><span style="color: #000000">ligne 49 : fixe le format des dates. Ce format est pris dans les fichiers internationalisés :</span>
+  </li>
 </ul>
+
 <div class="odt-code-rich" data-linenums="false" style="counter-reset: odtline 0;"><pre><code class="language-text">
 <span class="odt-code-line"><span style="color:#000000">format.date=</span><span style="color:#2a00ff">dd/MM/yyyy</span></span>
 <span class="odt-code-line"><span style="color:#000000">format.date_detail=</span><span style="color:#2a00ff">dd/MM/yyyy</span></span>
 </code></pre></div>
 
 <ul>
-<li><span style="color: #000000">ligne 50 : on indique qu&#x27;on ne doit pas être &quot;</span><em><span style="color: #000000"> laxiste </span></em><span style="color: #000000">&quot; vis à vis des dates. Si on ne le fait pas, une saisie comme 32/12/2011 qui est une saisie incorrecte est considérée comme la date valide 01/01/2012,</span></li>
-<li><span style="color: #000000">ligne 54 : on récupère une référence sur la couche [métier] auprès du bean [Application],</span></li>
-<li><span style="color: #000000">lignes 57-58 : on demande à la couche [métier], la liste des médecins et des clients,</span></li>
-<li><span style="color: #000000">lignes 66-91 : si tout s&#x27;est bien passé, les dictionnaires des médecins et des clients sont construits. Ils sont indexés par leur numéro. Ensuite, la vue [vue1.xhtml] sera affichée (ligne 93),</span></li>
-<li><span style="color: #000000">ligne 59 : en cas d&#x27;erreur, le modèle de la page [vueErreurs.xhtml] est construit. Ce modèle est la liste d&#x27;erreurs de la ligne 35,</span></li>
-<li><span style="color: #000000">lignes 105-115 : la méthode [prepareVueErreur] construit la liste d&#x27;erreurs à afficher. La page [index.xhtml] affiche alors la vue [vueErreurs.xhtml] (ligne 114).</span></li>
+  <li><span style="color: #000000">ligne 50 : on indique qu&#x27;on ne doit pas être &quot;</span><i><span style="color: #000000"> laxiste </span></i><span style="color: #000000">&quot; vis à vis des dates. Si on ne le fait pas, une saisie comme 32/12/2011 qui est une saisie incorrecte est considérée comme la date valide 01/01/2012,</span>
+  </li>
+  <li><span style="color: #000000">ligne 54 : on récupère une référence sur la couche [métier] auprès du bean [Application],</span>
+  </li>
+  <li><span style="color: #000000">lignes 57-58 : on demande à la couche [métier], la liste des médecins et des clients,</span>
+  </li>
+  <li><span style="color: #000000">lignes 66-91 : si tout s&#x27;est bien passé, les dictionnaires des médecins et des clients sont construits. Ils sont indexés par leur numéro. Ensuite, la vue [vue1.xhtml] sera affichée (ligne 93),</span>
+  </li>
+  <li><span style="color: #000000">ligne 59 : en cas d&#x27;erreur, le modèle de la page [vueErreurs.xhtml] est construit. Ce modèle est la liste d&#x27;erreurs de la ligne 35,</span>
+  </li>
+  <li><span style="color: #000000">lignes 105-115 : la méthode [prepareVueErreur] construit la liste d&#x27;erreurs à afficher. La page [index.xhtml] affiche alors la vue [vueErreurs.xhtml] (ligne 114).</span>
+  </li>
 </ul>
+
 <p><span style="color: #000000">La page [erreur.xhtml] est la suivante :</span></p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-xml">
 <span class="odt-code-line"><span style="color:#008080">&lt;?</span><span style="color:#3f7f7f">xml</span> <span style="color:#7f007f">version</span>=<span style="font-style:italic;color:#2a00ff">&#x27;1.0&#x27;</span> <span style="color:#7f007f">encoding</span>=<span style="font-style:italic;color:#2a00ff">&#x27;UTF-8&#x27;</span> <span style="color:#008080">?&gt;</span></span>
@@ -1497,12 +1556,18 @@
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000001B0000001E5017FBA17.png" style="display:inline-block; margin:4px;width:5.715cm;height:6.417cm;" class="odt-zoomable" data-zoom-src="images/10000000000001B0000001E5017FBA17.png" /></td></tr></table>
 
 <ul>
-<li>le bouton [1] est produit par la ligne 13. L&#x27;attribut <strong>icon</strong> fixe l&#x27;icône du bouton. Le bouton ramène à la vue <strong>vue1</strong> (attribut <strong>href</strong>),</li>
-<li>l&#x27;entête [2] est produit par les lignes 11-15,</li>
-<li>le titre [3] est produit par la ligne 18,</li>
-<li>le texte [4] est produit par le modèle <strong>#{erreur.classe}</strong> de la ligne 22,</li>
-<li>le texte [5] est produit par le modèle <strong>#{erreur.message}</strong> de la ligne 22.</li>
+  <li>le bouton [1] est produit par la ligne 13. L&#x27;attribut <b>icon</b> fixe l&#x27;icône du bouton. Le bouton ramène à la vue <b>vue1</b> (attribut <b>href</b>),
+  </li>
+  <li>l&#x27;entête [2] est produit par les lignes 11-15,
+  </li>
+  <li>le titre [3] est produit par la ligne 18,
+  </li>
+  <li>le texte [4] est produit par le modèle <b>#{erreur.classe}</b> de la ligne 22,
+  </li>
+  <li>le texte [5] est produit par le modèle <b>#{erreur.message}</b> de la ligne 22.
+  </li>
 </ul>
+
 <p>Nous allons maintenant définir les différentes phases de la vie de l&#x27;application. Pour chaque action de l&#x27;utilisateur, nous étudierons les vues concernées et les gestionnaires des événements qui s&#x27;y produisent.</p>
 <p><a id="refheading773923011462511"></a></p>
 <p><a id="refheading773943011462511"></a></p>
@@ -1553,17 +1618,25 @@
 </code></pre></div>
 
 <ul>
-<li><span style="color: #000000">lignes 11-15 : produisent l&#x27;entête [1],</span></li>
-<li><span style="color: #000000">ligne 13 : produit le bouton [2]. Un clic sur celui-ci affiche la vue </span><strong><span style="color: #000000">config</span></strong><span style="color: #000000"> (attribut </span><strong><span style="color: #000000">href</span></strong><span style="color: #000000">),</span></li>
-<li><span style="color: #000000">ligne 19 : produit le titre [3],</span></li>
-<li><span style="color: #000000">lignes 21-26 : produisent le combo des médecins [4],</span></li>
-<li><span style="color: #000000">lignes 27-34 : produisent la saisie de la date [5]. Cette saisie est faite avec une balise &lt;</span><em><span style="color: #000000">p:inputText</span></em><span style="color: #000000">&gt; sans validateur. La validation de la date sera faite côté serveur. Si la date est incorrecte, celui-ci positionnera un message d&#x27;erreur affiché par les lignes 30-34,</span></li>
+  <li><span style="color: #000000">lignes 11-15 : produisent l&#x27;entête [1],</span>
+  </li>
+  <li><span style="color: #000000">ligne 13 : produit le bouton [2]. Un clic sur celui-ci affiche la vue </span><b><span style="color: #000000">config</span></b><span style="color: #000000"> (attribut </span><b><span style="color: #000000">href</span></b><span style="color: #000000">),</span>
+  </li>
+  <li><span style="color: #000000">ligne 19 : produit le titre [3],</span>
+  </li>
+  <li><span style="color: #000000">lignes 21-26 : produisent le combo des médecins [4],</span>
+  </li>
+  <li><span style="color: #000000">lignes 27-34 : produisent la saisie de la date [5]. Cette saisie est faite avec une balise &lt;</span><i><span style="color: #000000">p:inputText</span></i><span style="color: #000000">&gt; sans validateur. La validation de la date sera faite côté serveur. Si la date est incorrecte, celui-ci positionnera un message d&#x27;erreur affiché par les lignes 30-34,</span>
+  </li>
 </ul>
+
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000306000000EF12B1C406.png" style="display:inline-block; margin:4px;width:10.239cm;height:3.163cm;" class="odt-zoomable" data-zoom-src="images/1000000000000306000000EF12B1C406.png" /></td></tr></table>
 
 <ul>
-<li><span style="color: #000000">ligne 35 : le bouton qui valide le formulaire. Il met à jour trois zones : </span><strong><span style="color: #000000">form1</span></strong><span style="color: #000000"> (le formulaire dans vue1), </span><strong><span style="color: #000000">vue2</span></strong><span style="color: #000000"> et </span><strong><span style="color: #000000">vueErreurs</span></strong><span style="color: #000000">. En effet, si la date est invalide c&#x27;est </span><strong><span style="color: #000000">form1</span></strong><span style="color: #000000"> qui doit être mise à jour. Si la date est correcte c&#x27;est </span><strong><span style="color: #000000">vue2</span></strong><span style="color: #000000"> qui doit être mise à jour. Enfin s&#x27;il se produit une exception (connexion à la base cassée par exemple), c&#x27;est </span><strong><span style="color: #000000">vueErreurs</span></strong><span style="color: #000000"> qui doit être affichée. On peut être tenté de mettre </span><strong><span style="color: #000000">vue1</span></strong><span style="color: #000000"> à la place de </span><strong><span style="color: #000000">form1</span></strong><span style="color: #000000"> (on met à jour toute la vue). Dans ce cas, l&#x27;application bogue.</span></li>
+  <li><span style="color: #000000">ligne 35 : le bouton qui valide le formulaire. Il met à jour trois zones : </span><b><span style="color: #000000">form1</span></b><span style="color: #000000"> (le formulaire dans vue1), </span><b><span style="color: #000000">vue2</span></b><span style="color: #000000"> et </span><b><span style="color: #000000">vueErreurs</span></b><span style="color: #000000">. En effet, si la date est invalide c&#x27;est </span><b><span style="color: #000000">form1</span></b><span style="color: #000000"> qui doit être mise à jour. Si la date est correcte c&#x27;est </span><b><span style="color: #000000">vue2</span></b><span style="color: #000000"> qui doit être mise à jour. Enfin s&#x27;il se produit une exception (connexion à la base cassée par exemple), c&#x27;est </span><b><span style="color: #000000">vueErreurs</span></b><span style="color: #000000"> qui doit être affichée. On peut être tenté de mettre </span><b><span style="color: #000000">vue1</span></b><span style="color: #000000"> à la place de </span><b><span style="color: #000000">form1</span></b><span style="color: #000000"> (on met à jour toute la vue). Dans ce cas, l&#x27;application bogue.</span>
+  </li>
 </ul>
+
 <p><span style="color: #000000">Cette vue est adossée au modèle suivant :</span></p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
 <span class="odt-code-line"><span style="color:#646464">@</span>Named(value = <span style="color:#2a00ff">&quot;form&quot;</span>)</span>
@@ -1604,11 +1677,16 @@
 </code></pre></div>
 
 <ul>
-<li><span style="color: #000000">le champ de la ligne 16 alimente en lecture et écriture la valeur de la liste de la ligne 23 de la page. A l&#x27;affichage initial de la page, elle fixe la valeur sélectionnée dans le combo,</span></li>
-<li><span style="color: #000000">la méthode des lignes 27-29 génère les éléments du combo des médecins (ligne 24 de la vue). Chaque option générée aura pour </span><strong><span style="color: #000000">label</span></strong><span style="color: #000000"> (itemLabel) les </span><strong><span style="color: #000000">titre</span></strong><span style="color: #000000">, </span><strong><span style="color: #000000">nom</span></strong><span style="color: #000000">, </span><strong><span style="color: #000000">prénom</span></strong><span style="color: #000000"> du médecin et pour valeur (itemValue), l&#x27;</span><strong><span style="color: #000000">id</span></strong><span style="color: #000000"> du médecin,</span></li>
-<li><span style="color: #000000">le champ de la ligne 18 alimente en lecture / écriture le champ de saisie de la ligne 29 de la page,</span></li>
-<li><span style="color: #000000">lignes 32-34 : la méthode </span><strong><span style="color: #000000">getAgenda</span></strong><span style="color: #000000"> gère le clic sur le bouton [Agenda] de la ligne 35 de la page. Son code est le suivant :</span></li>
+  <li><span style="color: #000000">le champ de la ligne 16 alimente en lecture et écriture la valeur de la liste de la ligne 23 de la page. A l&#x27;affichage initial de la page, elle fixe la valeur sélectionnée dans le combo,</span>
+  </li>
+  <li><span style="color: #000000">la méthode des lignes 27-29 génère les éléments du combo des médecins (ligne 24 de la vue). Chaque option générée aura pour </span><b><span style="color: #000000">label</span></b><span style="color: #000000"> (itemLabel) les </span><b><span style="color: #000000">titre</span></b><span style="color: #000000">, </span><b><span style="color: #000000">nom</span></b><span style="color: #000000">, </span><b><span style="color: #000000">prénom</span></b><span style="color: #000000"> du médecin et pour valeur (itemValue), l&#x27;</span><b><span style="color: #000000">id</span></b><span style="color: #000000"> du médecin,</span>
+  </li>
+  <li><span style="color: #000000">le champ de la ligne 18 alimente en lecture / écriture le champ de saisie de la ligne 29 de la page,</span>
+  </li>
+  <li><span style="color: #000000">lignes 32-34 : la méthode </span><b><span style="color: #000000">getAgenda</span></b><span style="color: #000000"> gère le clic sur le bouton [Agenda] de la ligne 35 de la page. Son code est le suivant :</span>
+  </li>
 </ul>
+
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-text">
 <span class="odt-code-line">// agenda</span>
 <span class="odt-code-line"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">public</span><span style="color:#000000"> String getAgenda() {</span></span>
@@ -1632,11 +1710,16 @@
 </code></pre></div>
 
 <ul>
-<li>la méthode commence par vérifier la validité de la date saisie par l&#x27;utilisateur,</li>
-<li>ligne 5 : la date est <em>parsée</em> selon le format de date initialisé par la méthode <em>init</em> à l&#x27;instanciation du modèle,</li>
-<li>ligne 11 : s&#x27;il se produit une exception, une erreur est positionnée (ligne 13), un message d&#x27;erreur internationalisé est construit (ligne 14), la vue <strong>vue1</strong> est préparée (ligne 16) et on affiche la vue <strong>vue1</strong> (ligne 17),</li>
-<li>ligne 10 : si la date est correcte, on exécute la méthode suivante :</li>
+  <li>la méthode commence par vérifier la validité de la date saisie par l&#x27;utilisateur,
+  </li>
+  <li>ligne 5 : la date est <i>parsée</i> selon le format de date initialisé par la méthode <i>init</i> à l&#x27;instanciation du modèle,
+  </li>
+  <li>ligne 11 : s&#x27;il se produit une exception, une erreur est positionnée (ligne 13), un message d&#x27;erreur internationalisé est construit (ligne 14), la vue <b>vue1</b> est préparée (ligne 16) et on affiche la vue <b>vue1</b> (ligne 17),
+  </li>
+  <li>ligne 10 : si la date est correcte, on exécute la méthode suivante :
+  </li>
 </ul>
+
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
 <span class="odt-code-line"><span style="color:#000000">  </span><span style="color:#3f7f5f">// agenda</span></span>
 <span class="odt-code-line"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">public</span><span style="color:#000000"> String getAgenda(Date jour) {</span></span>
@@ -1736,16 +1819,26 @@
 </code></pre></div>
 
 <ul>
-<li><span style="color: #000000">lignes 11 : produit l&#x27;entête [1],</span></li>
-<li><span style="color: #000000">ligne 15-20 : produit le groupe de boutons [2],</span></li>
-<li><span style="color: #000000">ligne 21 : produit le titre [3]. On notera la valeur de l&#x27;attribut </span><strong><span style="color: #000000">escape</span></strong><span style="color: #000000">. C&#x27;est ce qui permet d&#x27;interpréter le code XHTML que nous avons mis dans </span><strong><span style="color: #000000">form2Titre</span></strong><span style="color: #000000">,</span></li>
-<li><span style="color: #000000">ligne 24 : l&#x27;affichage des créneaux horaires est faite à l&#x27;aide d&#x27;un </span><strong><span style="color: #000000">dataList</span></strong><span style="color: #000000">,</span></li>
-<li><span style="color: #000000">lignes 28-33 : produisent l&#x27;intitulé du créneau horaire [4],</span></li>
-<li><span style="color: #000000">lignes 34-37 : affichent un fragment s&#x27;il y a un rendez-vous dans le créneau horaire,</span></li>
-<li><span style="color: #000000">ligne 36 : affiche l&#x27;identité du client ayant pris le rendez-vous,</span></li>
-<li><span style="color: #000000">lignes 41-45 : affichent le bouton [Supprimer] s&#x27;il y a un rendez-vous,</span></li>
-<li><span style="color: #000000">lignes 46-50 : affichent le bouton [Réserver] s&#x27;il n&#x27;y a pas de rendez-vous.</span></li>
+  <li><span style="color: #000000">lignes 11 : produit l&#x27;entête [1],</span>
+  </li>
+  <li><span style="color: #000000">ligne 15-20 : produit le groupe de boutons [2],</span>
+  </li>
+  <li><span style="color: #000000">ligne 21 : produit le titre [3]. On notera la valeur de l&#x27;attribut </span><b><span style="color: #000000">escape</span></b><span style="color: #000000">. C&#x27;est ce qui permet d&#x27;interpréter le code XHTML que nous avons mis dans </span><b><span style="color: #000000">form2Titre</span></b><span style="color: #000000">,</span>
+  </li>
+  <li><span style="color: #000000">ligne 24 : l&#x27;affichage des créneaux horaires est faite à l&#x27;aide d&#x27;un </span><b><span style="color: #000000">dataList</span></b><span style="color: #000000">,</span>
+  </li>
+  <li><span style="color: #000000">lignes 28-33 : produisent l&#x27;intitulé du créneau horaire [4],</span>
+  </li>
+  <li><span style="color: #000000">lignes 34-37 : affichent un fragment s&#x27;il y a un rendez-vous dans le créneau horaire,</span>
+  </li>
+  <li><span style="color: #000000">ligne 36 : affiche l&#x27;identité du client ayant pris le rendez-vous,</span>
+  </li>
+  <li><span style="color: #000000">lignes 41-45 : affichent le bouton [Supprimer] s&#x27;il y a un rendez-vous,</span>
+  </li>
+  <li><span style="color: #000000">lignes 46-50 : affichent le bouton [Réserver] s&#x27;il n&#x27;y a pas de rendez-vous.</span>
+  </li>
 </ul>
+
 <p><span style="color: #000000">Cette vue est principalement alimentée par le modèle suivant :</span></p>
 <div class="odt-code-rich" data-linenums="false" style="counter-reset: odtline 0;"><pre><code class="language-text">
 <span class="odt-code-line"><span style="font-weight:bold;color:#7f0055">private</span> AgendaMedecinJour agendaMedecinJour;</span>
@@ -1767,10 +1860,14 @@
 </code></pre></div>
 
 <ul>
-<li><span style="color: #000000">ligne 2 : le bouton [Supprimer] est associé à la méthode <em>[Form].action</em> (attribut <strong>action</strong>),</span></li>
-<li><span style="color: #000000">ligne 3 : l&#x27;<strong>id</strong> du créneau sur lequel on est positionné sera envoyé au modèle <em>[Form].idCreneauChoisi</em>,</span></li>
-<li><span style="color: #000000">ligne 2 : l&#x27;appel AJAX mettra à jour les zones <strong>form2</strong> (formulaire de <strong>vue2</strong>) et la vue <strong>vueErreurs</strong>. On a en effet deux cas : sii tout se passe bien la vue <strong>vue2</strong> sera réaffichée sinon c&#x27;est la vue <strong>vueErreurs</strong> qui le sera.</span></li>
+  <li><span style="color: #000000">ligne 2 : le bouton [Supprimer] est associé à la méthode <i>[Form].action</i> (attribut <b>action</b>),</span>
+  </li>
+  <li><span style="color: #000000">ligne 3 : l&#x27;<b>id</b> du créneau sur lequel on est positionné sera envoyé au modèle <i>[Form].idCreneauChoisi</i>,</span>
+  </li>
+  <li><span style="color: #000000">ligne 2 : l&#x27;appel AJAX mettra à jour les zones <b>form2</b> (formulaire de <b>vue2</b>) et la vue <b>vueErreurs</b>. On a en effet deux cas : sii tout se passe bien la vue <b>vue2</b> sera réaffichée sinon c&#x27;est la vue <b>vueErreurs</b> qui le sera.</span>
+  </li>
 </ul>
+
 <p><span style="color: #000000">La méthode [action] est la suivante :</span></p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
 <span class="odt-code-line">  <span style="color:#3f7f5f">// action sur RV</span></span>
@@ -1825,12 +1922,18 @@
 </code></pre></div>
 
 <ul>
-<li><span style="color: #000000">lignes 3-12 : on recherche le créneau horaire dont on a reçu l&#x27;<strong>id</strong> (ligne 7),</span></li>
-<li><span style="color: #000000">si on le trouve pas, ce qui est anormal, on réaffiche <strong>vue2</strong> (lignes 16-17),</span></li>
-<li><span style="color: #000000">ligne 19 : si on le trouve, on mémorise l&#x27;objet [CreneauMedecinJour] correspondant. C&#x27;est lui qui nous donne accès au rendez-vous à supprimer,</span></li>
-<li><span style="color: #000000">ligne 26 : on le supprime,</span></li>
-<li><span style="color: #000000">lignes 35-48 : la méthode <strong>supprimer</strong> renvoie la vue <strong>vue2</strong> si la suppression s&#x27;est bien passée (lignes 42-43) ou la vue <strong>vueErreurs</strong> s&#x27;il y a eu un problème (lignes 46-47).</span></li>
+  <li><span style="color: #000000">lignes 3-12 : on recherche le créneau horaire dont on a reçu l&#x27;<b>id</b> (ligne 7),</span>
+  </li>
+  <li><span style="color: #000000">si on le trouve pas, ce qui est anormal, on réaffiche <b>vue2</b> (lignes 16-17),</span>
+  </li>
+  <li><span style="color: #000000">ligne 19 : si on le trouve, on mémorise l&#x27;objet [CreneauMedecinJour] correspondant. C&#x27;est lui qui nous donne accès au rendez-vous à supprimer,</span>
+  </li>
+  <li><span style="color: #000000">ligne 26 : on le supprime,</span>
+  </li>
+  <li><span style="color: #000000">lignes 35-48 : la méthode <b>supprimer</b> renvoie la vue <b>vue2</b> si la suppression s&#x27;est bien passée (lignes 42-43) ou la vue <b>vueErreurs</b> s&#x27;il y a eu un problème (lignes 46-47).</span>
+  </li>
 </ul>
+
 <p><a id="refheading774003011462511"></a></p>
 <h2 id="911-prise-de-rendez-vous">9.11. Prise de rendez-vous</h2>
 <p><span style="color: #000000">La prise de rendez-vous correspond à la séquence suivante :</span></p>
@@ -1846,9 +1949,12 @@
 </code></pre></div>
 
 <ul>
-<li><span style="color: #000000">ligne 2 : le bouton [Réserver] est associé à la méthode <em>[Form].action</em> (attribut <em>action</em>), donc la même que pour le bouton [Supprimer]. L&#x27;appel AJAX met à jour les vues <strong>vue3</strong> et <strong>vueErreurs</strong> selon qu&#x27;il y a ou non des erreurs lors du traitement de l&#x27;appel.</span></li>
-<li><span style="color: #000000">ligne 3 : comme pour le bouton [Supprimer], l&#x27;<strong>id</strong> du créneau horaire est passé au modèle.</span></li>
+  <li><span style="color: #000000">ligne 2 : le bouton [Réserver] est associé à la méthode <i>[Form].action</i> (attribut <i>action</i>), donc la même que pour le bouton [Supprimer]. L&#x27;appel AJAX met à jour les vues <b>vue3</b> et <b>vueErreurs</b> selon qu&#x27;il y a ou non des erreurs lors du traitement de l&#x27;appel.</span>
+  </li>
+  <li><span style="color: #000000">ligne 3 : comme pour le bouton [Supprimer], l&#x27;<b>id</b> du créneau horaire est passé au modèle.</span>
+  </li>
 </ul>
+
 <p><span style="color: #000000">Le modèle qui traite cette action est le suivant :</span></p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
 <span class="odt-code-line">// action sur RV</span>
@@ -1880,9 +1986,12 @@
 </code></pre></div>
 
 <ul>
-<li><span style="color: #000000">lignes 2-10 : la méthode <em>action</em> va déterminer la référence <em>creneauChoisi</em> de l&#x27;objet [CreneauMedecinJour] qui fait l&#x27;objet d&#x27;une réservation puis appeler la méthode <em>reserver</em>,</span></li>
-<li><span style="color: #000000">ligne 16 : un message internationalisé est construit. C&#x27;est le suivant :</span></li>
+  <li><span style="color: #000000">lignes 2-10 : la méthode <i>action</i> va déterminer la référence <i>creneauChoisi</i> de l&#x27;objet [CreneauMedecinJour] qui fait l&#x27;objet d&#x27;une réservation puis appeler la méthode <i>reserver</i>,</span>
+  </li>
+  <li><span style="color: #000000">ligne 16 : un message internationalisé est construit. C&#x27;est le suivant :</span>
+  </li>
 </ul>
+
 <div class="odt-code-rich" data-linenums="false" style="counter-reset: odtline 0;"><pre><code class="language-text">
 <span class="odt-code-line">form3.titre=<span style="font-weight:bold;color:#7f0055">{0}</span> <span style="font-weight:bold;color:#7f0055">{1}</span> <span style="font-weight:bold;color:#7f0055">{2}</span><span style="color:#2a00ff">&lt;br/&gt;</span><span style="font-weight:bold;color:#7f0055">{3}</span><span style="color:#2a00ff">&lt;br/&gt;{4,number,#00}h:{5,number,#00}-{6,number,#00}h:{7,number,#00}</span></span>
 <span class="odt-code-line"><span style="color:#000000">form3.titre_detail=</span><span style="font-weight:bold;color:#7f0055">{0}</span><span style="color:#000000"> </span><span style="font-weight:bold;color:#7f0055">{1}</span><span style="color:#000000"> </span><span style="font-weight:bold;color:#7f0055">{2}</span><span style="color:#2a00ff">&lt;br/&gt;</span><span style="font-weight:bold;color:#7f0055">{3}</span><span style="color:#2a00ff">&lt;br/&gt;{4,number,#00}h:{5,number,#00}-{6,number,#00}h:{7,number,#00}</span></span>
@@ -1892,9 +2001,12 @@
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000010F00000181734430DE.png" style="display:inline-block; margin:4px;width:3.586cm;height:5.094cm;" class="odt-zoomable" data-zoom-src="images/100000000000010F00000181734430DE.png" /></td></tr></table>
 
 <ul>
-<li><span style="color: #000000">lignes 19-20 : le vue <strong>vue3</strong> est affichée,</span></li>
-<li><span style="color: #000000">lignes 23-24 : la vue <strong>vueErreurs</strong> est affichée si on a rencontré des problèmes.</span></li>
+  <li><span style="color: #000000">lignes 19-20 : le vue <b>vue3</b> est affichée,</span>
+  </li>
+  <li><span style="color: #000000">lignes 23-24 : la vue <b>vueErreurs</b> est affichée si on a rencontré des problèmes.</span>
+  </li>
 </ul>
+
 <p><a id="refheading774023011462511"></a></p>
 <h2 id="912-validation-dun-rendez-vous">9.12. Validation d&#x27;un rendez-vous</h2>
 <p><span style="color: #000000">La validation d&#x27;un rendez-vous correspond à la séquence suivante :</span></p>
@@ -1935,10 +2047,14 @@
 </code></pre></div>
 
 <ul>
-<li><span style="color: #000000">ligne 16 : produit le titre de la vue [3]. On notera la valeur de l&#x27;attribut <strong>escape</strong> qui permet l&#x27;interprétation des caractères XHTML dans le titre,</span></li>
-<li><span style="color: #000000">lignes 18-23 : produisent le combo des clients [4],</span></li>
-<li><span style="color: #000000">ligne 25 : produit le bouton [Valider] [5]. La méthode <em>[Form].validerRv</em> est associée à ce bouton :</span></li>
+  <li><span style="color: #000000">ligne 16 : produit le titre de la vue [3]. On notera la valeur de l&#x27;attribut <b>escape</b> qui permet l&#x27;interprétation des caractères XHTML dans le titre,</span>
+  </li>
+  <li><span style="color: #000000">lignes 18-23 : produisent le combo des clients [4],</span>
+  </li>
+  <li><span style="color: #000000">ligne 25 : produit le bouton [Valider] [5]. La méthode <i>[Form].validerRv</i> est associée à ce bouton :</span>
+  </li>
 </ul>
+
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
 <span class="odt-code-line">// validation Rv</span>
 <span class="odt-code-line"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">public</span><span style="color:#000000"> String validerRv() {</span></span>
@@ -1962,9 +2078,12 @@
 
 <p><span style="color: #000000">Ce code a déjà été rencontré dans la version 01. On notera simplement l&#x27;affichage des vues :</span></p>
 <ul>
-<li><span style="color: #000000">la vue <strong>vue2</strong> (lignes 11-12) si tout s&#x27;est bien passé,</span></li>
-<li><span style="color: #000000">la vue <strong>vueErreurs</strong> (lignes 15-16) sinon.</span></li>
+  <li><span style="color: #000000">la vue <b>vue2</b> (lignes 11-12) si tout s&#x27;est bien passé,</span>
+  </li>
+  <li><span style="color: #000000">la vue <b>vueErreurs</b> (lignes 15-16) sinon.</span>
+  </li>
 </ul>
+
 <p><a id="refheading774043011462511"></a></p>
 <h2 id="913-annulation-dune-prise-de-rendez-vous">9.13. Annulation d&#x27;une prise de rendez-vous</h2>
 <p><span style="color: #000000">Cela correspond à la séquence suivante :</span></p>
@@ -2054,13 +2173,20 @@
 </code></pre></div>
 
 <ul>
-<li><span style="color: #000000">ligne 11 : fait afficher [3],</span></li>
-<li><span style="color: #000000">ligne 13 : fait afficher le bouton [4]. Ce bouton permet de revenir à la vue <strong>vue1</strong>,</span></li>
-<li><span style="color: #000000">ligne 17 : le formulaire de la vue,</span></li>
-<li><span style="color: #000000">ligne 19 : fait afficher le titre de la vue [5],</span></li>
-<li><span style="color: #000000">lignes 21-27 : font afficher les boutons radio. La valeur (<strong>itemValue</strong>) du bouton radio sélectionné sera postée au modèle <em>[Form].locale</em> (attribut <strong>value</strong> de la ligne 23),</span></li>
-<li><span style="color: #000000">ligne 28 : fait afficher le bouton [Valider]. L&#x27;appel AJAX met à jour la vue <strong>vue1</strong> (attribut <strong>update</strong>). La méthode appelée est <em>[Form].configurer</em> :</span></li>
+  <li><span style="color: #000000">ligne 11 : fait afficher [3],</span>
+  </li>
+  <li><span style="color: #000000">ligne 13 : fait afficher le bouton [4]. Ce bouton permet de revenir à la vue <b>vue1</b>,</span>
+  </li>
+  <li><span style="color: #000000">ligne 17 : le formulaire de la vue,</span>
+  </li>
+  <li><span style="color: #000000">ligne 19 : fait afficher le titre de la vue [5],</span>
+  </li>
+  <li><span style="color: #000000">lignes 21-27 : font afficher les boutons radio. La valeur (<b>itemValue</b>) du bouton radio sélectionné sera postée au modèle <i>[Form].locale</i> (attribut <b>value</b> de la ligne 23),</span>
+  </li>
+  <li><span style="color: #000000">ligne 28 : fait afficher le bouton [Valider]. L&#x27;appel AJAX met à jour la vue <b>vue1</b> (attribut <b>update</b>). La méthode appelée est <i>[Form].configurer</i> :</span>
+  </li>
 </ul>
+
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
 <span class="odt-code-line"><span style="font-weight:bold;color:#7f0055">public</span> String configurer(){</span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#3f7f5f">// après configuration - on réaffiche vue1</span></span>
@@ -2100,8 +2226,10 @@
 </code></pre></div>
 
 <ul>
-<li><span style="color: #000000">ligne 8 : la vue va utiliser la langue qui vient d&#x27;être changée (attribut <strong>locale</strong>) et va afficher <strong>vue1</strong> (ligne 11).</span></li>
+  <li><span style="color: #000000">ligne 8 : la vue va utiliser la langue qui vient d&#x27;être changée (attribut <b>locale</b>) et va afficher <b>vue1</b> (ligne 11).</span>
+  </li>
 </ul>
+
 <p><a id="refheading105119100051761"></a></p>
 <h2 id="916-conclusion">9.16. Conclusion</h2>
 <p><span style="color: #000000">Rappelons l&#x27;architecture de l&#x27;application que nous venons de construire :</span></p>
@@ -2114,18 +2242,27 @@
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004F600000137B57BDB29.png" style="display:inline-block; margin:4px;width:16.801cm;height:4.115cm;" class="odt-zoomable" data-zoom-src="images/10000000000004F600000137B57BDB29.png" /></td></tr></table>
 
 <ul>
-<li><span style="color: #000000">[mv-rdvmedecins-ejb-dao-jpa] : les couches [DAO] et [JPA],</span></li>
-<li><span style="color: #000000">[mv-rdvmedecins-ejb-metier] : la couche [métier],</span></li>
-<li><span style="color: #000000">[mv-rdvmedecins-pfmobile] : la couche [web] implémentée par Primefaces mobile,</span></li>
-<li><span style="color: #000000">[mv-rdvmedecins-pfmobile-app] : le parent du projet d&#x27;entreprise [mv-rdvmedecins-pfmobile-app-ear]. Lorsqu&#x27;on importe le projet parent, le projet fils est automatiquement importé,</span></li>
-<li><span style="color: #000000">en [2], on exécute le projet d&#x27;entreprise [mv-rdvmedecins-pfmobile-app-ear],</span></li>
+  <li><span style="color: #000000">[mv-rdvmedecins-ejb-dao-jpa] : les couches [DAO] et [JPA],</span>
+  </li>
+  <li><span style="color: #000000">[mv-rdvmedecins-ejb-metier] : la couche [métier],</span>
+  </li>
+  <li><span style="color: #000000">[mv-rdvmedecins-pfmobile] : la couche [web] implémentée par Primefaces mobile,</span>
+  </li>
+  <li><span style="color: #000000">[mv-rdvmedecins-pfmobile-app] : le parent du projet d&#x27;entreprise [mv-rdvmedecins-pfmobile-app-ear]. Lorsqu&#x27;on importe le projet parent, le projet fils est automatiquement importé,</span>
+  </li>
+  <li><span style="color: #000000">en [2], on exécute le projet d&#x27;entreprise [mv-rdvmedecins-pfmobile-app-ear],</span>
+  </li>
 </ul>
+
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000003F40000014EF6FFF838.png" style="display:inline-block; margin:4px;width:13.388cm;height:4.419cm;" class="odt-zoomable" data-zoom-src="images/10000000000003F40000014EF6FFF838.png" /></td></tr></table>
 
 <ul>
-<li><span style="color: #000000">en [3], on choisit le serveur Glassfish,</span></li>
-<li><span style="color: #000000">en [4], dans l&#x27;onglet [Servers], l&#x27;application a été déployée. Elle ne s&#x27;exécute pas d&#x27;elle-même. Il faut demander son URL [http://localhost:8080/mv-rdvmedecins-pfmobile/] dans un navigateur ou un simulateur de mobile [5] :</span></li>
+  <li><span style="color: #000000">en [3], on choisit le serveur Glassfish,</span>
+  </li>
+  <li><span style="color: #000000">en [4], dans l&#x27;onglet [Servers], l&#x27;application a été déployée. Elle ne s&#x27;exécute pas d&#x27;elle-même. Il faut demander son URL [http://localhost:8080/mv-rdvmedecins-pfmobile/] dans un navigateur ou un simulateur de mobile [5] :</span>
+  </li>
 </ul>
+
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000001AD0000032E71A50DBD.png" style="display:inline-block; margin:4px;width:5.676cm;height:10.769cm;" class="odt-zoomable" data-zoom-src="images/10000000000001AD0000032E71A50DBD.png" /></td></tr></table>
 
 

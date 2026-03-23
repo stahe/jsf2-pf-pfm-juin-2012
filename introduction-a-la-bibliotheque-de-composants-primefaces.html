@@ -1038,10 +1038,14 @@
 <a id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="w">      </span><span class="nx">xmlns</span><span class="o">:</span><span class="nx">ui</span><span class="o">=</span><span class="s2">&quot;http://java.sun.com/jsf/facelets&quot;</span><span class="o">&gt;</span>
 </code></pre></div></td></tr></table></div>
 <ul>
-<li><span style="color: #000000">ligne 2 : les balises <strong>&lt;h:x&gt;</strong> de l&#x27;espace de noms [http://java.sun.com/jsf/html] qui correspondent aux balises HTML,</span></li>
-<li><span style="color: #000000">ligne 3 : les balises <strong>&lt;f:y&gt;</strong> de l&#x27;espace de noms [http://java.sun.com/jsf/core] qui correspondent aux balises JSF,</span></li>
-<li><span style="color: #000000">ligne 4 : les balises <strong>&lt;ui:z&gt;</strong> de l&#x27;espace de noms [http://java.sun.com/jsf/facelets] qui correspondent aux balises des facelets.</span></li>
+  <li><span style="color: #000000">ligne 2 : les balises <b>&lt;h:x&gt;</b> de l&#x27;espace de noms [http://java.sun.com/jsf/html] qui correspondent aux balises HTML,</span>
+  </li>
+  <li><span style="color: #000000">ligne 3 : les balises <b>&lt;f:y&gt;</b> de l&#x27;espace de noms [http://java.sun.com/jsf/core] qui correspondent aux balises JSF,</span>
+  </li>
+  <li><span style="color: #000000">ligne 4 : les balises <b>&lt;ui:z&gt;</b> de l&#x27;espace de noms [http://java.sun.com/jsf/facelets] qui correspondent aux balises des facelets.</span>
+  </li>
 </ul>
+
 <p><span style="color: #000000">Pour construire les pages JSF, nous allons ajouter une quatrième bibliothèque de balises, celles des composants </span><strong><span style="color: #000000">Primefaces</span></strong><span style="color: #000000">.</span></p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span>
 <span class="normal"><a href="#__codelineno-1-2">2</a></span>
@@ -1050,8 +1054,10 @@
 <a id="__codelineno-1-3" name="__codelineno-1-3"></a>xmlns:p=&quot;http://primefaces.org/ui&quot;&gt;
 </code></pre></div></td></tr></table></div>
 <ul>
-<li><span style="color: #000000">ligne 3 : les balises </span><strong><span style="color: #000000">&lt;p:z&gt;</span></strong><span style="color: #000000"> de l&#x27;espace de noms [http://primefaces.org/ui] correspondent aux composants Primefaces.</span></li>
+  <li><span style="color: #000000">ligne 3 : les balises </span><b><span style="color: #000000">&lt;p:z&gt;</span></b><span style="color: #000000"> de l&#x27;espace de noms [http://primefaces.org/ui] correspondent aux composants Primefaces.</span>
+  </li>
 </ul>
+
 <p><span style="color: #000000">C&#x27;est la </span><strong><span style="color: #000000">seule modification</span></strong><span style="color: #000000"> qui va apparaître. Elle apparaît donc dans les vues. Les gestionnaires d&#x27;événements et les modèles restent ce qu&#x27;ils étaient avec JSF. C&#x27;est un point important à comprendre.</span></p>
 <p><span style="color: #000000">L&#x27;utilisation des composants Primefaces permet de créer des interfaces web plus </span><strong><span style="color: #000000">conviviales</span></strong><span style="color: #000000"> grâce au nombreux composants de cette bibliothèque et plus </span><strong><span style="color: #000000">fluides</span></strong><span style="color: #000000"> grâce à la technologie </span><strong><span style="color: #000000">AJAX</span></strong><span style="color: #000000"> qu&#x27;elle utilise nativement. On parle alors d&#x27;</span><strong><span style="color: #000000">interfaces riches</span></strong><span style="color: #000000"> ou </span><strong><span style="color: #000000">RIA</span></strong><span style="color: #000000"> (Rich Internet Application).</span></p>
 <p><span style="color: #000000">L&#x27;architecture JSF précédente deviendra l&#x27;architecture PF (Primefaces) suivante :</span></p>
@@ -1064,9 +1070,12 @@
 
 <p><span style="color: #000000">Dans les exemples à venir, nous utiliserons les deux premières caractéristiques de Primefaces :</span></p>
 <ul>
-<li><span style="color: #000000">certains de la centaine de composants offerts,</span></li>
-<li><span style="color: #000000">le comportement AJAX natif de ceux-ci.</span></li>
+  <li><span style="color: #000000">certains de la centaine de composants offerts,</span>
+  </li>
+  <li><span style="color: #000000">le comportement AJAX natif de ceux-ci.</span>
+  </li>
 </ul>
+
 <p><span style="color: #000000">Parmi les composants offerts :</span></p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000105000001C5C4D46714.png" style="display:inline-block; margin:4px;width:4.83cm;height:8.391cm;" class="odt-zoomable" data-zoom-src="images/1000000000000105000001C5C4D46714.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000000FE000001EA640B9BA4.png" style="display:inline-block; margin:4px;width:4.701cm;height:9.081cm;" class="odt-zoomable" data-zoom-src="images/10000000000000FE000001EA640B9BA4.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000101000002BA5A4C376B.png" style="display:inline-block; margin:4px;width:4.761cm;height:12.929cm;" class="odt-zoomable" data-zoom-src="images/1000000000000101000002BA5A4C376B.png" /></td></tr></table>
 
@@ -1077,15 +1086,22 @@
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004330000020B7933EFCF.png" style="display:inline-block; margin:4px;width:14.222cm;height:6.92cm;" class="odt-zoomable" data-zoom-src="images/10000000000004330000020B7933EFCF.png" /></td></tr></table>
 
 <ul>
-<li><span style="color: #000000">en [1], l&#x27;exemple pour le composant [Spinner],</span></li>
-<li><span style="color: #000000">en [2], la boîte de dialogue affichée après un clic sur le bouton [Submit].</span></li>
+  <li><span style="color: #000000">en [1], l&#x27;exemple pour le composant [Spinner],</span>
+  </li>
+  <li><span style="color: #000000">en [2], la boîte de dialogue affichée après un clic sur le bouton [Submit].</span>
+  </li>
 </ul>
+
 <p><span style="color: #000000">Il y a là pour nous, trois nouveautés :</span></p>
 <ul>
-<li><span style="color: #000000">le composant [Spinner] qui n&#x27;existe pas de base en JSF,</span></li>
-<li><span style="color: #000000">idem pour la boîte de dialogue,</span></li>
-<li><span style="color: #000000">enfin, le POST provoqué par le [Submit] est <strong>ajaxifié</strong>. Si on observe bien le navigateur lors du POST, on ne voit pas le sablier. La page n&#x27;est pas rechargée. Elle est simplement modifiée : un nouveau composant, ici la boît de dialogue apparaît dans la page.</span></li>
+  <li><span style="color: #000000">le composant [Spinner] qui n&#x27;existe pas de base en JSF,</span>
+  </li>
+  <li><span style="color: #000000">idem pour la boîte de dialogue,</span>
+  </li>
+  <li><span style="color: #000000">enfin, le POST provoqué par le [Submit] est <b>ajaxifié</b>. Si on observe bien le navigateur lors du POST, on ne voit pas le sablier. La page n&#x27;est pas rechargée. Elle est simplement modifiée : un nouveau composant, ici la boît de dialogue apparaît dans la page.</span>
+  </li>
 </ul>
+
 <p><span style="color: #000000">Voyons comment tout cela est produit. Le code XHTML de l&#x27;exemple est le suivant :</span></p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-javascript">
 <span class="odt-code-line">&lt;h:form&gt;</span>
@@ -1121,12 +1137,18 @@
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000435000002526AB97F2D.png" style="display:inline-block; margin:4px;width:14.249cm;height:7.858cm;" class="odt-zoomable" data-zoom-src="images/1000000000000435000002526AB97F2D.png" /></td></tr></table>
 
 <ul>
-<li><span style="color: #000000">en [1], le composant obtenu avec la balise &lt;p:panel&gt; de la ligne 2,</span></li>
-<li><span style="color: #000000">en [2], le champ de saisie obtenu par la combinaison d&#x27;une balise &lt;p:outputLabel&gt; et &lt;p:spinner&gt;, lignes 6 et 7,</span></li>
-<li><span style="color: #000000">en [3], le bouton du POST obtenu avec la balise &lt;p:commandButton&gt; de la ligne 21,</span></li>
-<li><span style="color: #000000">en [4], la boîte de dialogue des lignes 23-25,</span></li>
-<li><span style="color: #000000">en [5], un conteneur invisible pour deux composants. Il est créé par la balise &lt;p:outputPanel&gt; de la ligne 13.</span></li>
+  <li><span style="color: #000000">en [1], le composant obtenu avec la balise &lt;p:panel&gt; de la ligne 2,</span>
+  </li>
+  <li><span style="color: #000000">en [2], le champ de saisie obtenu par la combinaison d&#x27;une balise &lt;p:outputLabel&gt; et &lt;p:spinner&gt;, lignes 6 et 7,</span>
+  </li>
+  <li><span style="color: #000000">en [3], le bouton du POST obtenu avec la balise &lt;p:commandButton&gt; de la ligne 21,</span>
+  </li>
+  <li><span style="color: #000000">en [4], la boîte de dialogue des lignes 23-25,</span>
+  </li>
+  <li><span style="color: #000000">en [5], un conteneur invisible pour deux composants. Il est créé par la balise &lt;p:outputPanel&gt; de la ligne 13.</span>
+  </li>
 </ul>
+
 <p><span style="color: #000000">Analysons le code suivant qui met en oeuvre une action AJAX :</span></p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-text">
 <span class="odt-code-line"><span style="color:#000000">           </span><span style="color:#800080">&lt;h:outputLabel</span><span style="font-style:italic;color:#008080"> </span><span style="color:#808000">for</span><span style="color:#800080">=&quot;</span><span style="color:#0000ff">ajaxspinner</span><span style="color:#800080">&quot;</span><span style="font-style:italic;color:#008080"> </span><span style="color:#808000">value</span><span style="color:#800080">=&quot;</span><span style="color:#0000ff">Ajax Spinner: </span><span style="color:#800080">&quot;</span><span style="font-style:italic;color:#008080"> </span><span style="color:#800080">/&gt;</span></span>
@@ -1142,22 +1164,34 @@
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000001B90000009C109979AF.png" style="display:inline-block; margin:4px;width:5.835cm;height:2.064cm;" class="odt-zoomable" data-zoom-src="images/10000000000001B90000009C109979AF.png" /></td></tr></table>
 
 <ul>
-<li><span style="color: #000000">ligne 1 : affiche le texte [1]. Est en même temps un libellé pour le composant d&#x27;<em>id=ajaxspinner</em> (attribut <strong>for</strong>). Ce composant est celui de la ligne 3(attribut <strong>id</strong>),,</span></li>
-<li><span style="color: #000000">lignes 3-5 : affichent le composant [2]. Ce composant est un composant de saisie / affichage associé au modèle <span style="color: #0000ff">#{spinnerController.number5}</span> (attribut <strong>value</strong>),</span></li>
-<li><span style="color: #000000">ligne 6 : affiche le composant [3].  Ce composant est un composant d&#x27;affichage lié au modèle <span style="color: #0000ff">#{spinnerController.number5}</span> (attribut <strong>value</strong>),</span></li>
-<li><span style="color: #000000">ligne 4 : la balise &lt;<strong>p:ajax</strong>&gt; ajoute un comportement AJAX au <em>spinner</em>. A chaque fois que celui-ci change de valeur, un POST de cette valeur (attribut <strong>process=&quot;@this&quot;</strong>) est fait au modèle <span style="color: #0000ff">#{spinnerController.number5}</span>. Ceci fait, une mise à jour de la page est faite (attribut <strong>update</strong>). Cet attribut a pour valeur l&#x27;<strong>id</strong> d&#x27;un composant de la page, ici celui de la ligne 6. Le composant cible de l&#x27;attribut <strong>update</strong> est alors mis à jour avec le modèle. Celui-ci est de nouveau <span style="color: #0000ff">#{spinnerController.number5}</span>, donc la valeur du <em>spinner</em>. Ainsi la zone [3] suit les saisies de la zone [2].</span></li>
+  <li><span style="color: #000000">ligne 1 : affiche le texte [1]. Est en même temps un libellé pour le composant d&#x27;<i>id=ajaxspinner</i> (attribut <b>for</b>). Ce composant est celui de la ligne 3(attribut <b>id</b>),,</span>
+  </li>
+  <li><span style="color: #000000">lignes 3-5 : affichent le composant [2]. Ce composant est un composant de saisie / affichage associé au modèle <span style="color: #0000ff">#{spinnerController.number5}</span> (attribut <b>value</b>),</span>
+  </li>
+  <li><span style="color: #000000">ligne 6 : affiche le composant [3].  Ce composant est un composant d&#x27;affichage lié au modèle <span style="color: #0000ff">#{spinnerController.number5}</span> (attribut <b>value</b>),</span>
+  </li>
+  <li><span style="color: #000000">ligne 4 : la balise &lt;<b>p:ajax</b>&gt; ajoute un comportement AJAX au <i>spinner</i>. A chaque fois que celui-ci change de valeur, un POST de cette valeur (attribut <b>process=&quot;@this&quot;</b>) est fait au modèle <span style="color: #0000ff">#{spinnerController.number5}</span>. Ceci fait, une mise à jour de la page est faite (attribut <b>update</b>). Cet attribut a pour valeur l&#x27;<b>id</b> d&#x27;un composant de la page, ici celui de la ligne 6. Le composant cible de l&#x27;attribut <b>update</b> est alors mis à jour avec le modèle. Celui-ci est de nouveau <span style="color: #0000ff">#{spinnerController.number5}</span>, donc la valeur du <i>spinner</i>. Ainsi la zone [3] suit les saisies de la zone [2].</span>
+  </li>
 </ul>
+
 <p><span style="color: #000000">On a là un comportement AJAX, acronyme qui signifie <strong>A</strong>synchronous <strong>J</strong>avascript <strong>A</strong>nd <strong>X</strong>ML. De façon générale, un comportement AJAX est le suivant :</span></p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000034B0000017725EC58C2.png" style="display:inline-block; margin:4px;width:11.153cm;height:4.962cm;" class="odt-zoomable" data-zoom-src="images/100000000000034B0000017725EC58C2.png" /></td></tr></table>
 
 <ul>
-<li>le navigateur affiche une page HTML qui contient du code Javascript (J de AJAX). Les éléments de la page forment un objet Javascript qu&#x27;on appelle le DOM (Document Object Model),</li>
-<li>le serveur loge l&#x27;application web qui a produit cette page,</li>
-<li><span style="color: #000000">en [1], un événement se produit dans la page. Par exemple l&#x27;incrémentation du <em>spinner</em>. Cet événement est géré par du Javascript,</span></li>
-<li><span style="color: #000000">en [2], le Javascript fait un POST à l&#x27;application web. Il le fait de façon asynchrone (le <strong>A</strong> de <strong>A</strong>JAX). L&#x27;utilisateur peut continuer à travailler avec la page. Elle n&#x27;est pas gelée mais on peut si nécessaire la geler. Le POST met à jour le modèle de la page à partir des valeurs postées, ici le modèle <span style="color: #0000ff">#{spinnerController.number5}</span>,</span></li>
-<li>en [3], l&#x27;application web renvoie au Javascript, une réponse XML (le X de AJAX) ou JSON (JavaScript Object Notation),</li>
-<li><span style="color: #000000">en [4], le Javascript utilise cette réponse pour mettre à jour une zone précise du DOM, ici la zone d&#x27;<em>id=ajaxspinnervalue</em>.</span></li>
+  <li>le navigateur affiche une page HTML qui contient du code Javascript (J de AJAX). Les éléments de la page forment un objet Javascript qu&#x27;on appelle le DOM (Document Object Model),
+  </li>
+  <li>le serveur loge l&#x27;application web qui a produit cette page,
+  </li>
+  <li><span style="color: #000000">en [1], un événement se produit dans la page. Par exemple l&#x27;incrémentation du <i>spinner</i>. Cet événement est géré par du Javascript,</span>
+  </li>
+  <li><span style="color: #000000">en [2], le Javascript fait un POST à l&#x27;application web. Il le fait de façon asynchrone (le <b>A</b> de <b>A</b>JAX). L&#x27;utilisateur peut continuer à travailler avec la page. Elle n&#x27;est pas gelée mais on peut si nécessaire la geler. Le POST met à jour le modèle de la page à partir des valeurs postées, ici le modèle <span style="color: #0000ff">#{spinnerController.number5}</span>,</span>
+  </li>
+  <li>en [3], l&#x27;application web renvoie au Javascript, une réponse XML (le X de AJAX) ou JSON (JavaScript Object Notation),
+  </li>
+  <li><span style="color: #000000">en [4], le Javascript utilise cette réponse pour mettre à jour une zone précise du DOM, ici la zone d&#x27;<i>id=ajaxspinnervalue</i>.</span>
+  </li>
 </ul>
+
 <p><span style="color: #000000">Lorsqu&#x27;on utilise JSF et Primefaces, le Javascript est généré par Primefaces. Cette bibliothèque s&#x27;appuie sur la bibliothèque Javascript <strong>JQuery</strong>. De même les composants Primefaces s&#x27;appuient sur ceux de la bibliothèque de composants <strong>JQuery UI</strong> (User Interface). Donc <strong>JQuery</strong> est à la base de Primefaces.</span></p>
 <p>Revenons à notre exemple et présentons maintenant le POST du bouton [Submit] :</p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000042A00000220FA29391E.png" style="display:inline-block; margin:4px;width:14.102cm;height:7.197cm;" class="odt-zoomable" data-zoom-src="images/100000000000042A00000220FA29391E.png" /></td></tr></table>
@@ -1189,9 +1223,12 @@
 </code></pre></div>
 
 <ul>
-<li>ligne 1 : le POST est provoqué par le bouton de la ligne 1. Dans Primefaces, les balises qui provoquent un POST le font par défaut sous la forme d&#x27;un appel AJAX. C&#x27;est pourquoi ces balises ont un attribut <strong>update</strong> pour indiquer la zone à mettre à jour, une fois la réponse du serveur reçue. Ici, la zone mise à jour est le <strong>panelGrid</strong> de la ligne 4. Donc au retour du POST, cette zone va être mise à jour par les valeurs postées au modèle. Cependant, elles sont à l&#x27;intérieur d&#x27;une boîte de dialogue non visible par défaut. C&#x27;est l&#x27;attribut <strong>oncomplete</strong> de la ligne 1 qui l&#x27;affiche. Cet événement se produit à la fin du traitement du POST. La valeur de cet attribut est du code Javascript. Ici, on affiche la boîte de dialogue qui a l&#x27;<strong>id=dialog</strong>, donc celle de la ligne 3 (attribut <strong>widgetVar</strong>),</li>
-<li>ligne 3 : on voit divers attributs de la boîte de dialogue. Il faut expérimenter pour voir ce qu&#x27;ils font.</li>
+  <li>ligne 1 : le POST est provoqué par le bouton de la ligne 1. Dans Primefaces, les balises qui provoquent un POST le font par défaut sous la forme d&#x27;un appel AJAX. C&#x27;est pourquoi ces balises ont un attribut <b>update</b> pour indiquer la zone à mettre à jour, une fois la réponse du serveur reçue. Ici, la zone mise à jour est le <b>panelGrid</b> de la ligne 4. Donc au retour du POST, cette zone va être mise à jour par les valeurs postées au modèle. Cependant, elles sont à l&#x27;intérieur d&#x27;une boîte de dialogue non visible par défaut. C&#x27;est l&#x27;attribut <b>oncomplete</b> de la ligne 1 qui l&#x27;affiche. Cet événement se produit à la fin du traitement du POST. La valeur de cet attribut est du code Javascript. Ici, on affiche la boîte de dialogue qui a l&#x27;<b>id=dialog</b>, donc celle de la ligne 3 (attribut <b>widgetVar</b>),
+  </li>
+  <li>ligne 3 : on voit divers attributs de la boîte de dialogue. Il faut expérimenter pour voir ce qu&#x27;ils font.
+  </li>
 </ul>
+
 <p>Nous avons parlé du modèle mais ne l&#x27;avons pas encore présenté. C&#x27;est celui-ci :</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-2-2"> 2</a></span>
@@ -1217,35 +1254,49 @@
 </code></pre></div></td></tr></table></div>
 <p>De façon générale, on peut procéder comme suit :</p>
 <ul>
-<li>repérer le composant Primefaces qu&#x27;on veut utiliser,</li>
-<li>étudier son exemple. Les exemples de Primefaces sont bien faits et facilement compréhensibles.</li>
+  <li>repérer le composant Primefaces qu&#x27;on veut utiliser,
+  </li>
+  <li>étudier son exemple. Les exemples de Primefaces sont bien faits et facilement compréhensibles.
+  </li>
 </ul>
+
 <p><a id="refheading10503510005176"></a></p>
 <h2 id="54-un-premier-projet-primefaces-mv-pf-01">5.4. Un premier projet Primefaces : mv-pf-01</h2>
 <p>Construisons un projet web Maven avec Netbeans :</p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000047E00000153EEDBC78E.png" style="display:inline-block; margin:4px;width:15.214cm;height:4.486cm;" class="odt-zoomable" data-zoom-src="images/100000000000047E00000153EEDBC78E.png" /></td></tr></table>
 
 <ul>
-<li>[1, 2, 3] : on construit un projet Maven de type [Web Application],</li>
+  <li>[1, 2, 3] : on construit un projet Maven de type [Web Application],
+  </li>
 </ul>
+
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004A900000120A30B1A93.png" style="display:inline-block; margin:4px;width:15.783cm;height:3.81cm;" class="odt-zoomable" data-zoom-src="images/10000000000004A900000120A30B1A93.png" /></td></tr></table>
 
 <ul>
-<li>[4] : le serveur sera Tomcat,</li>
-<li>en [5], le projet généré,</li>
-<li>en [6], on le nettoie du fichier [index.jsp] et du paquetage Java,</li>
+  <li>[4] : le serveur sera Tomcat,
+  </li>
+  <li>en [5], le projet généré,
+  </li>
+  <li>en [6], on le nettoie du fichier [index.jsp] et du paquetage Java,
+  </li>
 </ul>
+
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000050B000000EA313E5F7D.png" style="display:inline-block; margin:4px;width:17.08cm;height:3.096cm;" class="odt-zoomable" data-zoom-src="images/100000000000050B000000EA313E5F7D.png" /></td></tr></table>
 
 <ul>
-<li>en [7, 8] : dans les propriétés du projet, on ajoute un support pour Java server Faces,</li>
+  <li>en [7, 8] : dans les propriétés du projet, on ajoute un support pour Java server Faces,
+  </li>
 </ul>
+
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004D50000018355000867.png" style="display:inline-block; margin:4px;width:16.365cm;height:5.121cm;" class="odt-zoomable" data-zoom-src="images/10000000000004D50000018355000867.png" /></td></tr></table>
 
 <ul>
-<li>en [9], dans l&#x27;onglet [Components] on choisit la bibliothèque de composants Primefaces. Netbeans offre un support pour d&#x27;autres bibliothèques de composants : ICEFaces et RichFaces.</li>
-<li>en[10], le projet généré. En [11], on notera la dépendance sur Primefaces.</li>
+  <li>en [9], dans l&#x27;onglet [Components] on choisit la bibliothèque de composants Primefaces. Netbeans offre un support pour d&#x27;autres bibliothèques de composants : ICEFaces et RichFaces.
+  </li>
+  <li>en[10], le projet généré. En [11], on notera la dépendance sur Primefaces.
+  </li>
 </ul>
+
 <p>En clair, un projet Primefaces est un projet JSF classique auquel on a ajouté une dépendance sur Primefaces. Rien de plus.</p>
 <p>Ayant compris cela, nous modifions le fichier [pom.xml] pour travailler avec les dernières versions des bibliothèques :</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-xml">
@@ -1415,12 +1466,18 @@
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004C5000001AE70CFBB66.png" style="display:inline-block; margin:4px;width:16.154cm;height:5.689cm;" class="odt-zoomable" data-zoom-src="images/10000000000004C5000001AE70CFBB66.png" /></td></tr></table>
 
 <ul>
-<li>en [1], les fichiers de configuration du projet JSF,</li>
-<li>en [2], les pages XHTML,</li>
-<li>en [3], le bean support pour le changement de langues,</li>
-<li>en [4], les fichiers de messages,</li>
-<li>en [5], les dépendances.</li>
+  <li>en [1], les fichiers de configuration du projet JSF,
+  </li>
+  <li>en [2], les pages XHTML,
+  </li>
+  <li>en [3], le bean support pour le changement de langues,
+  </li>
+  <li>en [4], les fichiers de messages,
+  </li>
+  <li>en [5], les dépendances.
+  </li>
 </ul>
+
 <p>Les pages du projet ont pour modèle la page [layout.xhtml] :</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-xml">
 <span class="odt-code-line"><span style="color:#008080">&lt;?</span><span style="color:#3f7f7f">xml</span> <span style="color:#7f007f">version</span><span style="color:#000000">=</span><span style="font-style:italic;color:#2a00ff">&#x27;1.0&#x27;</span> <span style="color:#7f007f">encoding</span><span style="color:#000000">=</span><span style="font-style:italic;color:#2a00ff">&#x27;UTF-8&#x27;</span> <span style="color:#008080">?&gt;</span></span>
@@ -1469,14 +1526,19 @@
 </code></pre></div>
 
 <ul>
-<li>ligne 9 : une balise &lt;<strong>f:view</strong>&gt; encadre toute la page afin de profiter de l&#x27;internationalisation qu&#x27;elle permet,</li>
-<li>ligne 15 : un formulaire d&#x27;<strong>id</strong> <strong>formulaire.</strong> Ce formulaire forme le corps de la page. Dans ce corps, il n&#x27;y a qu&#x27;une partie dynamique, celle des lignes 28-30. C&#x27;est là que viendra s&#x27;insérer la partie variable de la page :</li>
+  <li>ligne 9 : une balise &lt;<b>f:view</b>&gt; encadre toute la page afin de profiter de l&#x27;internationalisation qu&#x27;elle permet,
+  </li>
+  <li>ligne 15 : un formulaire d&#x27;<b>id</b> <b>formulaire.</b> Ce formulaire forme le corps de la page. Dans ce corps, il n&#x27;y a qu&#x27;une partie dynamique, celle des lignes 28-30. C&#x27;est là que viendra s&#x27;insérer la partie variable de la page :
+  </li>
 </ul>
+
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000014E000001BCE8E72853.png" style="display:inline-block; margin:4px;width:4.419cm;height:5.874cm;" class="odt-zoomable" data-zoom-src="images/100000000000014E000001BCE8E72853.png" /></td></tr></table>
 
 <ul>
-<li>la zone encadrée ci-dessus sera mise à jour par des appels AJAX. Afin de l&#x27;identifier, nous l&#x27;avons incluse dans un conteneur Primefaces généré par la balise &lt;<strong>p:outputPanel</strong>&gt; (ligne 27). Et ce conteneur a été nommé <strong>contenu</strong> (attribut <strong>id</strong>). Comme il se trouve dans un formulaire qui est lui-même un conteneur de nom <strong>formulaire</strong>, le nom complet de la zone dynamique est <strong>:formulaire:contenu</strong>. Le premier <strong>:</strong> indique qu&#x27;on part de la racine du document, puis on passe dans le conteneur de nom <strong>formulaire</strong>, puis dans le conteneur de nom <strong>contenu</strong>. Une difficulté avec AJAX est de nommer correctement les zones à mettre à jour par un appel AJAX. Le plus simple est de regarder le code source de la page HTML reçue :</li>
+  <li>la zone encadrée ci-dessus sera mise à jour par des appels AJAX. Afin de l&#x27;identifier, nous l&#x27;avons incluse dans un conteneur Primefaces généré par la balise &lt;<b>p:outputPanel</b>&gt; (ligne 27). Et ce conteneur a été nommé <b>contenu</b> (attribut <b>id</b>). Comme il se trouve dans un formulaire qui est lui-même un conteneur de nom <b>formulaire</b>, le nom complet de la zone dynamique est <b>:formulaire:contenu</b>. Le premier <b>:</b> indique qu&#x27;on part de la racine du document, puis on passe dans le conteneur de nom <b>formulaire</b>, puis dans le conteneur de nom <b>contenu</b>. Une difficulté avec AJAX est de nommer correctement les zones à mettre à jour par un appel AJAX. Le plus simple est de regarder le code source de la page HTML reçue :
+  </li>
 </ul>
+
 <p><a id="line11"></a></p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1">1</a></span>
 <span class="normal"><a href="#__codelineno-3-2">2</a></span>
@@ -1509,18 +1571,26 @@
 </code></pre></div>
 
 <ul>
-<li>ligne 8, le modèle de [index.xhtml] est la page [layout.xhtml] qu&#x27;on vient de présenter,</li>
-<li>ligne 9, c&#x27;est la zone d&#x27;id <strong>contenu</strong> qui est mise à jour par [index.html]. Dans cette zone, il y a deux fragments :<ul>
-<li>le fragment [page1.xhtml] ligne 11 ;</li>
-<li>le fragment [page2.xhtml] ligne 14.</li>
+  <li>ligne 8, le modèle de [index.xhtml] est la page [layout.xhtml] qu&#x27;on vient de présenter,
+  </li>
+  <li>ligne 9, c&#x27;est la zone d&#x27;id <b>contenu</b> qui est mise à jour par [index.html]. Dans cette zone, il y a deux fragments :
+    <ul>
+      <li>le fragment [page1.xhtml] ligne 11 ;
+      </li>
+      <li>le fragment [page2.xhtml] ligne 14.
+      </li>
+    </ul>
+  </li>
 </ul>
-</li>
-</ul>
+
 <p>Ces deux fragments sont exclusifs l&#x27;un de l&#x27;autre.</p>
 <ul>
-<li>ligne 10 : le fragment [page1.xhtml] est affiché si la requête a l&#x27;attribut <strong>page1</strong> à <strong>true</strong> ou si l&#x27;attribut <strong>page2</strong> n&#x27;existe pas. C&#x27;est le cas de la toute première requête où aucun de ces attributs ne sera présent dans la requête. Dans ce cas, on affichera le fragment [page1.xhtml],</li>
-<li>ligne 11,  le fragment [page2.xhtml] est affiché si la requête a l&#x27;attribut <strong>page2</strong> à <strong>true</strong></li>
+  <li>ligne 10 : le fragment [page1.xhtml] est affiché si la requête a l&#x27;attribut <b>page1</b> à <b>true</b> ou si l&#x27;attribut <b>page2</b> n&#x27;existe pas. C&#x27;est le cas de la toute première requête où aucun de ces attributs ne sera présent dans la requête. Dans ce cas, on affichera le fragment [page1.xhtml],
+  </li>
+  <li>ligne 11,  le fragment [page2.xhtml] est affiché si la requête a l&#x27;attribut <b>page2</b> à <b>true</b>
+  </li>
 </ul>
+
 <p>Le fragment [page1.xhtml] est le suivant :</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-xml">
 <span class="odt-code-line"><span style="color:#008080">&lt;?</span><span style="color:#3f7f7f">xml</span> <span style="color:#7f007f">version</span><span style="color:#000000">=</span><span style="font-style:italic;color:#2a00ff">&#x27;1.0&#x27;</span> <span style="color:#7f007f">encoding</span><span style="color:#000000">=</span><span style="font-style:italic;color:#2a00ff">&#x27;UTF-8&#x27;</span> <span style="color:#008080">?&gt;</span></span>
@@ -1548,10 +1618,14 @@
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000029B0000017D4A768DED.png" style="display:inline-block; margin:4px;width:8.825cm;height:5.041cm;" class="odt-zoomable" data-zoom-src="images/100000000000029B0000017D4A768DED.png" /></td></tr></table>
 
 <ul>
-<li>lignes 11 et 12, les deux liens pour changer la langue. Ces deux liens provoquent des appels AJAX (<em>ajax=true</em>). C&#x27;est la valeur par défaut. On peut donc ne pas mettre l&#x27;attribut <em>ajax=true</em>. Nous ne le ferons plus par la suite. On notera que ces deux liens mettent à jour la zone <strong>:formulaire:contenu</strong> (attribut <em>update</em>), celle qui est encadrée ci-dessus,</li>
-<li>ligne 15 : un lien AJAX de navigation qui là encore met à jour la zone <strong>:formulaire:contenu</strong>,</li>
-<li>ligne 16 : on utilise la balise &lt;<em>h:setPropertyActionListener</em>&gt; pour mettre l&#x27;attribut <strong>page2</strong> dans la requête avec la valeur <strong>true</strong>. Cela va avoir pour effet d&#x27;afficher le fragment [page2.xhtml] (ligne 6 ci-dessous) dans la page [index.xhtml] :</li>
+  <li>lignes 11 et 12, les deux liens pour changer la langue. Ces deux liens provoquent des appels AJAX (<i>ajax=true</i>). C&#x27;est la valeur par défaut. On peut donc ne pas mettre l&#x27;attribut <i>ajax=true</i>. Nous ne le ferons plus par la suite. On notera que ces deux liens mettent à jour la zone <b>:formulaire:contenu</b> (attribut <i>update</i>), celle qui est encadrée ci-dessus,
+  </li>
+  <li>ligne 15 : un lien AJAX de navigation qui là encore met à jour la zone <b>:formulaire:contenu</b>,
+  </li>
+  <li>ligne 16 : on utilise la balise &lt;<i>h:setPropertyActionListener</i>&gt; pour mettre l&#x27;attribut <b>page2</b> dans la requête avec la valeur <b>true</b>. Cela va avoir pour effet d&#x27;afficher le fragment [page2.xhtml] (ligne 6 ci-dessous) dans la page [index.xhtml] :
+  </li>
 </ul>
+
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-python">
 <span class="odt-code-line"><span style="color:#000000">  </span><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">ui:composition</span> <span style="color:#7f007f">template</span><span style="color:#000000">=</span><span style="font-style:italic;color:#2a00ff">&quot;layout.xhtml&quot;</span><span style="color:#008080">&gt;</span></span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">ui:define</span> <span style="color:#7f007f">name</span><span style="color:#000000">=</span><span style="font-style:italic;color:#2a00ff">&quot;contenu&quot;</span><span style="color:#008080">&gt;</span></span>
@@ -1589,9 +1663,12 @@
 
 <p>De cet exemple, nous retiendrons les points suivants pour la suite :</p>
 <ul>
-<li>nous utiliserons le modèle [layout.xhtml] comme modèle des pages,</li>
-<li>la zone dynamique sera identifiée par l&#x27;id <strong>:formulaire:contenu</strong> et sera mise à jour par des appels AJAX.</li>
+  <li>nous utiliserons le modèle [layout.xhtml] comme modèle des pages,
+  </li>
+  <li>la zone dynamique sera identifiée par l&#x27;id <b>:formulaire:contenu</b> et sera mise à jour par des appels AJAX.
+  </li>
 </ul>
+
 <p><a id="refheading10504110005176"></a></p>
 <h2 id="57-exemple-mv-pf-04-formulaire-de-saisie">5.7. Exemple mv-pf-04 :  formulaire de saisie</h2>
 <p>Ce projet est le portage du projet JSF2 [mv-jsf2-03] (cf paragraphe <a href="java-server-faces.html#jsf-exemple3">2.5</a>) :</p>
@@ -1898,9 +1975,12 @@
 </code></pre></div>
 
 <ul>
-<li>les liens ont tous l&#x27;attribut <strong>ajax=false</strong>. Il y a donc un chargement de page normal,</li>
-<li>on notera lignes 2 et 4, la façon de faire une redirection.</li>
+  <li>les liens ont tous l&#x27;attribut <b>ajax=false</b>. Il y a donc un chargement de page normal,
+  </li>
+  <li>on notera lignes 2 et 4, la façon de faire une redirection.
+  </li>
 </ul>
+
 <p><a id="refheading10504710005176"></a></p>
 <h2 id="510-exemple-mv-pf-07-validation-et-conversion-des-saisies">5.10. Exemple : mv-pf-07 : validation et conversion des saisies</h2>
 <p>Ce projet est le portage du projet JSF2 [mv-jsf2-06] (cf paragraphe <a href="java-server-faces.html#jsf-exemple6">2.8</a>) :</p>
@@ -1921,9 +2001,12 @@
 
 <p>Vis à vis de la balise &lt;<strong>h:message</strong>&gt; de JSF, la balise &lt;<strong>p:message</strong>&gt; de PF amène les changements suivants :</p>
 <ul>
-<li>l&#x27;apparence du message d&#x27;erreur est différente [1],</li>
-<li>la zone de saisie erronée est entourée d&#x27;un cadre rouge [2].</li>
+  <li>l&#x27;apparence du message d&#x27;erreur est différente [1],
+  </li>
+  <li>la zone de saisie erronée est entourée d&#x27;un cadre rouge [2].
+  </li>
 </ul>
+
 <p><a id="refheading10504910005176"></a></p>
 <h2 id="511-exemple-mv-pf-08-evenements-lies-au-changement-detat-de-composants">5.11. Exemple : mv-pf-08 :  événements liés au changement d&#x27;état de composants</h2>
 <p>Ce projet est le portage du projet JSF2 [mv-jsf2-07] (cf paragraphe <a href="java-server-faces.html#jsf-exemple7">2.9</a>) :</p>
@@ -1970,9 +2053,12 @@
 <a id="__codelineno-5-12" name="__codelineno-5-12"></a><span class="w">        </span><span class="nt">&lt;/p:selectOneMenu&gt;</span>
 </code></pre></div></td></tr></table></div>
 <ul>
-<li>ligne 2 : la balise <strong>&lt;h:selectOneMenu&gt;</strong> sans attribut <strong>valueChangeListener</strong>,</li>
-<li>ligne 4 : la balise <strong>&lt;p:ajax&gt;</strong> ajoute un comportement AJAX à sa balise parent <strong>&lt;h:selectOneMenu&gt;</strong>. Par défaut, elle réagit à l&#x27;événement &quot; changement de valeur &quot; de la liste <em>combo1</em>. Sur cet événement, les valeurs du formulaire auquel elle appartient vont être postées au serveur par un appel AJAX. Le modèle est donc mis à jour. On utilise ce nouveau modèle pour mettre à jour la liste déroulante identifiée par <em>combo2</em> (ligne 10). On notera, ligne 4, que l&#x27;appel AJAX n&#x27;exécute pas de méthode du modèle. C&#x27;est inutile ici. On veut simplement changer le modèle par le POST des valeurs saisies.</li>
+  <li>ligne 2 : la balise <b>&lt;h:selectOneMenu&gt;</b> sans attribut <b>valueChangeListener</b>,
+  </li>
+  <li>ligne 4 : la balise <b>&lt;p:ajax&gt;</b> ajoute un comportement AJAX à sa balise parent <b>&lt;h:selectOneMenu&gt;</b>. Par défaut, elle réagit à l&#x27;événement &quot; changement de valeur &quot; de la liste <i>combo1</i>. Sur cet événement, les valeurs du formulaire auquel elle appartient vont être postées au serveur par un appel AJAX. Le modèle est donc mis à jour. On utilise ce nouveau modèle pour mettre à jour la liste déroulante identifiée par <i>combo2</i> (ligne 10). On notera, ligne 4, que l&#x27;appel AJAX n&#x27;exécute pas de méthode du modèle. C&#x27;est inutile ici. On veut simplement changer le modèle par le POST des valeurs saisies.
+  </li>
 </ul>
+
 <p><a id="refheading10505110005176"></a></p>
 <h2 id="512-exemple-mv-pf-09-saisie-assistee">5.12. Exemple : mv-pf-09 : saisie assistée</h2>
 <p>Ce projet présente des balises de saisie spécifiques à Primefaces qui facilitent la saisie de certains types de données :</p>
@@ -1985,9 +2071,12 @@
 
 <p>L&#x27;intérêt du projet réside dans :</p>
 <ul>
-<li>l&#x27;unique page [index.html] affichée par celui-ci,</li>
-<li>le modèle [Form.java] de cette dernière.</li>
+  <li>l&#x27;unique page [index.html] affichée par celui-ci,
+  </li>
+  <li>le modèle [Form.java] de cette dernière.
+  </li>
 </ul>
+
 <p><a id="refheading10505510005176"></a></p>
 <h3 id="5122-le-modele">5.12.2. Le modèle</h3>
 <p>Le formulaire présente quatre champs de saisie associés au modèle suivant :</p>
@@ -2093,9 +2182,12 @@
 </code></pre></div>
 
 <ul>
-<li><span style="color: #000000">ligne 3 : on a là une balise </span><strong><span style="color: #000000">&lt;p:inputText&gt;</span></strong><span style="color: #000000"> classique qui permet de saisir le nombre entier. Celui-ci peut être également saisi grâce au slider,</span></li>
-<li><span style="color: #000000">ligne 4 : la balise </span><strong><span style="color: #000000">&lt;p:slider&gt;</span></strong><span style="color: #000000"> est associée à la balise de saisie &lt;</span><strong><span style="color: #000000">p:inputText</span></strong><span style="color: #000000">&gt; (attribut </span><strong><span style="color: #000000">for</span></strong><span style="color: #000000">). On lui fixe une valeur minimale et une valeur maximale.</span></li>
+  <li><span style="color: #000000">ligne 3 : on a là une balise </span><b><span style="color: #000000">&lt;p:inputText&gt;</span></b><span style="color: #000000"> classique qui permet de saisir le nombre entier. Celui-ci peut être également saisi grâce au slider,</span>
+  </li>
+  <li><span style="color: #000000">ligne 4 : la balise </span><b><span style="color: #000000">&lt;p:slider&gt;</span></b><span style="color: #000000"> est associée à la balise de saisie &lt;</span><b><span style="color: #000000">p:inputText</span></b><span style="color: #000000">&gt; (attribut </span><b><span style="color: #000000">for</span></b><span style="color: #000000">). On lui fixe une valeur minimale et une valeur maximale.</span>
+  </li>
 </ul>
+
 <p><a id="refheading10506310005176"></a></p>
 <h3 id="5126-le-spinner">5.12.6. <span style="color: #000000">Le spinner</span></h3>
 <p><span style="color: #000000">On a eu déjà l&#x27;occasion de présenter ce composant :</span></p>
@@ -2142,9 +2234,12 @@
 
 <p><span style="color: #000000"> </span></p>
 <ul>
-<li><span style="color: #000000">ligne 1 : la méthode reçoit comme paramètre la chaîne des caractères tapés par l&#x27;utilisateur dans la zone de saisie. Elle rend une liste de propositions,</span></li>
-<li><span style="color: #000000">lignes 4-6 : on construit une liste de 10 propositions qui reprend les caractères reçus en paramètres et leur ajoute un chiffre de 0 à 9.</span></li>
+  <li><span style="color: #000000">ligne 1 : la méthode reçoit comme paramètre la chaîne des caractères tapés par l&#x27;utilisateur dans la zone de saisie. Elle rend une liste de propositions,</span>
+  </li>
+  <li><span style="color: #000000">lignes 4-6 : on construit une liste de 10 propositions qui reprend les caractères reçus en paramètres et leur ajoute un chiffre de 0 à 9.</span>
+  </li>
 </ul>
+
 <p><a id="refheading10506710005176"></a></p>
 <h3 id="5128-la-balise-pgrowl">5.12.8. <span style="color: #000000">La balise &lt;p:growl&gt;</span></h3>
 <p><span style="color: #000000">La balise &lt;</span><strong><span style="color: #000000">p:growl</span></strong><span style="color: #000000">&gt; est un remplacement possible de la balise &lt;</span><strong><span style="color: #000000">p:messages</span></strong><span style="color: #000000">&gt; qui affiche les messages d&#x27;erreur du formulaire.</span></p>
@@ -2157,8 +2252,10 @@
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004FF0000011CA2F28226.png" style="display:inline-block; margin:4px;width:16.921cm;height:3.757cm;" class="odt-zoomable" data-zoom-src="images/10000000000004FF0000011CA2F28226.png" /></td></tr></table>
 
 <ul>
-<li><span style="color: #000000">en [2], la balise &lt;</span><strong><span style="color: #000000">p:growl</span></strong><span style="color: #000000">&gt; affiche alors les messages d&#x27;erreurs associés aux saisies erronées.</span></li>
+  <li><span style="color: #000000">en [2], la balise &lt;</span><b><span style="color: #000000">p:growl</span></b><span style="color: #000000">&gt; affiche alors les messages d&#x27;erreurs associés aux saisies erronées.</span>
+  </li>
 </ul>
+
 <p><a id="refheading10506910005176"></a></p>
 <h2 id="513-exemple-mv-pf-10-datatable-1">5.13. Exemple : mv-pf-10 : dataTable - 1</h2>
 <p>Ce projet présente la balise &lt;<strong>p:dataTable</strong>&gt; qui sert à afficher des listes de données</p>
@@ -2170,9 +2267,12 @@
 
 <p>L&#x27;intérêt du projet réside dans :</p>
 <ul>
-<li>l&#x27;unique page [index.html] affichée par celui-ci,</li>
-<li>le modèle [Form.java] de cette dernière et le bean [Personne].</li>
+  <li>l&#x27;unique page [index.html] affichée par celui-ci,
+  </li>
+  <li>le modèle [Form.java] de cette dernière et le bean [Personne].
+  </li>
 </ul>
+
 <p><a id="refheading10507310005176"></a></p>
 <h3 id="5132-le-fichier-des-messages">5.13.2. Le fichier des messages</h3>
 <p>Le fichier [messages_fr.properties] est le suivant :</p>
@@ -2265,11 +2365,16 @@
 </code></pre></div>
 
 <ul>
-<li><span style="color: #000000">lignes 9-10 : le bean est de portée </span><strong><span style="color: #000000">session</span></strong><span style="color: #000000">,</span></li>
-<li><span style="color: #000000">lignes 18-24 : le constructeur crée une liste de trois personnes, liste qui va donc vivre au fil des requêtes,</span></li>
-<li><span style="color: #000000">ligne 15 : le n° d&#x27;une personne à supprimer de la liste,</span></li>
-<li><span style="color: #000000">lignes 26-28 : la méthode de suppression.</span></li>
+  <li><span style="color: #000000">lignes 9-10 : le bean est de portée </span><b><span style="color: #000000">session</span></b><span style="color: #000000">,</span>
+  </li>
+  <li><span style="color: #000000">lignes 18-24 : le constructeur crée une liste de trois personnes, liste qui va donc vivre au fil des requêtes,</span>
+  </li>
+  <li><span style="color: #000000">ligne 15 : le n° d&#x27;une personne à supprimer de la liste,</span>
+  </li>
+  <li><span style="color: #000000">lignes 26-28 : la méthode de suppression.</span>
+  </li>
 </ul>
+
 <p><a id="refheading10507710005176"></a></p>
 <h3 id="5134-le-formulaire">5.13.4. <span style="color: #000000">Le formulaire</span></h3>
 <p><span style="color: #000000">Le formulaire est le suivant [index.xhtml] :</span></p>
@@ -2325,17 +2430,25 @@
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000003D20000022C26FDAFD5.png" style="display:inline-block; margin:4px;width:12.938cm;height:7.355cm;" class="odt-zoomable" data-zoom-src="images/10000000000003D20000022C26FDAFD5.png" /></td></tr></table>
 
 <ul>
-<li><span style="color: #000000">ligne 12 : génère le tableau encadré ci-dessus. L&#x27;attribut <strong>value</strong> désigne la collection affichée par le tableau, ici la liste des personnes du modèle. L&#x27;attribut <strong>emptyMessage</strong> et facultatif. Il désigne le message à afficher lorsque la liste est vide. Par défaut c&#x27;est &#x27;<em>no records found</em>&#x27;. Ici, ce sera :</span></li>
+  <li><span style="color: #000000">ligne 12 : génère le tableau encadré ci-dessus. L&#x27;attribut <b>value</b> désigne la collection affichée par le tableau, ici la liste des personnes du modèle. L&#x27;attribut <b>emptyMessage</b> et facultatif. Il désigne le message à afficher lorsque la liste est vide. Par défaut c&#x27;est &#x27;<i>no records found</i>&#x27;. Ici, ce sera :</span>
+  </li>
 </ul>
+
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000319000000A8C067E6E6.png" style="display:inline-block; margin:4px;width:10.49cm;height:2.221cm;" class="odt-zoomable" data-zoom-src="images/1000000000000319000000A8C067E6E6.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
 
 <ul>
-<li><span style="color: #000000">lignes 13-15 : génèrent l&#x27;entête [1],</span></li>
-<li><span style="color: #000000">lignes 16-21 : génèrent la colonne [2],</span></li>
-<li><span style="color: #000000">lignes 22-27 : génèrent la colonne [3],</span></li>
-<li><span style="color: #000000">lignes 28-33 : génèrent la colonne [4],</span></li>
-<li><span style="color: #000000">lignes 34-41 : génèrent la colonne [5].</span></li>
+  <li><span style="color: #000000">lignes 13-15 : génèrent l&#x27;entête [1],</span>
+  </li>
+  <li><span style="color: #000000">lignes 16-21 : génèrent la colonne [2],</span>
+  </li>
+  <li><span style="color: #000000">lignes 22-27 : génèrent la colonne [3],</span>
+  </li>
+  <li><span style="color: #000000">lignes 28-33 : génèrent la colonne [4],</span>
+  </li>
+  <li><span style="color: #000000">lignes 34-41 : génèrent la colonne [5].</span>
+  </li>
 </ul>
+
 <p>Le lien [Retirer] permet de retirer une personne de la liste. Ligne [38], c&#x27;est la méthode <em>[Form].retirerPersonne</em> qui fait ce travail. Elle a besoin de connaître le n° de la personne à retirer. Celui-ci lui est donné ligne 39. Ligne 38, on a utilisé l&#x27;attribut <strong>action</strong>. A d&#x27;autres occasions, on a utilisé l&#x27;attribut <strong>actionListener</strong>. Je ne suis pas sûr de bien comprendre la différence fonctionnelle entre ces deux attributs. A l&#x27;usage, on remarque cependant que les attributs positionnés par les balises &lt;<span style="color: #3f7f7f">setPropertyActionListener&gt;</span> le sont <strong>avant</strong> exécution de la méthode désignée par l&#x27;attribut <strong>action</strong>, et que ce n&#x27;est pas le cas pour l&#x27;attribut <strong>actionListener</strong>. En clair, dès qu&#x27;on a des paramètres à envoyer à l&#x27;action appelée, il faut utiliser l&#x27;attribut <strong>action</strong>.</p>
 <p>La méthode pour retirer une personne est la suivante :</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
@@ -2398,10 +2511,14 @@
 </code></pre></div>
 
 <ul>
-<li>ligne 13 : l&#x27;attribut <strong>selectionMode</strong> permet de choisir un mode de sélection <em>single</em> ou <em>multiple</em>. Ici, nous avons choisi de ne sélectionner qu&#x27;une seule ligne,</li>
-<li>ligne 13 : l&#x27;attribut <strong>rowkey</strong> désigne un attribut des éléments affichés qui permet de les sélectionner de façon unique. Ici, nous avons choisi l&#x27;<strong>id</strong> de la personne sélectionnée,</li>
-<li>ligne 13 : l&#x27;attribut <strong>selection</strong> désigne l&#x27;attribut du modèle qui recevra une référence de la personne sélectionnée. Grâce à l&#x27;attribut <strong>rowkey</strong> précédent, côté serveur une référence de la personne sélectionnée va pouvoir être calculée. On n&#x27;a pas les détails de la méthode utilisée. On peut imaginer que la collection est parcourue séquentiellement à la recherche de l&#x27;élément correspondant au <strong>rowkey</strong> sélectionné. Cela veut dire que si la méthode qui associe <strong>rowkey</strong> à <strong>selection</strong> est plus complexe, alors cette méthode n&#x27;est pas utilisable,</li>
+  <li>ligne 13 : l&#x27;attribut <b>selectionMode</b> permet de choisir un mode de sélection <i>single</i> ou <i>multiple</i>. Ici, nous avons choisi de ne sélectionner qu&#x27;une seule ligne,
+  </li>
+  <li>ligne 13 : l&#x27;attribut <b>rowkey</b> désigne un attribut des éléments affichés qui permet de les sélectionner de façon unique. Ici, nous avons choisi l&#x27;<b>id</b> de la personne sélectionnée,
+  </li>
+  <li>ligne 13 : l&#x27;attribut <b>selection</b> désigne l&#x27;attribut du modèle qui recevra une référence de la personne sélectionnée. Grâce à l&#x27;attribut <b>rowkey</b> précédent, côté serveur une référence de la personne sélectionnée va pouvoir être calculée. On n&#x27;a pas les détails de la méthode utilisée. On peut imaginer que la collection est parcourue séquentiellement à la recherche de l&#x27;élément correspondant au <b>rowkey</b> sélectionné. Cela veut dire que si la méthode qui associe <b>rowkey</b> à <b>selection</b> est plus complexe, alors cette méthode n&#x27;est pas utilisable,
+  </li>
 </ul>
+
 <p>Ceci expliqué, la méthode <em>[Form].retirerPersonne</em> évolue comme suit :</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
 <span class="odt-code-line">...</span>
@@ -2430,9 +2547,12 @@
 </code></pre></div>
 
 <ul>
-<li>ligne 9 : à chaque POST, la référence de la ligne 9 est initialisée avec la référence, dans la liste de la ligne 8, de la personne sélectionnée,</li>
-<li>en 18 : la suppression de la personne s&#x27;en trouve simplifiée. La recherche que nous avions faite dans l&#x27;exemple précédent a été faite par la balise &lt;<em>dataTable</em>&gt;.</li>
+  <li>ligne 9 : à chaque POST, la référence de la ligne 9 est initialisée avec la référence, dans la liste de la ligne 8, de la personne sélectionnée,
+  </li>
+  <li>en 18 : la suppression de la personne s&#x27;en trouve simplifiée. La recherche que nous avions faite dans l&#x27;exemple précédent a été faite par la balise &lt;<i>dataTable</i>&gt;.
+  </li>
 </ul>
+
 <p><a id="refheading10508110005176"></a>
 <a id="pf-exemple-12"></a></p>
 <h2 id="515-exemple-mv-pf-12-datatable-3">5.15. Exemple : mv-pf-12 : dataTable - 3</h2>
@@ -2455,8 +2575,10 @@
 </code></pre></div>
 
 <ul>
-<li>ligne 6, l&#x27;attribut <strong>rowkey</strong> a disparu, l&#x27;attribut <strong>selection</strong> reste. Le lien entre les attributs <strong>rowkey</strong> et <strong>selection</strong> se fait désormais au travers d&#x27;une classe. L&#x27;attribut <strong>value</strong> de la ligne 5 a désormais pour valeur une instance de l&#x27;interface  Primefaces <strong>SelectableDataModel&lt;T&gt;</strong>. La méthode <em>[Form].getPersonnes</em> du modèle évolue comme suit :</li>
+  <li>ligne 6, l&#x27;attribut <b>rowkey</b> a disparu, l&#x27;attribut <b>selection</b> reste. Le lien entre les attributs <b>rowkey</b> et <b>selection</b> se fait désormais au travers d&#x27;une classe. L&#x27;attribut <b>value</b> de la ligne 5 a désormais pour valeur une instance de l&#x27;interface  Primefaces <b>SelectableDataModel&lt;T&gt;</b>. La méthode <i>[Form].getPersonnes</i> du modèle évolue comme suit :
+  </li>
 </ul>
+
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-text">
 <span class="odt-code-line"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">public</span><span style="color:#000000"> DataTableModel getPersonnes() {</span></span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">return</span><span style="color:#000000"> </span><span style="font-weight:bold;color:#7f0055">new</span><span style="color:#000000"> DataTableModel(personnes);</span></span>
@@ -2508,12 +2630,18 @@
 </code></pre></div>
 
 <ul>
-<li>ligne 7 : la classe est une instance de l&#x27;interface <em>SelectableDataModel</em>. Deux classes au moins implémentent cette interface : <strong>ListDataModel</strong> dont le constructeur admet une liste pour paramètre, et <strong>ArrayDataModel</strong>  dont le constructeur admet un tableau pour paramètre. Ici, notre bean étend la classe <strong>ListDataModel</strong>,</li>
-<li>lignes 13-15 : le constructeur admet pour paramètre la liste des personnes que nous gérons. Ce paramètre est passé à la classe parent,</li>
-<li>ligne 18 : la méthode <strong>getRowKey</strong> joue le rôle de l&#x27;attribut <strong>rowkey</strong> qui a été enlevé. Elle doit rendre l&#x27;objet qui permet d&#x27;identifier une personne de façon unique, ici l&#x27;<strong>id</strong> de la personne,</li>
-<li>ligne 23 : la méthode <strong>getRowData</strong> doit rendre l&#x27;objet sélectionné, à partir de son <strong>rowkey</strong>. Donc ici, rendre une personne à partir de son <strong>id</strong>. La référence ainsi obtenue sera affectée à l&#x27;objet cible de l&#x27;attribut <strong>selection</strong> dans la balise <strong>dataTable</strong>, ici l&#x27;attribut <span style="color: #7f007f">selection</span><span style="color: #000000">=</span><em><span style="color: #2a00ff">&quot;#{form.personneChoisie}&quot;</span></em><em>.</em> Le paramètre de la méthode est le <strong>rowkey</strong> de l&#x27;objet sélectionné par l&#x27;utilisateur, sous forme d&#x27;une chaîne de caractères,</li>
-<li>lignes 24-35 : délivrent la référence sur la personne dont on a reçu l&#x27;<strong>id</strong>. Cette référence sera affectée au modèle <em>[Form].personneChoisie</em>. La méthode [retirerPersonne] reste donc inchangée :</li>
+  <li>ligne 7 : la classe est une instance de l&#x27;interface <i>SelectableDataModel</i>. Deux classes au moins implémentent cette interface : <b>ListDataModel</b> dont le constructeur admet une liste pour paramètre, et <b>ArrayDataModel</b>  dont le constructeur admet un tableau pour paramètre. Ici, notre bean étend la classe <b>ListDataModel</b>,
+  </li>
+  <li>lignes 13-15 : le constructeur admet pour paramètre la liste des personnes que nous gérons. Ce paramètre est passé à la classe parent,
+  </li>
+  <li>ligne 18 : la méthode <b>getRowKey</b> joue le rôle de l&#x27;attribut <b>rowkey</b> qui a été enlevé. Elle doit rendre l&#x27;objet qui permet d&#x27;identifier une personne de façon unique, ici l&#x27;<b>id</b> de la personne,
+  </li>
+  <li>ligne 23 : la méthode <b>getRowData</b> doit rendre l&#x27;objet sélectionné, à partir de son <b>rowkey</b>. Donc ici, rendre une personne à partir de son <b>id</b>. La référence ainsi obtenue sera affectée à l&#x27;objet cible de l&#x27;attribut <b>selection</b> dans la balise <b>dataTable</b>, ici l&#x27;attribut <span style="color: #7f007f">selection</span><span style="color: #000000">=</span><i><span style="color: #2a00ff">&quot;#{form.personneChoisie}&quot;</span></i><i>.</i> Le paramètre de la méthode est le <b>rowkey</b> de l&#x27;objet sélectionné par l&#x27;utilisateur, sous forme d&#x27;une chaîne de caractères,
+  </li>
+  <li>lignes 24-35 : délivrent la référence sur la personne dont on a reçu l&#x27;<b>id</b>. Cette référence sera affectée au modèle <i>[Form].personneChoisie</i>. La méthode [retirerPersonne] reste donc inchangée :
+  </li>
 </ul>
+
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-text">
 <span class="odt-code-line"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">public</span><span style="color:#000000"> </span><span style="font-weight:bold;color:#7f0055">void</span><span style="color:#000000"> retirerPersonne() {</span></span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#3f7f5f">// on enlève la personne choisie</span></span>
@@ -2561,16 +2689,23 @@
 </code></pre></div>
 
 <ul>
-<li>lignes 9-11 : définissent un menu contextuel pour (attribut <strong>for</strong>) le <em>dataTable</em> de la ligne 21 (attribut <strong>id</strong>). C&#x27;est donc sur un clic droit sur le tableau des personnes que ce menu contextuel apparaît,</li>
-<li>ligne 10 : notre menu n&#x27;a qu&#x27;une option (balise <strong>menuItem</strong>). Lorsque cette option est cliquée, le code Javascript de l&#x27;attribut <strong>onclick</strong> est exécuté. Le code Javascript [<span style="color: #2a00ff">confirmation.show()</span>] fait afficher la boîte de dialogue de la ligne 14 (attribut <strong>widgetVar</strong>). Celle-ci est la suivante :</li>
+  <li>lignes 9-11 : définissent un menu contextuel pour (attribut <b>for</b>) le <i>dataTable</i> de la ligne 21 (attribut <b>id</b>). C&#x27;est donc sur un clic droit sur le tableau des personnes que ce menu contextuel apparaît,
+  </li>
+  <li>ligne 10 : notre menu n&#x27;a qu&#x27;une option (balise <b>menuItem</b>). Lorsque cette option est cliquée, le code Javascript de l&#x27;attribut <b>onclick</b> est exécuté. Le code Javascript [<span style="color: #2a00ff">confirmation.show()</span>] fait afficher la boîte de dialogue de la ligne 14 (attribut <b>widgetVar</b>). Celle-ci est la suivante :
+  </li>
 </ul>
+
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000002A30000013B5F5C6C64.png" style="display:inline-block; margin:4px;width:8.931cm;height:4.168cm;" class="odt-zoomable" data-zoom-src="images/10000000000002A30000013B5F5C6C64.png" /></td></tr></table>
 
 <ul>
-<li>ligne 14 : l&#x27;attribut <strong>message</strong> fait afficher [3], l&#x27;attribut <strong>header</strong> fait afficher [1], l&#x27;attribut <strong>severity</strong> fait afficher l&#x27;icône [2],</li>
-<li>ligne 16 : fait afficher [4]. Sur un clic, la personne est supprimée (attribut <strong>action</strong>), puis la boîte de dialogue est fermée (attribut <strong>oncomplete</strong>). L&#x27;attribut <strong>oncomplete</strong> est du code Javascript qui est exécuté une fois que l&#x27;action côté serveur a été exécutée,</li>
-<li>ligne 17 :  fait afficher [5]. Sur un clic, la boîte de dialogue est fermée et la personne n&#x27;est pas supprimée.</li>
+  <li>ligne 14 : l&#x27;attribut <b>message</b> fait afficher [3], l&#x27;attribut <b>header</b> fait afficher [1], l&#x27;attribut <b>severity</b> fait afficher l&#x27;icône [2],
+  </li>
+  <li>ligne 16 : fait afficher [4]. Sur un clic, la personne est supprimée (attribut <b>action</b>), puis la boîte de dialogue est fermée (attribut <b>oncomplete</b>). L&#x27;attribut <b>oncomplete</b> est du code Javascript qui est exécuté une fois que l&#x27;action côté serveur a été exécutée,
+  </li>
+  <li>ligne 17 :  fait afficher [5]. Sur un clic, la boîte de dialogue est fermée et la personne n&#x27;est pas supprimée.
+  </li>
 </ul>
+
 <p><a id="refheading10508510005176"></a></p>
 <h2 id="517-exemple-mv-pf-14-datatable-5">5.17. Exemple : mv-pf-14 : dataTable - 5</h2>
 <p>Ce projet montre qu&#x27;il est possible d&#x27;avoir un retour du serveur après exécution d&#x27;un appel AJAX. On utilise pour cela l&#x27;attribut <strong>oncomplete</strong> de l&#x27;appel AJAX :</p>
@@ -2605,10 +2740,14 @@
 </code></pre></div>
 
 <ul>
-<li>ligne 7 : l&#x27;attribut <strong>oncomplete</strong> appelle la fonction Javascript des lignes 13-18,</li>
-<li>ligne 13 : la signature de la méthode doit être celle-ci. <strong>args</strong> est un dictionnaire que le modèle côté serveur peut enrichir,</li>
-<li>ligne 15 : on regarde si le dictionnaire <strong>args</strong> a un attribut nommé &#x27;<strong>msgErreur</strong>&#x27;. Si oui, il est affiché (ligne 16).</li>
+  <li>ligne 7 : l&#x27;attribut <b>oncomplete</b> appelle la fonction Javascript des lignes 13-18,
+  </li>
+  <li>ligne 13 : la signature de la méthode doit être celle-ci. <b>args</b> est un dictionnaire que le modèle côté serveur peut enrichir,
+  </li>
+  <li>ligne 15 : on regarde si le dictionnaire <b>args</b> a un attribut nommé &#x27;<b>msgErreur</b>&#x27;. Si oui, il est affiché (ligne 16).
+  </li>
 </ul>
+
 <p>Dans le modèle, la méthode [retirerPersonne] évolue comme suit :</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-text">
 <span class="odt-code-line"><span style="font-weight:bold;color:#7f0055">public</span><span style="color:#000000"> </span><span style="font-weight:bold;color:#7f0055">void</span><span style="color:#000000"> retirerPersonne() {</span></span>
@@ -2626,18 +2765,24 @@
 </code></pre></div>
 
 <ul>
-<li>ligne 3 : on tire un nombre aléatoire 0 ou 1,</li>
-<li>lignes 4-6 : si c&#x27;est 0, la personne sélectionnée par l&#x27;utilisateur est supprimée de la liste des personnes,</li>
-<li>lignes 9 : sinon, on construit un message d&#x27;erreur internationalisé :</li>
+  <li>ligne 3 : on tire un nombre aléatoire 0 ou 1,
+  </li>
+  <li>lignes 4-6 : si c&#x27;est 0, la personne sélectionnée par l&#x27;utilisateur est supprimée de la liste des personnes,
+  </li>
+  <li>lignes 9 : sinon, on construit un message d&#x27;erreur internationalisé :
+  </li>
 </ul>
+
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-text">
 <span class="odt-code-line"><span style="color:#000000">form.msgErreur=</span><span style="color:#2a00ff">La</span><span style="color:#000000"> </span><span style="color:#2a00ff">personne</span><span style="color:#000000"> </span><span style="color:#2a00ff">n&#x27;a</span><span style="color:#000000"> </span><span style="color:#2a00ff">pu</span><span style="color:#000000"> </span><span style="color:#2a00ff">\u00eatre</span><span style="color:#000000"> </span><span style="color:#2a00ff">supprim\u00e9e.</span><span style="color:#000000"> </span><span style="color:#2a00ff">Veuillez</span><span style="color:#000000"> </span><span style="color:#2a00ff">r\u00e9essayer</span><span style="color:#000000"> </span><span style="color:#2a00ff">ult\u00e9rieurement.</span></span>
 <span class="odt-code-line"><span style="color:#000000">form.msgErreur_detail=</span><span style="color:#2a00ff">La</span><span style="color:#000000"> </span><span style="color:#2a00ff">personne</span><span style="color:#000000"> </span><span style="color:#2a00ff">n&#x27;a</span><span style="color:#000000"> </span><span style="color:#2a00ff">pu</span><span style="color:#000000"> </span><span style="color:#2a00ff">\u00eatre</span><span style="color:#000000"> </span><span style="color:#2a00ff">supprim\u00e9e.</span><span style="color:#000000"> </span><span style="color:#2a00ff">Veuillez</span><span style="color:#000000"> </span><span style="color:#2a00ff">r\u00e9essayer</span><span style="color:#000000"> </span><span style="color:#2a00ff">ult\u00e9rieurement.</span></span>
 </code></pre></div>
 
 <ul>
-<li>ligne 10 : une instruction compliquée qui a pour but d&#x27;ajouter dans le dictionnaire <strong>args</strong> dont nous avons parlé, l&#x27;attribut nommé &#x27;<strong>msgErreur&#x27;</strong> avec la valeur <strong>msgErreur</strong> construite ligne 9. Cet attribut est récupéré ensuite par la méthode Javascript de [index.xhtml] :</li>
+  <li>ligne 10 : une instruction compliquée qui a pour but d&#x27;ajouter dans le dictionnaire <b>args</b> dont nous avons parlé, l&#x27;attribut nommé &#x27;<b>msgErreur&#x27;</b> avec la valeur <b>msgErreur</b> construite ligne 9. Cet attribut est récupéré ensuite par la méthode Javascript de [index.xhtml] :
+  </li>
 </ul>
+
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-js">
 <span class="odt-code-line"><span style="color:#000000">      </span><span style="color:#3f5fbf">&lt;!-- Javascript --&gt;</span></span>
 <span class="odt-code-line"><span style="color:#000000">      </span><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">script</span> <span style="color:#7f007f">type</span><span style="color:#000000">=</span><span style="font-style:italic;color:#2a00ff">&quot;text/javascript&quot;</span><span style="color:#008080">&gt;</span><span style="color:#000000">  </span></span>
@@ -2686,10 +2831,14 @@
 </code></pre></div>
 
 <ul>
-<li>lignes 15-22 : la barre d&#x27;outils,</li>
-<li>lignes 16-18 : définissent le groupe de composants à gauche de la barre,</li>
-<li>lignes 19-21 : idem pour les composants à droite.</li>
+  <li>lignes 15-22 : la barre d&#x27;outils,
+  </li>
+  <li>lignes 16-18 : définissent le groupe de composants à gauche de la barre,
+  </li>
+  <li>lignes 19-21 : idem pour les composants à droite.
+  </li>
 </ul>
+
 <p>Les composants à gauche de la barre d&#x27;outils sont les suivants :</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-xml">
 <span class="odt-code-line"><span style="color:#000000">        </span><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">p:toolbarGroup</span> <span style="color:#7f007f">align</span><span style="color:#000000">=</span><span style="font-style:italic;color:#2a00ff">&quot;left&quot;</span><span style="color:#008080">&gt;</span><span style="color:#000000">  </span></span>
@@ -2708,18 +2857,27 @@
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000280000000B7C5D776E8.png" style="display:inline-block; margin:4px;width:8.467cm;height:2.422cm;" class="odt-zoomable" data-zoom-src="images/1000000000000280000000B7C5D776E8.png" /></td></tr></table>
 
 <ul>
-<li>ligne 2 : affiche [1],</li>
-<li>ligne 3 : affiche un espace de 30 pixels [2],</li>
-<li>lignes 4-6 : affichent une liste déroulante avec une liste de personnes [3],</li>
-<li>ligne 7 : affiche un séparateur [4],</li>
-<li>ligne 8 : affiche un bouton [5] chargé de supprimer la personne sélectionnée dans la liste déroulante. Le bouton a une icône. <span style="color: #000000">Ces icônes sont celles de JQuery UI. On trouve leur liste à l&#x27;URL [http://jqueryui.com/themeroller/] [6] :</span></li>
+  <li>ligne 2 : affiche [1],
+  </li>
+  <li>ligne 3 : affiche un espace de 30 pixels [2],
+  </li>
+  <li>lignes 4-6 : affichent une liste déroulante avec une liste de personnes [3],
+  </li>
+  <li>ligne 7 : affiche un séparateur [4],
+  </li>
+  <li>ligne 8 : affiche un bouton [5] chargé de supprimer la personne sélectionnée dans la liste déroulante. Le bouton a une icône. <span style="color: #000000">Ces icônes sont celles de JQuery UI. On trouve leur liste à l&#x27;URL [http://jqueryui.com/themeroller/] [6] :</span>
+  </li>
 </ul>
+
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000050C000002D7BC4C928D.png" style="display:inline-block; margin:4px;width:17.092cm;height:9.618cm;" class="odt-zoomable" data-zoom-src="images/100000000000050C000002D7BC4C928D.png" /></td></tr></table>
 
 <ul>
-<li><span style="color: #000000">pour connaître le nom d&#x27;une icône, il suffit de placer la souris dessus. Ensuite ce nom est utilisé dans l&#x27;attribut </span><strong><span style="color: #000000">icon</span></strong><span style="color: #000000"> du composant &lt;</span><em><span style="color: #000000">commandButton</span></em><span style="color: #000000">&gt;, par exemple </span><span style="color: #7f007f">icon</span><span style="color: #000000">=</span><em><span style="color: #2a00ff">&quot;ui-icon-trash&quot;</span></em><span style="color: #000000">. On notera que ci-dessus, le nom donné sera </span><strong><span style="color: #000000">.ui-icon-trash</span></strong><span style="color: #000000"> et qu&#x27;on enlève le point initial de ce nom dans l&#x27;attribut </span><em><span style="color: #000000">icon,</span></em></li>
-<li><span style="color: #000000">ligne 9 : crée une bulle d&#x27;aide pour le bouton (attribut </span><strong><span style="color: #000000">for</span></strong><span style="color: #000000">). Lorsqu&#x27;on laisse le curseur sur le bouton, le message d&#x27;aide s&#x27;affiche [7].</span></li>
+  <li><span style="color: #000000">pour connaître le nom d&#x27;une icône, il suffit de placer la souris dessus. Ensuite ce nom est utilisé dans l&#x27;attribut </span><b><span style="color: #000000">icon</span></b><span style="color: #000000"> du composant &lt;</span><i><span style="color: #000000">commandButton</span></i><span style="color: #000000">&gt;, par exemple </span><span style="color: #7f007f">icon</span><span style="color: #000000">=</span><i><span style="color: #2a00ff">&quot;ui-icon-trash&quot;</span></i><span style="color: #000000">. On notera que ci-dessus, le nom donné sera </span><b><span style="color: #000000">.ui-icon-trash</span></b><span style="color: #000000"> et qu&#x27;on enlève le point initial de ce nom dans l&#x27;attribut </span><i><span style="color: #000000">icon,</span></i>
+  </li>
+  <li><span style="color: #000000">ligne 9 : crée une bulle d&#x27;aide pour le bouton (attribut </span><b><span style="color: #000000">for</span></b><span style="color: #000000">). Lorsqu&#x27;on laisse le curseur sur le bouton, le message d&#x27;aide s&#x27;affiche [7].</span>
+  </li>
 </ul>
+
 <p>Le modèle associé à ces composants est le suivant :</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
 <span class="odt-code-line"><span style="font-weight:bold;color:#7f0055">package</span><span style="color:#000000"> forms;</span></span>
@@ -2788,10 +2946,14 @@
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000172000000AC53B1A579.png" style="display:inline-block; margin:4px;width:6.849cm;height:3.191cm;" class="odt-zoomable" data-zoom-src="images/1000000000000172000000AC53B1A579.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
 
 <ul>
-<li>lignes 6-9 : un bouton menu. Il contient des options de menu,</li>
-<li>ligne 7 : l&#x27;option pour passer le formulaire en français,</li>
-<li>ligne 8 : celle pour le passer en anglais.</li>
+  <li>lignes 6-9 : un bouton menu. Il contient des options de menu,
+  </li>
+  <li>ligne 7 : l&#x27;option pour passer le formulaire en français,
+  </li>
+  <li>ligne 8 : celle pour le passer en anglais.
+  </li>
 </ul>
+
 <p><a id="refheading10508910005176"></a></p>
 <h2 id="519-conclusion">5.19. <span style="color: #000000">Conclusion</span></h2>
 <p><span style="color: #000000">Nous en savons assez pour porter notre application exemple sur Primefaces. Nous n&#x27;avons vu qu&#x27;une quinzaine de composants alors que la bibliothèque en possède plus de 100. Le lecteur est invité à chercher le composant qui lui manque, directement sur le site de Primefaces.</span></p>

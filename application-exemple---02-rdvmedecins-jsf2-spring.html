@@ -913,10 +913,14 @@
 
 <p>Il s&#x27;agit réellement d&#x27;un portage. Nous allons partir de l&#x27;application précédente et l&#x27;adapter au nouvel environnement. Nous ne commenterons que les modifications. Elles sont de trois ordres :</p>
 <ul>
-<li>le serveur n&#x27;est plus Glassfish mais Tomcat, un serveur léger qui n&#x27;a pas de conteneur EJB,</li>
-<li>pour remplacer les EJB, on utilisera Spring, le concurrent principal des EJB [http://www.springsource.com/],</li>
-<li>l&#x27;implémentation JPA utilisée sera Hibernate à la place d&#x27;EclipseLink.</li>
+  <li>le serveur n&#x27;est plus Glassfish mais Tomcat, un serveur léger qui n&#x27;a pas de conteneur EJB,
+  </li>
+  <li>pour remplacer les EJB, on utilisera Spring, le concurrent principal des EJB [http://www.springsource.com/],
+  </li>
+  <li>l&#x27;implémentation JPA utilisée sera Hibernate à la place d&#x27;EclipseLink.
+  </li>
 </ul>
+
 <p>Parce que nous allons beaucoup procéder par copier / coller entre l&#x27;ancien projet et le nouveau, nous gardons les précédents projets ouverts dans Netbeans :</p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000000EE000000736E7F2A8E.png" style="display:inline-block; margin:4px;width:4.41cm;height:2.131cm;" class="odt-zoomable" data-zoom-src="images/10000000000000EE000000736E7F2A8E.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
 
@@ -933,9 +937,12 @@
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000330000001852F53B8DC.png" style="display:inline-block; margin:4px;width:10.795cm;height:5.147cm;" class="odt-zoomable" data-zoom-src="images/1000000000000330000001852F53B8DC.png" /></td></tr></table>
 
 <ul>
-<li>en [1], le projet créé,</li>
-<li>en [2], le même débarrassé des packages de [Source Packages] et [Test Packages] et de la dépendance [junit-3.8.1].</li>
+  <li>en [1], le projet créé,
+  </li>
+  <li>en [2], le même débarrassé des packages de [Source Packages] et [Test Packages] et de la dépendance [junit-3.8.1].
+  </li>
 </ul>
+
 <p>Le plus difficile dans les projets Maven est de trouver les bonnes dépendances. Pour ce projet Spring / JPA / Hibernate, ce sont les suivantes :</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-xml">
 <span class="odt-code-line"><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">project</span> <span style="color:#7f007f">xmlns</span><span style="color:#000000">=</span><span style="font-style:italic;color:#2a00ff">&quot;http://maven.apache.org/POM/4.0.0&quot;</span> <span style="color:#7f007f">xmlns:xsi</span><span style="color:#000000">=</span><span style="font-style:italic;color:#2a00ff">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span></span>
@@ -1019,27 +1026,40 @@
 </code></pre></div>
 
 <ul>
-<li>lignes 18-29 : pour Hibernate,</li>
-<li>lignes 30-34 : pour le pilote JDBC de MySQL,</li>
-<li>lignes 35-41 : pour le test JUnit,</li>
-<li>lignes 42-51 : pour le pool de connexions Apache Commons DBCP. Un pool de connexions est un pool de connexions ouvertes. Lorsque l&#x27;application a besoin d&#x27;une connexion, il la demande au pool. Lorsqu&#x27;il n&#x27;en a plus besoin il la rend. Les connexions sont ouvertes au démarrage de l&#x27;application et le restent durant de la vie de l&#x27;application. Cela évite le coût d&#x27;ouvertures / fermetures répétées des connexions. Ce type de pool existait dans Glassfish mais son utilisation a été transparente pour nous. Ce sera également le cas ici mais il nous faut l&#x27;installer et le configurer,</li>
-<li>lignes 52-75 : pour Spring.</li>
+  <li>lignes 18-29 : pour Hibernate,
+  </li>
+  <li>lignes 30-34 : pour le pilote JDBC de MySQL,
+  </li>
+  <li>lignes 35-41 : pour le test JUnit,
+  </li>
+  <li>lignes 42-51 : pour le pool de connexions Apache Commons DBCP. Un pool de connexions est un pool de connexions ouvertes. Lorsque l&#x27;application a besoin d&#x27;une connexion, il la demande au pool. Lorsqu&#x27;il n&#x27;en a plus besoin il la rend. Les connexions sont ouvertes au démarrage de l&#x27;application et le restent durant de la vie de l&#x27;application. Cela évite le coût d&#x27;ouvertures / fermetures répétées des connexions. Ce type de pool existait dans Glassfish mais son utilisation a été transparente pour nous. Ce sera également le cas ici mais il nous faut l&#x27;installer et le configurer,
+  </li>
+  <li>lignes 52-75 : pour Spring.
+  </li>
 </ul>
+
 <p>Ajoutons ces dépendances et construisons le projet :</p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000031E00000180595F3A74.png" style="display:inline-block; margin:4px;width:10.557cm;height:5.08cm;" class="odt-zoomable" data-zoom-src="images/100000000000031E00000180595F3A74.png" /></td></tr></table>
 
 <ul>
-<li>en [1], on construit le projet ce qui va forcer Maven à télécharger les dépendances,</li>
-<li>en [2], celles-ci apparaissent alors dans la branche [Dependencies]. Elles sont très nombreuses, les frameworks Hibernate et Spring ayant eux-mêmes de très nombreuses dépendances. Là encore, grâce à Maven, nous n&#x27;avons pas à nous préoccuper de ces dernières. Elles sont téléchargées automatiquement.</li>
+  <li>en [1], on construit le projet ce qui va forcer Maven à télécharger les dépendances,
+  </li>
+  <li>en [2], celles-ci apparaissent alors dans la branche [Dependencies]. Elles sont très nombreuses, les frameworks Hibernate et Spring ayant eux-mêmes de très nombreuses dépendances. Là encore, grâce à Maven, nous n&#x27;avons pas à nous préoccuper de ces dernières. Elles sont téléchargées automatiquement.
+  </li>
 </ul>
+
 <p>Maintenant que nous avons les dépendances, nous collons le code du projet EJB de la couche [dao] dans le projet Spring de la couche [dao] :</p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004B60000013CD8A7F7BE.png" style="display:inline-block; margin:4px;width:15.954cm;height:4.18cm;" class="odt-zoomable" data-zoom-src="images/10000000000004B60000013CD8A7F7BE.png" /></td></tr></table>
 
 <ul>
-<li>en [1], on copie dans le projet source,</li>
-<li>en [2], on colle dans le projet destination,</li>
-<li>en [3], le résultat.</li>
+  <li>en [1], on copie dans le projet source,
+  </li>
+  <li>en [2], on colle dans le projet destination,
+  </li>
+  <li>en [3], le résultat.
+  </li>
 </ul>
+
 <p>Une fois la copie effectuée, il faut corriger les erreurs.</p>
 <p><a id="refheading7741630114625"></a></p>
 <h3 id="412-le-paquetage-exceptions">4.1.2. Le paquetage [exceptions]</h3>
@@ -1051,24 +1071,33 @@
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004CA0000026A98808703.png" style="display:inline-block; margin:4px;width:16.219cm;height:8.176cm;" class="odt-zoomable" data-zoom-src="images/10000000000004CA0000026A98808703.png" /></td></tr></table>
 
 <ul>
-<li>en [1], la classe [Creneau] est erronée à cause de l&#x27;absence du paquetage de validation de la ligne [5]. On aurait pu ajouter ce paquetage dans les dépendances du projet. Mais aux tests, Hibernate lance une exception à cause de lui. Comme il n&#x27;est pas indispensable à notre application, nous l&#x27;avons enlevé. Pour corriger la classe, il suffit de supprimer toutes les lignes erronées [2]. On fait cela pour toutes les classes erronées.</li>
+  <li>en [1], la classe [Creneau] est erronée à cause de l&#x27;absence du paquetage de validation de la ligne [5]. On aurait pu ajouter ce paquetage dans les dépendances du projet. Mais aux tests, Hibernate lance une exception à cause de lui. Comme il n&#x27;est pas indispensable à notre application, nous l&#x27;avons enlevé. Pour corriger la classe, il suffit de supprimer toutes les lignes erronées [2]. On fait cela pour toutes les classes erronées.
+  </li>
 </ul>
+
 <p><a id="refheading7742030114625"></a></p>
 <h3 id="414-le-paquetage-dao">4.1.4. Le paquetage [dao]</h3>
 <p>Nous en sommes au point suivant :</p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000002DC0000010714869FD8.png" style="display:inline-block; margin:4px;width:9.684cm;height:3.48cm;" class="odt-zoomable" data-zoom-src="images/10000000000002DC0000010714869FD8.png" /></td></tr></table>
 
 <ul>
-<li>en [1], les deux paquetages corrigés,</li>
-<li>en [2], le paquetage [dao]. Comme il n&#x27;y a plus d&#x27;EJB, il n&#x27;y a plus non plus la notion d&#x27;interface distante et locale de l&#x27;EJB. Nous les supprimons [3].</li>
+  <li>en [1], les deux paquetages corrigés,
+  </li>
+  <li>en [2], le paquetage [dao]. Comme il n&#x27;y a plus d&#x27;EJB, il n&#x27;y a plus non plus la notion d&#x27;interface distante et locale de l&#x27;EJB. Nous les supprimons [3].
+  </li>
 </ul>
+
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000003740000022BCC80A005.png" style="display:inline-block; margin:4px;width:11.695cm;height:7.343cm;" class="odt-zoomable" data-zoom-src="images/10000000000003740000022BCC80A005.png" /></td></tr></table>
 
 <ul>
-<li>en [1], les erreurs de la classe [DaoJpa] ont deux origines :</li>
-<li>l&#x27;importation d&#x27;un paquetage lié aux EJB (lignes 6-8) ;</li>
-<li>l&#x27;utilisation des interfaces locale et distante que nous venons de supprimer.</li>
+  <li>en [1], les erreurs de la classe [DaoJpa] ont deux origines :
+  </li>
+  <li>l&#x27;importation d&#x27;un paquetage lié aux EJB (lignes 6-8) ;
+  </li>
+  <li>l&#x27;utilisation des interfaces locale et distante que nous venons de supprimer.
+  </li>
 </ul>
+
 <p>Nous supprimons les lignes erronées et utilisons l&#x27;interface [IDao] à la place des interfaces locale et distante [2].</p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000002B600000205C2A09165.png" style="display:inline-block; margin:4px;width:9.181cm;height:6.84cm;" class="odt-zoomable" data-zoom-src="images/10000000000002B600000205C2A09165.png" /></td></tr></table>
 
@@ -1096,10 +1125,14 @@
 </code></pre></div>
 
 <ul>
-<li>ligne 3 : on donne un nom à l&#x27;unité de persistance,</li>
-<li>ligne 3 : le type des transactions est RESOURCE_LOCAL. Dans le projet EJB, c&#x27;était JTA pour indiquer que les transactions étaient gérées par le conteneur EJB. La valeur RESOURCE_LOCAL indique que l&#x27;application gère elle-même ses transactions. Ce sera le cas ici au travers de Spring,</li>
-<li>lignes 4-7 : les noms complets des quatre entités JPA. C&#x27;est facultatif car Hibernate les cherche automatiquement dans le ClassPath du projet.</li>
+  <li>ligne 3 : on donne un nom à l&#x27;unité de persistance,
+  </li>
+  <li>ligne 3 : le type des transactions est RESOURCE_LOCAL. Dans le projet EJB, c&#x27;était JTA pour indiquer que les transactions étaient gérées par le conteneur EJB. La valeur RESOURCE_LOCAL indique que l&#x27;application gère elle-même ses transactions. Ce sera le cas ici au travers de Spring,
+  </li>
+  <li>lignes 4-7 : les noms complets des quatre entités JPA. C&#x27;est facultatif car Hibernate les cherche automatiquement dans le ClassPath du projet.
+  </li>
 </ul>
+
 <p>C&#x27;est tout. Le nom du provider JPA, ses propriétés, les caractéristiques JDBC de la source de données sont désormais dans le fichier de configuration de Spring.</p>
 <p><a id="refheading7742430114625"></a></p>
 <h3 id="416-le-fichier-de-configuration-de-spring">4.1.6. Le fichier de configuration de Spring</h3>
@@ -1155,32 +1188,54 @@
 
 <p>C&#x27;est un fichier compatible Spring 2.x. Nous n&#x27;avons pas cherché à utiliser les nouvelles caractéristiques des versions 3.x.</p>
 <ul>
-<li>lignes 2-4 : la balise racine &lt;beans&gt; du fichier de configuration. Nous ne commentons pas les divers attributs de cette balise. On prendra soin de faire un copier / coller parce que se tromper dans l&#x27;un de ces attributs provoque des erreurs parfois difficiles à comprendre,</li>
-<li>ligne 7 : le bean &quot;dao&quot; est une référence sur une instance de la classe [<span style="color: #0000ff">rdvmedecins.dao.DaoJpa</span>]. Une instance unique sera créée (singleton) et implémentera la couche [dao] de l&#x27;application,</li>
-<li>lignes 24-29 : une source de données est définie. Elle fournit le service de &quot;pool de connexions&quot; dont nous avons parlé. C&#x27;est [DBCP] du projet <em>Apache commons DBCP</em> [http://jakarta.apache.org/commons/dbcp/] qui est ici utilisé,</li>
-<li>lignes 25-28 : pour créer des connexions avec la base de données cible, la source de données a besoin de connaître le pilote JDBC utilisé (ligne 25), l&#x27;URL de la base de données (ligne 26), l&#x27;utilisateur de la connexion et son mot de passe (lignes 27-28),</li>
-<li>lignes 10-21 : configurent la couche JPA,</li>
-<li>ligne 10 : définit un bean de type [EntityManagerFactory] capable de créer des objets de type [EntityManager] pour gérer les contextes de persistance. La classe instanciée [LocalContainerEntityManagerFactoryBean] est fournie par Spring. Elle a besoin d&#x27;un certain nombre de paramètres pour s&#x27;instancier, définis lignes 11-20,</li>
-<li>ligne 11 : la source de données à utiliser pour obtenir des connexions au SGBD. C&#x27;est la source [DBCP] définie aux lignes 24-29,</li>
-<li>lignes 12-20 : l&#x27;implémentation JPA à utiliser,</li>
-<li>ligne 13 : définit Hibernate comme implémentation JPA à utiliser,</li>
-<li>ligne 14 : le dialecte SQL qu&#x27;Hibernate doit utiliser avec le SGBD cible, ici MySQL5,</li>
-<li>ligne 16 (en commentaires) : demande que les ordres SQL exécutés par Hibernate soient logués sur la console,</li>
-<li>ligne 17 (en commentaires) : demande qu&#x27;au démarrage de l&#x27;application, la base de données soit générée (drop et create),</li>
-<li>ligne 32 : indique que les transactions sont gérées avec des annotations Java (elles auraient pu être également déclarées dans <em>spring-config.xml</em>). C&#x27;est en particulier l&#x27;annotation <strong>@Transactional</strong> rencontrée dans la classe [DaoJpa],</li>
-<li>lignes 33-35 : définissent le gestionnaire de transactions à utiliser,</li>
-<li>ligne 33 : le gestionnaire de transactions est une classe fournie par Spring,</li>
-<li>ligne 34 : le gestionnaire de transactions de Spring a besoin de connaître l&#x27;<em>EntityManagerFactory</em> qui gère la couche JPA. C&#x27;est celui défini aux lignes 10-21,</li>
-<li>ligne 41 : définit la classe qui gère les annotations de persistance Spring,</li>
-<li>ligne 38 : définissent la classe Spring qui gère notamment l&#x27;annotation @<strong>Repository</strong> qui rend une classe ainsi annotée, éligible pour la traduction des exceptions natives du pilote JDBC du SGBD en exceptions génériques Spring de type [DataAccessException]. Cette traduction encapsule l&#x27;exception JDBC native dans un type [DataAccessException] ayant diverses sous-classes :</li>
+  <li>lignes 2-4 : la balise racine &lt;beans&gt; du fichier de configuration. Nous ne commentons pas les divers attributs de cette balise. On prendra soin de faire un copier / coller parce que se tromper dans l&#x27;un de ces attributs provoque des erreurs parfois difficiles à comprendre,
+  </li>
+  <li>ligne 7 : le bean &quot;dao&quot; est une référence sur une instance de la classe [<span style="color: #0000ff">rdvmedecins.dao.DaoJpa</span>]. Une instance unique sera créée (singleton) et implémentera la couche [dao] de l&#x27;application,
+  </li>
+  <li>lignes 24-29 : une source de données est définie. Elle fournit le service de &quot;pool de connexions&quot; dont nous avons parlé. C&#x27;est [DBCP] du projet <i>Apache commons DBCP</i> [http://jakarta.apache.org/commons/dbcp/] qui est ici utilisé,
+  </li>
+  <li>lignes 25-28 : pour créer des connexions avec la base de données cible, la source de données a besoin de connaître le pilote JDBC utilisé (ligne 25), l&#x27;URL de la base de données (ligne 26), l&#x27;utilisateur de la connexion et son mot de passe (lignes 27-28),
+  </li>
+  <li>lignes 10-21 : configurent la couche JPA,
+  </li>
+  <li>ligne 10 : définit un bean de type [EntityManagerFactory] capable de créer des objets de type [EntityManager] pour gérer les contextes de persistance. La classe instanciée [LocalContainerEntityManagerFactoryBean] est fournie par Spring. Elle a besoin d&#x27;un certain nombre de paramètres pour s&#x27;instancier, définis lignes 11-20,
+  </li>
+  <li>ligne 11 : la source de données à utiliser pour obtenir des connexions au SGBD. C&#x27;est la source [DBCP] définie aux lignes 24-29,
+  </li>
+  <li>lignes 12-20 : l&#x27;implémentation JPA à utiliser,
+  </li>
+  <li>ligne 13 : définit Hibernate comme implémentation JPA à utiliser,
+  </li>
+  <li>ligne 14 : le dialecte SQL qu&#x27;Hibernate doit utiliser avec le SGBD cible, ici MySQL5,
+  </li>
+  <li>ligne 16 (en commentaires) : demande que les ordres SQL exécutés par Hibernate soient logués sur la console,
+  </li>
+  <li>ligne 17 (en commentaires) : demande qu&#x27;au démarrage de l&#x27;application, la base de données soit générée (drop et create),
+  </li>
+  <li>ligne 32 : indique que les transactions sont gérées avec des annotations Java (elles auraient pu être également déclarées dans <i>spring-config.xml</i>). C&#x27;est en particulier l&#x27;annotation <b>@Transactional</b> rencontrée dans la classe [DaoJpa],
+  </li>
+  <li>lignes 33-35 : définissent le gestionnaire de transactions à utiliser,
+  </li>
+  <li>ligne 33 : le gestionnaire de transactions est une classe fournie par Spring,
+  </li>
+  <li>ligne 34 : le gestionnaire de transactions de Spring a besoin de connaître l&#x27;<i>EntityManagerFactory</i> qui gère la couche JPA. C&#x27;est celui défini aux lignes 10-21,
+  </li>
+  <li>ligne 41 : définit la classe qui gère les annotations de persistance Spring,
+  </li>
+  <li>ligne 38 : définissent la classe Spring qui gère notamment l&#x27;annotation @<b>Repository</b> qui rend une classe ainsi annotée, éligible pour la traduction des exceptions natives du pilote JDBC du SGBD en exceptions génériques Spring de type [DataAccessException]. Cette traduction encapsule l&#x27;exception JDBC native dans un type [DataAccessException] ayant diverses sous-classes :
+  </li>
 </ul>
+
 <p><img src="images/10000000000001C00000009BC508DC35.png" style="width:8.301cm;height:2.87cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001C00000009BC508DC35.png" /></p>
 <p>Cette traduction permet au programme client de gérer les exceptions de façon générique quelque soit le SGBD cible. Nous n&#x27;avons pas utilisé l&#x27;annotation @<strong>Repository</strong> dans notre code Java. Aussi la ligne 38 est-elle inutile. Nous l&#x27;avons laissée par simple souci d&#x27;information.</p>
 <p>Nous en avons fini avec le fichier de configuration de Spring. Il a été tiré de la documentation Spring. Son adaptation à diverses situations se résume souvent à deux modifications :</p>
 <ul>
-<li>celle de la base de données cible : lignes 24-29,</li>
-<li>celle de l&#x27;implémentation JPA : lignes 12-20.</li>
+  <li>celle de la base de données cible : lignes 24-29,
+  </li>
+  <li>celle de l&#x27;implémentation JPA : lignes 12-20.
+  </li>
 </ul>
+
 <p>A l&#x27;exécution du code, tous les beans du fichier de configuration seront instanciés. Nous verrons comment.</p>
 <p><a id="refheading7742630114625"></a></p>
 <h3 id="417-la-classe-de-test-junit">4.1.7. La classe de test JUnit</h3>
@@ -1188,25 +1243,33 @@
 
 <p>Nous avions testé la couche [DAO] du projet EJB avec un test JUnit. Nous faisons de même pour la couche [DAO] du projet Spring :</p>
 <ul>
-<li>en [1] et [2], le copier / coller du test JUnit entre les deux projets,</li>
-<li>en [3], le test importé présente des erreurs dans son nouvel environnement.</li>
+  <li>en [1] et [2], le copier / coller du test JUnit entre les deux projets,
+  </li>
+  <li>en [3], le test importé présente des erreurs dans son nouvel environnement.
+  </li>
 </ul>
+
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000031E000003110062CA5D.png" style="display:inline-block; margin:4px;width:10.557cm;height:10.386cm;" class="odt-zoomable" data-zoom-src="images/100000000000031E000003110062CA5D.png" /></td></tr></table>
 
 <p>L&#x27;erreur signalée [1] est celle de l&#x27;interface distante de l&#x27;EJB qui n&#x27;existe plus. Par ailleurs, le code d&#x27;initialisation du champ [dao] de la ligne 19 était un appel JNDI propre aux EJB (lignes 25-28). Pour instancier le champ [dao] de la ligne 19, il nous faut exploiter le fichier de configuration de Spring. Cela se fait de la façon suivante :</p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000044A000002E3E3516C63.png" style="display:inline-block; margin:4px;width:14.526cm;height:9.777cm;" class="odt-zoomable" data-zoom-src="images/100000000000044A000002E3E3516C63.png" /></td></tr></table>
 
 <ul>
-<li>ligne 21 : le type de l&#x27;interface est devenu [IDao],</li>
-<li>ligne 28 : instancie tous les beans déclarés dans le fichier [spring-config-dao.xml], notamment celui-ci :</li>
+  <li>ligne 21 : le type de l&#x27;interface est devenu [IDao],
+  </li>
+  <li>ligne 28 : instancie tous les beans déclarés dans le fichier [spring-config-dao.xml], notamment celui-ci :
+  </li>
 </ul>
+
 <div class="odt-code-rich" data-linenums="false" style="counter-reset: odtline 0;"><pre><code class="language-text">
 <span class="odt-code-line">  <span style="color:#800080">&lt;bean</span><span style="font-style:italic;color:#008080"> </span><span style="color:#808000">id</span><span style="color:#800080">=&quot;</span><span style="color:#0000ff">dao</span><span style="color:#800080">&quot;</span><span style="font-style:italic;color:#008080"> </span><span style="color:#808000">class</span><span style="color:#800080">=&quot;</span><span style="color:#0000ff">rdvmedecins.dao.DaoJpa</span><span style="color:#800080">&quot;</span><span style="font-style:italic;color:#008080"> </span><span style="color:#800080">/&gt;</span></span>
 </code></pre></div>
 
 <ul>
-<li>la ligne 29 demande au contexte Spring de la ligne 28, une référence sur le bean qui a <span style="color: #808000">id</span><span style="color: #800080">=&quot;</span><span style="color: #0000ff">dao</span><span style="color: #800080">&quot;</span>. On obtient alors une référence sur le singleton [DaoJpa] (<em>class</em> ci-dessus) que Spring a instancié.</li>
+  <li>la ligne 29 demande au contexte Spring de la ligne 28, une référence sur le bean qui a <span style="color: #808000">id</span><span style="color: #800080">=&quot;</span><span style="color: #0000ff">dao</span><span style="color: #800080">&quot;</span>. On obtient alors une référence sur le singleton [DaoJpa] (<i>class</i> ci-dessus) que Spring a instancié.
+  </li>
 </ul>
+
 <p>Les lignes 28-29 construisent les blocs suivants (pointillés roses) :</p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000040C000000BACF0DB68A.png" style="display:inline-block; margin:4px;width:13.705cm;height:2.461cm;" class="odt-zoomable" data-zoom-src="images/100000000000040C000000BACF0DB68A.png" /></td></tr></table>
 
@@ -1360,12 +1423,18 @@
 <a id="__codelineno-0-72" name="__codelineno-0-72"></a><span class="n">Rv</span><span class="p">[</span><span class="mi">211</span><span class="p">,</span> <span class="n">Creneau</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">8</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span> <span class="mi">8</span><span class="p">:</span><span class="mi">20</span><span class="p">,</span><span class="n">Médecin</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="n">Mme</span><span class="p">,</span><span class="n">Marie</span><span class="p">,</span><span class="n">PELISSIER</span><span class="p">]],</span> <span class="n">Client</span><span class="p">[</span><span class="mi">4</span><span class="p">,</span><span class="n">Melle</span><span class="p">,</span><span class="n">Brigitte</span><span class="p">,</span><span class="n">BISTROU</span><span class="p">]]</span>
 </code></pre></div></td></tr></table></div>
 <ul>
-<li>lignes 1-4 : des logs de Spring,</li>
-<li>lignes 5-10 : des logs d&#x27;Hibernate,</li>
-<li>ligne 11 : Spring signale tous les beans qu&#x27;il a instanciés. On y retrouve en premier, le bean [dao],</li>
-<li>lignes 12 et suivantes : les logs du test JUnit,</li>
-<li>lignes 60-65 : on voit clairement l&#x27;exception provoquée par l&#x27;ajout d&#x27;un rendez-vous déjà présent dans la base. On rappelle qu&#x27;avec l&#x27;EJB, on n&#x27;avait pas eu cette exception à cause d&#x27;un problème de sérialisation.</li>
+  <li>lignes 1-4 : des logs de Spring,
+  </li>
+  <li>lignes 5-10 : des logs d&#x27;Hibernate,
+  </li>
+  <li>ligne 11 : Spring signale tous les beans qu&#x27;il a instanciés. On y retrouve en premier, le bean [dao],
+  </li>
+  <li>lignes 12 et suivantes : les logs du test JUnit,
+  </li>
+  <li>lignes 60-65 : on voit clairement l&#x27;exception provoquée par l&#x27;ajout d&#x27;un rendez-vous déjà présent dans la base. On rappelle qu&#x27;avec l&#x27;EJB, on n&#x27;avait pas eu cette exception à cause d&#x27;un problème de sérialisation.
+  </li>
 </ul>
+
 <p>La couche [dao] est opérationnelle. Nous construisons maintenant la couche [métier].</p>
 <p><a id="refheading7742830114625"></a></p>
 <h2 id="42-la-couche-metier">4.2. La couche [métier]</h2>
@@ -1386,46 +1455,68 @@
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000519000001B78CDF0713.png" style="display:inline-block; margin:4px;width:17.265cm;height:5.808cm;" class="odt-zoomable" data-zoom-src="images/1000000000000519000001B78CDF0713.png" /></td></tr></table>
 
 <ul>
-<li>en [1] et [2], on ajoute une dépendance sur le projet de la couche [dao],</li>
-<li>en [3], cette dépendance a amené d&#x27;autres dépendances, celles du projet de la couche [dao].</li>
+  <li>en [1] et [2], on ajoute une dépendance sur le projet de la couche [dao],
+  </li>
+  <li>en [3], cette dépendance a amené d&#x27;autres dépendances, celles du projet de la couche [dao].
+  </li>
 </ul>
+
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004CD00000118DAD1F9A7.png" style="display:inline-block; margin:4px;width:16.26cm;height:3.704cm;" class="odt-zoomable" data-zoom-src="images/10000000000004CD00000118DAD1F9A7.png" /></td></tr></table>
 
 <ul>
-<li>en [1] et [2], on copie les sources Java du projet EJB vers le projet Spring,</li>
-<li>en [3], les sources importés présentent des erreurs dans leur nouvel environnement.</li>
+  <li>en [1] et [2], on copie les sources Java du projet EJB vers le projet Spring,
+  </li>
+  <li>en [3], les sources importés présentent des erreurs dans leur nouvel environnement.
+  </li>
 </ul>
+
 <p>On commence par supprimer les interfaces distante et locale de la couche [métier] qui n&#x27;existent plus [4] :</p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004F6000002E23BD9EE02.png" style="display:inline-block; margin:4px;width:16.801cm;height:9.763cm;" class="odt-zoomable" data-zoom-src="images/10000000000004F6000002E23BD9EE02.png" /></td></tr></table>
 
 <ul>
-<li>en [5], les erreurs de la classe [Metier] ont plusieurs causes :<ul>
-<li>l&#x27;utilisation du paquetage [javax.ejb] qui n&#x27;existe plus ;</li>
-<li>l&#x27;utilisation de l&#x27;interface [IDaoLocal] qui n&#x27;existe plus ;</li>
-<li>l&#x27;utilisation des interfaces [IMetierRemote] et [IMetierLocal] qui n&#x27;existent plus.</li>
+  <li>en [5], les erreurs de la classe [Metier] ont plusieurs causes :
+    <ul>
+      <li>l&#x27;utilisation du paquetage [javax.ejb] qui n&#x27;existe plus ;
+      </li>
+      <li>l&#x27;utilisation de l&#x27;interface [IDaoLocal] qui n&#x27;existe plus ;
+      </li>
+      <li>l&#x27;utilisation des interfaces [IMetierRemote] et [IMetierLocal] qui n&#x27;existent plus.
+      </li>
+    </ul>
+  </li>
 </ul>
-</li>
-</ul>
+
 <p>Nous </p>
 <ul>
-<li>supprimons toutes les lignes erronées liées au paquetage [javax.ejb],</li>
-<li>remplaçons l&#x27;interface [IDaoLocal] par l&#x27;interface [IDao],</li>
-<li>remplaçons les interfaces [IMetierRemote] et [IMetierLocal] par l&#x27;interface [IMetier].</li>
+  <li>supprimons toutes les lignes erronées liées au paquetage [javax.ejb],
+  </li>
+  <li>remplaçons l&#x27;interface [IDaoLocal] par l&#x27;interface [IDao],
+  </li>
+  <li>remplaçons les interfaces [IMetierRemote] et [IMetierLocal] par l&#x27;interface [IMetier].
+  </li>
 </ul>
+
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004CB0000022A9D6B2173.png" style="display:inline-block; margin:4px;width:16.233cm;height:7.329cm;" class="odt-zoomable" data-zoom-src="images/10000000000004CB0000022A9D6B2173.png" /></td></tr></table>
 
 <ul>
-<li>en [6], la classe ainsi corrigée,</li>
-<li>en [7], il n&#x27;y a plus d&#x27;erreurs.</li>
+  <li>en [6], la classe ainsi corrigée,
+  </li>
+  <li>en [7], il n&#x27;y a plus d&#x27;erreurs.
+  </li>
 </ul>
+
 <p>Nous avons supprimé les références aux EJB mais il nous faut maintenant retrouver leurs propriétés :</p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000293000000CAE9037AD8.png" style="display:inline-block; margin:4px;width:12.201cm;height:3.739cm;" class="odt-zoomable" data-zoom-src="images/1000000000000293000000CAE9037AD8.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
 
 <ul>
-<li>ligne 22 : on avait un singleton. Cette caractéristique sera obtenue en faisant de la classe un bean géré par Spring,</li>
-<li>ligne 23 : chaque méthode se déroulait dans une transaction. Ce sera obtenu avec l&#x27;annotation Spring @<strong>Transactional</strong>,</li>
-<li>lignes 27-28 : la référence sur la couche [DAO] était obtenue par injection du conteneur EJB. Nous utiliserons une injection Spring.</li>
+  <li>ligne 22 : on avait un singleton. Cette caractéristique sera obtenue en faisant de la classe un bean géré par Spring,
+  </li>
+  <li>ligne 23 : chaque méthode se déroulait dans une transaction. Ce sera obtenu avec l&#x27;annotation Spring @<b>Transactional</b>,
+  </li>
+  <li>lignes 27-28 : la référence sur la couche [DAO] était obtenue par injection du conteneur EJB. Nous utiliserons une injection Spring.
+  </li>
 </ul>
+
 <p>Le code de la classe [Metier] du projet Spring évolue donc comme suit :</p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000035C00000245E0BB035A.png" style="display:inline-block; margin:4px;width:11.377cm;height:7.687cm;" class="odt-zoomable" data-zoom-src="images/100000000000035C00000245E0BB035A.png" /></td></tr></table>
 
@@ -1436,17 +1527,24 @@
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004CB000000EBA95F3476.png" style="display:inline-block; margin:4px;width:16.233cm;height:3.11cm;" class="odt-zoomable" data-zoom-src="images/10000000000004CB000000EBA95F3476.png" /></td></tr></table>
 
 <ul>
-<li>en [1], dans l&#x27;onglet [Files], on crée un sous-dossier au dossier [main],</li>
-<li>en [2], il doit s&#x27;appeler [resources],</li>
-<li>en [3], dans l&#x27;onglet [Projects], la branche [Other Sources] a été créée.</li>
+  <li>en [1], dans l&#x27;onglet [Files], on crée un sous-dossier au dossier [main],
+  </li>
+  <li>en [2], il doit s&#x27;appeler [resources],
+  </li>
+  <li>en [3], dans l&#x27;onglet [Projects], la branche [Other Sources] a été créée.
+  </li>
 </ul>
+
 <p>Nous pouvons passer au copier / coller du fichier de configuration de Spring :</p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004F4000001A6EF9F586A.png" style="display:inline-block; margin:4px;width:16.775cm;height:5.583cm;" class="odt-zoomable" data-zoom-src="images/10000000000004F4000001A6EF9F586A.png" /></td></tr></table>
 
 <ul>
-<li>en [1] on copie le fichier du projet [DAO] dans le projet [métier] [2],</li>
-<li>en [3], le fichier copié.</li>
+  <li>en [1] on copie le fichier du projet [DAO] dans le projet [métier] [2],
+  </li>
+  <li>en [3], le fichier copié.
+  </li>
 </ul>
+
 <p>Le fichier de configuration qui a été copié configure la couche [DAO]. Nous lui ajoutons un bean pour configurer la couche [métier] :</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span>
 <span class="normal"><a href="#__codelineno-1-2">2</a></span>
@@ -1459,10 +1557,14 @@
 <a id="__codelineno-1-5" name="__codelineno-1-5"></a><span class="nt">&lt;/bean&gt;</span>
 </code></pre></div></td></tr></table></div>
 <ul>
-<li>ligne 2 : le bean de la couche [DAO],</li>
-<li>lignes 3-5 : le bean de la couche [métier],</li>
-<li>ligne 3 : le bean s&#x27;appelle <em>métier</em> (attribut <em>id</em>) et est une instance de la classe [rdvmedecins.metier.service.Metier] (attribut <em>class</em>). Ce bean sera instancié comme les autres au démarrage de l&#x27;application.</li>
+  <li>ligne 2 : le bean de la couche [DAO],
+  </li>
+  <li>lignes 3-5 : le bean de la couche [métier],
+  </li>
+  <li>ligne 3 : le bean s&#x27;appelle <i>métier</i> (attribut <i>id</i>) et est une instance de la classe [rdvmedecins.metier.service.Metier] (attribut <i>class</i>). Ce bean sera instancié comme les autres au démarrage de l&#x27;application.
+  </li>
 </ul>
+
 <p>Rappelons le code du bean [rdvmedecins.metier.service.Metier] :</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
 <span class="odt-code-line"><span style="font-weight:bold;color:#7f0055">package</span><span style="color:#000000"> rdvmedecins.metier.service;</span></span>
@@ -1479,8 +1581,10 @@
 </code></pre></div>
 
 <ul>
-<li>ligne 8 : le champ [dao] va être instancié par Spring en même temps que le bean <em>métier</em>. Revenons à la définition de ce bean dans le fichier de configuration de Spring :</li>
+  <li>ligne 8 : le champ [dao] va être instancié par Spring en même temps que le bean <i>métier</i>. Revenons à la définition de ce bean dans le fichier de configuration de Spring :
+  </li>
 </ul>
+
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span>
 <span class="normal"><a href="#__codelineno-2-2">2</a></span>
 <span class="normal"><a href="#__codelineno-2-3">3</a></span>
@@ -1492,8 +1596,10 @@
 <a id="__codelineno-2-5" name="__codelineno-2-5"></a><span class="nt">&lt;/bean&gt;</span>
 </code></pre></div></td></tr></table></div>
 <ul>
-<li>ligne 4 : la balise &lt;property&gt; sert à initialiser des champs du bean instancié. Le nom du champ est donné par l&#x27;attribut <em>name</em>. C&#x27;est donc le champ <strong>dao</strong> de la classe [rdvmedecins.metier.service.Metier] qui va être instancié. Il le sera via une méthode <strong>setDao</strong> qui doit exister. La valeur qui lui sera affectée est celle de l&#x27;attribut <strong>ref</strong>. Cette valeur est ici, la référence du bean <strong>dao</strong> de la ligne 2.</li>
+  <li>ligne 4 : la balise &lt;property&gt; sert à initialiser des champs du bean instancié. Le nom du champ est donné par l&#x27;attribut <i>name</i>. C&#x27;est donc le champ <b>dao</b> de la classe [rdvmedecins.metier.service.Metier] qui va être instancié. Il le sera via une méthode <b>setDao</b> qui doit exister. La valeur qui lui sera affectée est celle de l&#x27;attribut <b>ref</b>. Cette valeur est ici, la référence du bean <b>dao</b> de la ligne 2.
+  </li>
 </ul>
+
 <p>Dit plus simplement, dans le code :</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
 <span class="odt-code-line"><span style="font-weight:bold;color:#7f0055">package</span><span style="color:#000000"> rdvmedecins.metier.service;</span></span>
@@ -1531,22 +1637,30 @@
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000048600000133CA492045.png" style="display:inline-block; margin:4px;width:15.319cm;height:4.062cm;" class="odt-zoomable" data-zoom-src="images/100000000000048600000133CA492045.png" /></td></tr></table>
 
 <ul>
-<li>en [1] et [2], le copier / coller entre les deux projets,</li>
-<li>en [3], le code importé présente des erreurs.</li>
+  <li>en [1] et [2], le copier / coller entre les deux projets,
+  </li>
+  <li>en [3], le code importé présente des erreurs.
+  </li>
 </ul>
+
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000002D10000020EE05450D1.png" style="display:inline-block; margin:4px;width:13.351cm;height:9.74cm;" class="odt-zoomable" data-zoom-src="images/10000000000002D10000020EE05450D1.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
 
 <p>Le code importé présente deux types d&#x27;erreur :</p>
 <ul>
-<li>ligne 13 : l&#x27;interface [IMetierRemote] a été remplacée par l&#x27;interface [IMetier],</li>
-<li>lignes 24-27 : l&#x27;instanciation de la couche [métier] ne se fait plus avec un appel JNDI mais par instanciation des beans du fichier de configuration de Spring.</li>
+  <li>ligne 13 : l&#x27;interface [IMetierRemote] a été remplacée par l&#x27;interface [IMetier],
+  </li>
+  <li>lignes 24-27 : l&#x27;instanciation de la couche [métier] ne se fait plus avec un appel JNDI mais par instanciation des beans du fichier de configuration de Spring.
+  </li>
 </ul>
+
 <p>Nous corrigeons ces deux points :</p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000494000002F1D3088508.png" style="display:inline-block; margin:4px;width:15.505cm;height:9.962cm;" class="odt-zoomable" data-zoom-src="images/1000000000000494000002F1D3088508.png" /></td></tr></table>
 
 <ul>
-<li>ligne 22 : le fichier [spring-config-metier-dao.xml] est exploité. Tous les beans de ce fichier sont alors instanciés. Parmi eux, il y a ceux-ci :</li>
+  <li>ligne 22 : le fichier [spring-config-metier-dao.xml] est exploité. Tous les beans de ce fichier sont alors instanciés. Parmi eux, il y a ceux-ci :
+  </li>
 </ul>
+
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-xml">
 <span class="odt-code-line">  <span style="color:#800080">&lt;!--</span><span style="font-style:italic;color:#008000"> couches applicatives </span><span style="color:#800080">--&gt;</span></span>
 <span class="odt-code-line"><span style="color:#000000">  </span><span style="color:#800080">&lt;bean</span><span style="font-style:italic;color:#008080"> </span><span style="color:#808000">id</span><span style="color:#800080">=&quot;</span><span style="color:#0000ff">dao</span><span style="color:#800080">&quot;</span><span style="font-style:italic;color:#008080"> </span><span style="color:#808000">class</span><span style="color:#800080">=&quot;</span><span style="color:#0000ff">rdvmedecins.dao.DaoJpa</span><span style="color:#800080">&quot;</span><span style="font-style:italic;color:#008080"> </span><span style="color:#800080">/&gt;</span></span>
@@ -1669,10 +1783,14 @@
 <a id="__codelineno-3-53" name="__codelineno-3-53"></a><span class="n">Agenda</span><span class="p">[</span><span class="n">Médecin</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="n">Mme</span><span class="p">,</span><span class="n">Marie</span><span class="p">,</span><span class="n">PELISSIER</span><span class="p">],</span><span class="mi">25</span><span class="o">/</span><span class="mi">05</span><span class="o">/</span><span class="mi">2012</span><span class="p">,</span> <span class="p">[</span><span class="n">Creneau</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">8</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span> <span class="mi">8</span><span class="p">:</span><span class="mi">20</span><span class="p">,</span><span class="n">Médecin</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="n">Mme</span><span class="p">,</span><span class="n">Marie</span><span class="p">,</span><span class="n">PELISSIER</span><span class="p">]]</span> <span class="n">null</span><span class="p">]</span> <span class="p">[</span><span class="n">Creneau</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">8</span><span class="p">:</span><span class="mi">20</span><span class="p">,</span> <span class="mi">8</span><span class="p">:</span><span class="mi">40</span><span class="p">,</span><span class="n">Médecin</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="n">Mme</span><span class="p">,</span><span class="n">Marie</span><span class="p">,</span><span class="n">PELISSIER</span><span class="p">]]</span> <span class="n">null</span><span class="p">]</span> <span class="p">[</span><span class="n">Creneau</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">8</span><span class="p">:</span><span class="mi">40</span><span class="p">,</span> <span class="mi">9</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="n">Médecin</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="n">Mme</span><span class="p">,</span><span class="n">Marie</span><span class="p">,</span><span class="n">PELISSIER</span><span class="p">]]</span> <span class="n">null</span><span class="p">]</span> <span class="p">[</span><span class="n">Creneau</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">9</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span> <span class="mi">9</span><span class="p">:</span><span class="mi">20</span><span class="p">,</span><span class="n">Médecin</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="n">Mme</span><span class="p">,</span><span class="n">Marie</span><span class="p">,</span><span class="n">PELISSIER</span><span class="p">]]</span> <span class="n">null</span><span class="p">]</span> <span class="p">[</span><span class="n">Creneau</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">9</span><span class="p">:</span><span class="mi">20</span><span class="p">,</span> <span class="mi">9</span><span class="p">:</span><span class="mi">40</span><span class="p">,</span><span class="n">Médecin</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="n">Mme</span><span class="p">,</span><span class="n">Marie</span><span class="p">,</span><span class="n">PELISSIER</span><span class="p">]]</span> <span class="n">null</span><span class="p">]</span> <span class="p">[</span><span class="n">Creneau</span> <span class="p">[</span><span class="mi">6</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">9</span><span class="p">:</span><span class="mi">40</span><span class="p">,</span> <span class="mi">10</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="n">Médecin</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="n">Mme</span><span class="p">,</span><span class="n">Marie</span><span class="p">,</span><span class="n">PELISSIER</span><span class="p">]]</span> <span class="n">null</span><span class="p">]</span> <span class="p">[</span><span class="n">Creneau</span> <span class="p">[</span><span class="mi">7</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span> <span class="mi">10</span><span class="p">:</span><span class="mi">20</span><span class="p">,</span><span class="n">Médecin</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="n">Mme</span><span class="p">,</span><span class="n">Marie</span><span class="p">,</span><span class="n">PELISSIER</span><span class="p">]]</span> <span class="n">null</span><span class="p">]</span> <span class="p">[</span><span class="n">Creneau</span> <span class="p">[</span><span class="mi">8</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">:</span><span class="mi">20</span><span class="p">,</span> <span class="mi">10</span><span class="p">:</span><span class="mi">40</span><span class="p">,</span><span class="n">Médecin</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="n">Mme</span><span class="p">,</span><span class="n">Marie</span><span class="p">,</span><span class="n">PELISSIER</span><span class="p">]]</span> <span class="n">null</span><span class="p">]</span> <span class="p">[</span><span class="n">Creneau</span> <span class="p">[</span><span class="mi">9</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">:</span><span class="mi">40</span><span class="p">,</span> <span class="mi">11</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="n">Médecin</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="n">Mme</span><span class="p">,</span><span class="n">Marie</span><span class="p">,</span><span class="n">PELISSIER</span><span class="p">]]</span> <span class="n">null</span><span class="p">]</span> <span class="p">[</span><span class="n">Creneau</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">11</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span> <span class="mi">11</span><span class="p">:</span><span class="mi">20</span><span class="p">,</span><span class="n">Médecin</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="n">Mme</span><span class="p">,</span><span class="n">Marie</span><span class="p">,</span><span class="n">PELISSIER</span><span class="p">]]</span> <span class="n">null</span><span class="p">]</span> <span class="p">[</span><span class="n">Creneau</span> <span class="p">[</span><span class="mi">11</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">11</span><span class="p">:</span><span class="mi">20</span><span class="p">,</span> <span class="mi">11</span><span class="p">:</span><span class="mi">40</span><span class="p">,</span><span class="n">Médecin</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="n">Mme</span><span class="p">,</span><span class="n">Marie</span><span class="p">,</span><span class="n">PELISSIER</span><span class="p">]]</span> <span class="n">null</span><span class="p">]</span> <span class="p">[</span><span class="n">Creneau</span> <span class="p">[</span><span class="mi">12</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">11</span><span class="p">:</span><span class="mi">40</span><span class="p">,</span> <span class="mi">12</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="n">Médecin</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="n">Mme</span><span class="p">,</span><span class="n">Marie</span><span class="p">,</span><span class="n">PELISSIER</span><span class="p">]]</span> <span class="n">null</span><span class="p">]</span> <span class="p">[</span><span class="n">Creneau</span> <span class="p">[</span><span class="mi">13</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">14</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span> <span class="mi">14</span><span class="p">:</span><span class="mi">20</span><span class="p">,</span><span class="n">Médecin</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="n">Mme</span><span class="p">,</span><span class="n">Marie</span><span class="p">,</span><span class="n">PELISSIER</span><span class="p">]]</span> <span class="n">null</span><span class="p">]</span> <span class="p">[</span><span class="n">Creneau</span> <span class="p">[</span><span class="mi">14</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">14</span><span class="p">:</span><span class="mi">20</span><span class="p">,</span> <span class="mi">14</span><span class="p">:</span><span class="mi">40</span><span class="p">,</span><span class="n">Médecin</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="n">Mme</span><span class="p">,</span><span class="n">Marie</span><span class="p">,</span><span class="n">PELISSIER</span><span class="p">]]</span> <span class="n">null</span><span class="p">]</span> <span class="p">[</span><span class="n">Creneau</span> <span class="p">[</span><span class="mi">15</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">14</span><span class="p">:</span><span class="mi">40</span><span class="p">,</span> <span class="mi">15</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="n">Médecin</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="n">Mme</span><span class="p">,</span><span class="n">Marie</span><span class="p">,</span><span class="n">PELISSIER</span><span class="p">]]</span> <span class="n">null</span><span class="p">]</span> <span class="p">[</span><span class="n">Creneau</span> <span class="p">[</span><span class="mi">16</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">15</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span> <span class="mi">15</span><span class="p">:</span><span class="mi">20</span><span class="p">,</span><span class="n">Médecin</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="n">Mme</span><span class="p">,</span><span class="n">Marie</span><span class="p">,</span><span class="n">PELISSIER</span><span class="p">]]</span> <span class="n">null</span><span class="p">]</span> <span class="p">[</span><span class="n">Creneau</span> <span class="p">[</span><span class="mi">17</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">15</span><span class="p">:</span><span class="mi">20</span><span class="p">,</span> <span class="mi">15</span><span class="p">:</span><span class="mi">40</span><span class="p">,</span><span class="n">Médecin</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="n">Mme</span><span class="p">,</span><span class="n">Marie</span><span class="p">,</span><span class="n">PELISSIER</span><span class="p">]]</span> <span class="n">null</span><span class="p">]</span> <span class="p">[</span><span class="n">Creneau</span> <span class="p">[</span><span class="mi">18</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">15</span><span class="p">:</span><span class="mi">40</span><span class="p">,</span> <span class="mi">16</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="n">Médecin</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="n">Mme</span><span class="p">,</span><span class="n">Marie</span><span class="p">,</span><span class="n">PELISSIER</span><span class="p">]]</span> <span class="n">null</span><span class="p">]</span> <span class="p">[</span><span class="n">Creneau</span> <span class="p">[</span><span class="mi">19</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">16</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span> <span class="mi">16</span><span class="p">:</span><span class="mi">20</span><span class="p">,</span><span class="n">Médecin</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="n">Mme</span><span class="p">,</span><span class="n">Marie</span><span class="p">,</span><span class="n">PELISSIER</span><span class="p">]]</span> <span class="n">null</span><span class="p">]</span> <span class="p">[</span><span class="n">Creneau</span> <span class="p">[</span><span class="mi">20</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">16</span><span class="p">:</span><span class="mi">20</span><span class="p">,</span> <span class="mi">16</span><span class="p">:</span><span class="mi">40</span><span class="p">,</span><span class="n">Médecin</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="n">Mme</span><span class="p">,</span><span class="n">Marie</span><span class="p">,</span><span class="n">PELISSIER</span><span class="p">]]</span> <span class="n">null</span><span class="p">]</span> <span class="p">[</span><span class="n">Creneau</span> <span class="p">[</span><span class="mi">21</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">16</span><span class="p">:</span><span class="mi">40</span><span class="p">,</span> <span class="mi">17</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="n">Médecin</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="n">Mme</span><span class="p">,</span><span class="n">Marie</span><span class="p">,</span><span class="n">PELISSIER</span><span class="p">]]</span> <span class="n">null</span><span class="p">]</span> <span class="p">[</span><span class="n">Creneau</span> <span class="p">[</span><span class="mi">22</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">17</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span> <span class="mi">17</span><span class="p">:</span><span class="mi">20</span><span class="p">,</span><span class="n">Médecin</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="n">Mme</span><span class="p">,</span><span class="n">Marie</span><span class="p">,</span><span class="n">PELISSIER</span><span class="p">]]</span> <span class="n">null</span><span class="p">]</span> <span class="p">[</span><span class="n">Creneau</span> <span class="p">[</span><span class="mi">23</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">17</span><span class="p">:</span><span class="mi">20</span><span class="p">,</span> <span class="mi">17</span><span class="p">:</span><span class="mi">40</span><span class="p">,</span><span class="n">Médecin</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="n">Mme</span><span class="p">,</span><span class="n">Marie</span><span class="p">,</span><span class="n">PELISSIER</span><span class="p">]]</span> <span class="n">null</span><span class="p">]</span> <span class="p">[</span><span class="n">Creneau</span> <span class="p">[</span><span class="mi">24</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">17</span><span class="p">:</span><span class="mi">40</span><span class="p">,</span> <span class="mi">18</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="n">Médecin</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="n">Mme</span><span class="p">,</span><span class="n">Marie</span><span class="p">,</span><span class="n">PELISSIER</span><span class="p">]]</span> <span class="n">null</span><span class="p">]]</span>
 </code></pre></div></td></tr></table></div>
 <ul>
-<li>lignes 1-4 : les logs de Spring et Hibernate,</li>
-<li>ligne 5 : les beans instanciés par Spring. On notera les beans <strong>dao</strong> et <strong>metier</strong>,</li>
-<li>lignes 6-53 : les logs du test. Ils sont conformes à ce qui avait été obtenu avec le test du projet EJB. Nous renvoyons le lecteur aux commentaires de ce test (paragraphe <a href="application-exemple---01--rdvmedecins-jsf2-ejb.html#logs-test-ejb-metier">3.5.3</a>).</li>
+  <li>lignes 1-4 : les logs de Spring et Hibernate,
+  </li>
+  <li>ligne 5 : les beans instanciés par Spring. On notera les beans <b>dao</b> et <b>metier</b>,
+  </li>
+  <li>lignes 6-53 : les logs du test. Ils sont conformes à ce qui avait été obtenu avec le test du projet EJB. Nous renvoyons le lecteur aux commentaires de ce test (paragraphe <a href="application-exemple---01--rdvmedecins-jsf2-ejb.html#logs-test-ejb-metier">3.5.3</a>).
+  </li>
 </ul>
+
 <p>Nous avons construit la couche [métier]. Nous passons à la dernière couche, la couche [web].</p>
 <p><a id="refheading7743830114625"></a></p>
 <h2 id="43-la-couche-web">4.3. La couche [web]</h2>
@@ -1685,17 +1803,25 @@
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000050E000001799C3E3475.png" style="display:inline-block; margin:4px;width:17.119cm;height:4.988cm;" class="odt-zoomable" data-zoom-src="images/100000000000050E000001799C3E3475.png" /></td></tr></table>
 
 <ul>
-<li>en [1], on crée un nouveau projet,</li>
-<li>en [2], un projet Maven de type [Web Application],</li>
-<li>en [3], on lui donne un nom,</li>
+  <li>en [1], on crée un nouveau projet,
+  </li>
+  <li>en [2], un projet Maven de type [Web Application],
+  </li>
+  <li>en [3], on lui donne un nom,
+  </li>
 </ul>
+
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004DE0000012126C675BC.png" style="display:inline-block; margin:4px;width:16.484cm;height:3.824cm;" class="odt-zoomable" data-zoom-src="images/10000000000004DE0000012126C675BC.png" /></td></tr></table>
 
 <ul>
-<li>en [4], on choisit cette fois, le serveur Tomcat et non pas Glassfish qui a servi au projet EJB,</li>
-<li>en [5], le projet obtenu,</li>
-<li>en [6], le projet après la suppression de [index.jsp] et du paquetage de [Source Packages].</li>
+  <li>en [4], on choisit cette fois, le serveur Tomcat et non pas Glassfish qui a servi au projet EJB,
+  </li>
+  <li>en [5], le projet obtenu,
+  </li>
+  <li>en [6], le projet après la suppression de [index.jsp] et du paquetage de [Source Packages].
+  </li>
 </ul>
+
 <p><a id="refheading7744230114625"></a></p>
 <h3 id="432-les-dependances-du-projet">4.3.2. Les dépendances du projet</h3>
 <p>Regardons l&#x27;architecture du projet :</p>
@@ -1705,9 +1831,12 @@
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000003710000021BCDDAC4BF.png" style="display:inline-block; margin:4px;width:11.656cm;height:7.131cm;" class="odt-zoomable" data-zoom-src="images/10000000000003710000021BCDDAC4BF.png" /></td></tr></table>
 
 <ul>
-<li>en [1], nous ajoutons la dépendance sur le projet Spring / métier,</li>
-<li>en [2], le projet Spring / métier a été ajouté. Comme il avait lui-même une dépendance sur le projet Spring / DAO / JPA, celui a été automatiquement ajouté dans les dépendances [3].</li>
+  <li>en [1], nous ajoutons la dépendance sur le projet Spring / métier,
+  </li>
+  <li>en [2], le projet Spring / métier a été ajouté. Comme il avait lui-même une dépendance sur le projet Spring / DAO / JPA, celui a été automatiquement ajouté dans les dépendances [3].
+  </li>
 </ul>
+
 <p>Revenons à la structure de notre application :</p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004F40000011A4032CB74.png" style="display:inline-block; margin:4px;width:16.775cm;height:3.731cm;" class="odt-zoomable" data-zoom-src="images/10000000000004F40000011A4032CB74.png" /></td></tr></table>
 
@@ -1740,8 +1869,10 @@
 </code></pre></div>
 
 <ul>
-<li>les lignes 7-16 ont été ajoutées au fichier [pom.xml]. Ce sont les dépendances vis à vis de JSF. Ce sont celles utilisées dans le projet EJB / Glassfish. On notera qu&#x27;elles n&#x27;ont pas la balise &lt;scope&gt;. Elles ont donc par défaut la portée [compile]. La bibliothèque JSF sera donc embarquée dans l&#x27;archive [war] du projet web.</li>
+  <li>les lignes 7-16 ont été ajoutées au fichier [pom.xml]. Ce sont les dépendances vis à vis de JSF. Ce sont celles utilisées dans le projet EJB / Glassfish. On notera qu&#x27;elles n&#x27;ont pas la balise &lt;scope&gt;. Elles ont donc par défaut la portée [compile]. La bibliothèque JSF sera donc embarquée dans l&#x27;archive [war] du projet web.
+  </li>
 </ul>
+
 <p>Après avoir ajouté ces dépendances au fichier [pom.xml], nous compilons le projet pour qu&#x27;elles soient téléchargées.</p>
 <p><a id="refheading7744430114625"></a></p>
 <h3 id="433-portage-du-projet-jsf-glassfish-vers-le-projet-jsf-tomcat">4.3.3. Portage du projet JSF / Glassfish vers le projet JSF / Tomcat</h3>
@@ -1749,33 +1880,45 @@
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004A50000018F9327086D.png" style="display:inline-block; margin:4px;width:15.73cm;height:5.279cm;" class="odt-zoomable" data-zoom-src="images/10000000000004A50000018F9327086D.png" /></td></tr></table>
 
 <ul>
-<li>[1, 2, 3] : copie des pages web de l&#x27;ancien projet vers le nouveau,</li>
+  <li>[1, 2, 3] : copie des pages web de l&#x27;ancien projet vers le nouveau,
+  </li>
 </ul>
+
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004840000014E7116B41C.png" style="display:inline-block; margin:4px;width:15.293cm;height:4.419cm;" class="odt-zoomable" data-zoom-src="images/10000000000004840000014E7116B41C.png" /></td></tr></table>
 
 <ul>
-<li>[1, 2, 3] : copie des codes Java de l&#x27;ancien projet vers le nouveau. Il y a des erreurs. C&#x27;est normal. Nous les corrigerons,</li>
+  <li>[1, 2, 3] : copie des codes Java de l&#x27;ancien projet vers le nouveau. Il y a des erreurs. C&#x27;est normal. Nous les corrigerons,
+  </li>
 </ul>
+
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000531000000E697E09756.png" style="display:inline-block; margin:4px;width:17.582cm;height:3.043cm;" class="odt-zoomable" data-zoom-src="images/1000000000000531000000E697E09756.png" /></td></tr></table>
 
 <ul>
-<li>en [1], dans l&#x27;onglet [Files] de Netbeans, on crée un sous-dossier [resources] au dossier [main],</li>
-<li>cela crée dans l&#x27;onglet [Projects], la branche [Other Sources] [3],</li>
+  <li>en [1], dans l&#x27;onglet [Files] de Netbeans, on crée un sous-dossier [resources] au dossier [main],
+  </li>
+  <li>cela crée dans l&#x27;onglet [Projects], la branche [Other Sources] [3],
+  </li>
 </ul>
+
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004C300000165C896217C.png" style="display:inline-block; margin:4px;width:16.127cm;height:4.724cm;" class="odt-zoomable" data-zoom-src="images/10000000000004C300000165C896217C.png" /></td></tr></table>
 
 <ul>
-<li>[1, 2, 3] : on copie les fichiers de messages de l&#x27;ancien projet vers le nouveau projet.</li>
+  <li>[1, 2, 3] : on copie les fichiers de messages de l&#x27;ancien projet vers le nouveau projet.
+  </li>
 </ul>
+
 <p><a id="refheading7744630114625"></a></p>
 <h3 id="434-modifications-du-projet-importe">4.3.4. Modifications du projet importé</h3>
 <p>Nous avons signalé que le code Java importé comportait des erreurs. Examinons les :</p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000005290000027B00CD0038.png" style="display:inline-block; margin:4px;width:17.477cm;height:8.401cm;" class="odt-zoomable" data-zoom-src="images/10000000000005290000027B00CD0038.png" /></td></tr></table>
 
 <ul>
-<li>en [1], seul le bean [Application] est erroné,</li>
-<li>en [2], l&#x27;erreur est due uniquement à l&#x27;interface [IMetierLocal] qui n&#x27;existe plus. Ici, on peut être étonnés que la ligne 20 ne soit pas mise en erreur. L&#x27;annotation @EJB fait explicitement référence aux EJB et est ici reconnue. Cela est du à la présence de la dépendance [javaee-web-api-6.0] [3]. Java EE 6 a amené avec lui une architecture qui permet de déployer une application web s&#x27;appuyant sur des EJB sans interface distante, sur des serveurs n&#x27;ayant pas de conteneur EJB. Il suffit que le serveur fournisse la dépendance [javaee-web-api-6.0]. On voit en effet que celle-ci a la portée [provided] [3].</li>
+  <li>en [1], seul le bean [Application] est erroné,
+  </li>
+  <li>en [2], l&#x27;erreur est due uniquement à l&#x27;interface [IMetierLocal] qui n&#x27;existe plus. Ici, on peut être étonnés que la ligne 20 ne soit pas mise en erreur. L&#x27;annotation @EJB fait explicitement référence aux EJB et est ici reconnue. Cela est du à la présence de la dépendance [javaee-web-api-6.0] [3]. Java EE 6 a amené avec lui une architecture qui permet de déployer une application web s&#x27;appuyant sur des EJB sans interface distante, sur des serveurs n&#x27;ayant pas de conteneur EJB. Il suffit que le serveur fournisse la dépendance [javaee-web-api-6.0]. On voit en effet que celle-ci a la portée [provided] [3].
+  </li>
 </ul>
+
 <p>Ici nous n&#x27;allons pas utiliser la dépendance [javaee-web-api-6.0]. Nous la supprimons [1] :</p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000003640000010217C5D032.png" style="display:inline-block; margin:4px;width:11.483cm;height:3.413cm;" class="odt-zoomable" data-zoom-src="images/10000000000003640000010217C5D032.png" /></td></tr></table>
 
@@ -1785,8 +1928,10 @@
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000051A000002714841DA28.png" style="display:inline-block; margin:4px;width:17.277cm;height:8.269cm;" class="odt-zoomable" data-zoom-src="images/100000000000051A000002714841DA28.png" /></td></tr></table>
 
 <ul>
-<li>en [1], les lignes erronées sont liée à la perte du paquetage [javax]. Nous les supprimons toutes [2]. Les lignes erronées faisaient de la classe [Form] un bean de portée session (lignes 18-20 de [1]). Par ailleurs, le bean [Application] était injecté ligne 25. Ces informations vont migrer vers le fichier de configuration de JSF [faces-config.xml].</li>
+  <li>en [1], les lignes erronées sont liée à la perte du paquetage [javax]. Nous les supprimons toutes [2]. Les lignes erronées faisaient de la classe [Form] un bean de portée session (lignes 18-20 de [1]). Par ailleurs, le bean [Application] était injecté ligne 25. Ces informations vont migrer vers le fichier de configuration de JSF [faces-config.xml].
+  </li>
 </ul>
+
 <p>Passons au bean [Application] :</p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004C70000020405E06182.png" style="display:inline-block; margin:4px;width:16.18cm;height:6.826cm;" class="odt-zoomable" data-zoom-src="images/10000000000004C70000020405E06182.png" /></td></tr></table>
 
@@ -1794,8 +1939,10 @@
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000003C800000177E9BE82DA.png" style="display:inline-block; margin:4px;width:12.806cm;height:4.962cm;" class="odt-zoomable" data-zoom-src="images/10000000000003C800000177E9BE82DA.png" /></td></tr></table>
 
 <ul>
-<li>en [1, 2], nous copions le fichier de configuration de Spring du projet Spring / Métier vers le projet Spring / JSF,</li>
+  <li>en [1, 2], nous copions le fichier de configuration de Spring du projet Spring / Métier vers le projet Spring / JSF,
+  </li>
 </ul>
+
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000001A300000116D2C24468.png" style="display:inline-block; margin:4px;width:5.544cm;height:3.678cm;" class="odt-zoomable" data-zoom-src="images/10000000000001A300000116D2C24468.png" /></td></tr></table>
 
 <p>En [3], le résultat.</p>
@@ -1832,9 +1979,12 @@
 </code></pre></div>
 
 <ul>
-<li>ligne 20 : les beans du fichier de configuration de Spring sont instanciés,</li>
-<li>ligne 21 : on demande une référence sur le bean <strong>metier</strong> donc sur la couche [métier].</li>
+  <li>ligne 20 : les beans du fichier de configuration de Spring sont instanciés,
+  </li>
+  <li>ligne 21 : on demande une référence sur le bean <b>metier</b> donc sur la couche [métier].
+  </li>
 </ul>
+
 <p>De façon générale, l&#x27;instanciation des beans de Spring est à faire dans la méthode <strong>init</strong> du bean de portée <strong>application</strong>. Il existe une autre méthode où l&#x27;instanciation des beans est faite par une servlet de Spring. Cela implique de changer le fichier [web.xml] et d&#x27;ajouter une dépendance sur l&#x27;artifact [spring-web]. Nous ne l&#x27;avons pas fait ici pour rester en ligne avec ce qui avait été utilisé dans les codes précédents.</p>
 <p>Nous avons supprimé les annotations dans les classes [Application] et [Form] qui en faisaient des beans JSF. Ces classes doivent rester des beans JSF. Au lieu des annotations, on utilise alors le fichier de configuration de JSF [WEB-INF / faces.config.xml] pour déclarer les beans.</p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000149000000E98C13DFE1.png" style="display:inline-block; margin:4px;width:4.353cm;height:3.083cm;" class="odt-zoomable" data-zoom-src="images/1000000000000149000000E98C13DFE1.png" /></td></tr></table>
@@ -1880,20 +2030,34 @@
 </code></pre></div>
 
 <ul>
-<li>les lignes 10-19 configurent le fichier des messages. C&#x27;était la seule configuration qu&#x27;on avait dans le projet JSF / EJB,</li>
-<li>les lignes 21-35 déclarent les beans de l&#x27;application JSF. C&#x27;était la méthode standard avec JSF 1.x. JSF 2 a introduit les annotations mais la méthode de JSF 1.x est toujours supportée,</li>
-<li>lignes 21-25 : déclarent le bean <strong>applicationBean</strong>,</li>
-<li>ligne 22 : le nom du bean. On pourrait être tenté par le nom <strong>application</strong>. A éviter car c&#x27;est le nom d&#x27;un bean prédéfini de JSF,</li>
-<li>ligne 23 : le nom complet de la classe du bean,</li>
-<li>ligne 24 : sa portée,</li>
-<li>lignes 27-35 : définissent le bean <strong>form</strong>,</li>
-<li>ligne 28 : le nom du bean,</li>
-<li>ligne 29 : le nom complet de la classe du bean,</li>
-<li>ligne 30 : sa portée,</li>
-<li>lignes 31-34 : définissent une propriété de la classe [beans.Form],</li>
-<li>ligne 32 : nom de la propriété. La classe [beans.Form] doit avoir un champ avec ce nom et le <strong>setter qui va avec</strong>,</li>
-<li>ligne 33 : la valeur du champ. Ici c&#x27;est la référence au bean <strong>applicationBean</strong> défini ligne 21. On opère donc là, <strong>l&#x27;injection</strong> du bean de portée <em>application</em> dans le bean de portée <em>session</em> afin que celui-ci ait accès aux données de portée <em>application</em>.</li>
+  <li>les lignes 10-19 configurent le fichier des messages. C&#x27;était la seule configuration qu&#x27;on avait dans le projet JSF / EJB,
+  </li>
+  <li>les lignes 21-35 déclarent les beans de l&#x27;application JSF. C&#x27;était la méthode standard avec JSF 1.x. JSF 2 a introduit les annotations mais la méthode de JSF 1.x est toujours supportée,
+  </li>
+  <li>lignes 21-25 : déclarent le bean <b>applicationBean</b>,
+  </li>
+  <li>ligne 22 : le nom du bean. On pourrait être tenté par le nom <b>application</b>. A éviter car c&#x27;est le nom d&#x27;un bean prédéfini de JSF,
+  </li>
+  <li>ligne 23 : le nom complet de la classe du bean,
+  </li>
+  <li>ligne 24 : sa portée,
+  </li>
+  <li>lignes 27-35 : définissent le bean <b>form</b>,
+  </li>
+  <li>ligne 28 : le nom du bean,
+  </li>
+  <li>ligne 29 : le nom complet de la classe du bean,
+  </li>
+  <li>ligne 30 : sa portée,
+  </li>
+  <li>lignes 31-34 : définissent une propriété de la classe [beans.Form],
+  </li>
+  <li>ligne 32 : nom de la propriété. La classe [beans.Form] doit avoir un champ avec ce nom et le <b>setter qui va avec</b>,
+  </li>
+  <li>ligne 33 : la valeur du champ. Ici c&#x27;est la référence au bean <b>applicationBean</b> défini ligne 21. On opère donc là, <b>l&#x27;injection</b> du bean de portée <i>application</i> dans le bean de portée <i>session</i> afin que celui-ci ait accès aux données de portée <i>application</i>.
+  </li>
 </ul>
+
 <p>Nous avons dit plus haut que le champ [application] du bean [beans.Form] allait être initialisé via un <em>setter</em>. Il faut alors le rajouter à la classe [beans.Form] s&#x27;il n&#x27;existe pas déjà :</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-text">
 <span class="odt-code-line"><span style="font-weight:bold;color:#7f0055">public</span><span style="color:#000000"> </span><span style="font-weight:bold;color:#7f0055">void</span><span style="color:#000000"> setApplication(Application application) {</span></span>
@@ -1907,19 +2071,26 @@
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000005070000014AB282391E.png" style="display:inline-block; margin:4px;width:17.027cm;height:4.366cm;" class="odt-zoomable" data-zoom-src="images/10000000000005070000014AB282391E.png" /></td></tr></table>
 
 <ul>
-<li><span style="color: #000000">en [1], le projet corrigé,</span></li>
-<li><span style="color: #000000">en [2], on le construit,</span></li>
-<li><span style="color: #000000">en [3], on l&#x27;exécute. Il faut que le SGBD MySQL soit lancé. Le serveur Tomcat va alors être lancé [4] s&#x27;il ne l&#x27;était pas, puis la page d&#x27;accueil de l&#x27;application va être affichée [5] :</span></li>
+  <li><span style="color: #000000">en [1], le projet corrigé,</span>
+  </li>
+  <li><span style="color: #000000">en [2], on le construit,</span>
+  </li>
+  <li><span style="color: #000000">en [3], on l&#x27;exécute. Il faut que le SGBD MySQL soit lancé. Le serveur Tomcat va alors être lancé [4] s&#x27;il ne l&#x27;était pas, puis la page d&#x27;accueil de l&#x27;application va être affichée [5] :</span>
+  </li>
 </ul>
+
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000049C0000020228DFB041.png" style="display:inline-block; margin:4px;width:15.61cm;height:6.8cm;" class="odt-zoomable" data-zoom-src="images/100000000000049C0000020228DFB041.png" /></td></tr></table>
 
 <p><span style="color: #000000">A partir de là, on retrouve l&#x27;application étudiée. Nous laissons le lecteur vérifier qu&#x27;elle fonctionne. Maintenant arrêtons l&#x27;application :</span></p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000002F40000018B8CFFB55F.png" style="display:inline-block; margin:4px;width:10.001cm;height:5.226cm;" class="odt-zoomable" data-zoom-src="images/10000000000002F40000018B8CFFB55F.png" /></td></tr></table>
 
 <ul>
-<li><span style="color: #000000">en [1], on décharge l&#x27;application,</span></li>
-<li><span style="color: #000000">en [2], elle n&#x27;est plus là.</span></li>
+  <li><span style="color: #000000">en [1], on décharge l&#x27;application,</span>
+  </li>
+  <li><span style="color: #000000">en [2], elle n&#x27;est plus là.</span>
+  </li>
 </ul>
+
 <p><span style="color: #000000">Regardons maintenant les <a id="fuite-memoire-tomcat"></a>logs de Tomcat :</span></p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-1">1</a></span>
 <span class="normal"><a href="#__codelineno-4-2">2</a></span>
@@ -1939,16 +2110,22 @@
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000367000002052FBC5FCE.png" style="display:inline-block; margin:4px;width:11.523cm;height:6.84cm;" class="odt-zoomable" data-zoom-src="images/1000000000000367000002052FBC5FCE.png" /></td></tr></table>
 
 <ul>
-<li><span style="color: #000000">en [1], on va dans les propriétés du serveur Tomcat,</span></li>
-<li><span style="color: #000000">en [2], dans l&#x27;onglet [Platform], on fixe la valeur de la mémoire qui déborde. Ici, on a mis 1 Go parce qu&#x27;on avait une mémoire totale de 8 Go. On pourra mettre 512M (512 mégaoctets) avec une mémoire plus petite.</span></li>
+  <li><span style="color: #000000">en [1], on va dans les propriétés du serveur Tomcat,</span>
+  </li>
+  <li><span style="color: #000000">en [2], dans l&#x27;onglet [Platform], on fixe la valeur de la mémoire qui déborde. Ici, on a mis 1 Go parce qu&#x27;on avait une mémoire totale de 8 Go. On pourra mettre 512M (512 mégaoctets) avec une mémoire plus petite.</span>
+  </li>
 </ul>
+
 <p><span style="color: #000000">Ensuite, on met le pilote JDBC de MySQL dans <em>&lt;tomcat&gt;/lib</em> où <em>&lt;tomcat&gt;</em> est le répertoire d&#x27;installation de Tomcat.</span></p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000003C6000001E210836A2C.png" style="display:inline-block; margin:4px;width:12.779cm;height:6.376cm;" class="odt-zoomable" data-zoom-src="images/10000000000003C6000001E210836A2C.png" /></td></tr></table>
 
 <ul>
-<li><span style="color: #000000">en [1], dans les propriétés de Tomcat, on note son répertoire d&#x27;installation &lt;tomcat&gt;,</span></li>
-<li><span style="color: #000000">dans &lt;tomcat&gt;/lib [2], on place un pilote JDBC récent de MySQL [3].</span></li>
+  <li><span style="color: #000000">en [1], dans les propriétés de Tomcat, on note son répertoire d&#x27;installation &lt;tomcat&gt;,</span>
+  </li>
+  <li><span style="color: #000000">dans &lt;tomcat&gt;/lib [2], on place un pilote JDBC récent de MySQL [3].</span>
+  </li>
 </ul>
+
 <p><span style="color: #000000">Ensuite, on enlève la dépendance qu&#x27;avait le projet sur le pilote JDBC de MySQL [4].</span></p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000244000001BF5F660EE8.png" style="display:inline-block; margin:4px;width:7.673cm;height:5.914cm;" class="odt-zoomable" data-zoom-src="images/1000000000000244000001BF5F660EE8.png" /></td></tr></table>
 
@@ -1961,32 +2138,44 @@
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000051600000153E5CD7488.png" style="display:inline-block; margin:4px;width:17.224cm;height:4.486cm;" class="odt-zoomable" data-zoom-src="images/100000000000051600000153E5CD7488.png" /></td></tr></table>
 
 <ul>
-<li>en [1], on importe les trois projets Spring,</li>
-<li>en [2], on sélectionne le test JUnit de la couche [DAO] et on l&#x27;exécute en [3],</li>
+  <li>en [1], on importe les trois projets Spring,
+  </li>
+  <li>en [2], on sélectionne le test JUnit de la couche [DAO] et on l&#x27;exécute en [3],
+  </li>
 </ul>
+
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004B700000157430DBD23.png" style="display:inline-block; margin:4px;width:15.968cm;height:4.538cm;" class="odt-zoomable" data-zoom-src="images/10000000000004B700000157430DBD23.png" /></td></tr></table>
 
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004A800000151BC16ED18.png" style="display:inline-block; margin:4px;width:15.769cm;height:4.459cm;" class="odt-zoomable" data-zoom-src="images/10000000000004A800000151BC16ED18.png" /></td></tr></table>
 
 <ul>
-<li>en [4], le test est réussi,</li>
-<li>en [5], les logs de la console.</li>
+  <li>en [4], le test est réussi,
+  </li>
+  <li>en [5], les logs de la console.
+  </li>
 </ul>
+
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000051400000175F3BAD7CA.png" style="display:inline-block; margin:4px;width:17.198cm;height:4.935cm;" class="odt-zoomable" data-zoom-src="images/100000000000051400000175F3BAD7CA.png" /></td></tr></table>
 
 <ul>
-<li>en [6A] [6B], on exécute le client console de la couche [métier],</li>
-<li>en [7], l&#x27;affichage console obtenu,</li>
+  <li>en [6A] [6B], on exécute le client console de la couche [métier],
+  </li>
+  <li>en [7], l&#x27;affichage console obtenu,
+  </li>
 </ul>
+
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000051100000124125B34D0.png" style="display:inline-block; margin:4px;width:17.159cm;height:3.863cm;" class="odt-zoomable" data-zoom-src="images/100000000000051100000124125B34D0.png" /></td></tr></table>
 
 <ul>
-<li>en [8] [9], on exécute le projet web sur un serveur Tomcat 7 [10],</li>
+  <li>en [8] [9], on exécute le projet web sur un serveur Tomcat 7 [10],
+  </li>
 </ul>
+
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000029A000002339A022B85.png" style="display:inline-block; margin:4px;width:8.811cm;height:7.449cm;" class="odt-zoomable" data-zoom-src="images/100000000000029A000002339A022B85.png" /></td></tr></table>
 
 <ul>
-<li>en [11], la page d&#x27;accueil de l&#x27;application est affichée dans le navigateur interne d&#x27;Eclipse.</li>
+  <li>en [11], la page d&#x27;accueil de l&#x27;application est affichée dans le navigateur interne d&#x27;Eclipse.
+  </li>
 </ul>
 
 

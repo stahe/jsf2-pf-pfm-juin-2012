@@ -710,25 +710,37 @@
 
 <p><span style="color: #000000">Nous allons nous appuyer sur deux applications déjà écrites. Nous allons utiliser :</span></p>
 <ul>
-<li><span style="color: #000000">les couches [DAO] et [JPA] de la version 02 JSF / Spring,</span></li>
-<li><span style="color: #000000">la couche [web] / Primefaces mobile de la version 05 PFM / EJB,</span></li>
-<li><span style="color: #000000">les fichiers de configuration de Spring de la version 02</span></li>
+  <li><span style="color: #000000">les couches [DAO] et [JPA] de la version 02 JSF / Spring,</span>
+  </li>
+  <li><span style="color: #000000">la couche [web] / Primefaces mobile de la version 05 PFM / EJB,</span>
+  </li>
+  <li><span style="color: #000000">les fichiers de configuration de Spring de la version 02</span>
+  </li>
 </ul>
+
 <p><span style="color: #000000">Nous refaisons là un travail analogue à celui qui avait été fait pour porter l&#x27;application JSF2 / EJB / Glassfish dans un environnement JSF2 / Spring Tomcat. Aussi donnerons-nous moins d&#x27;explications. Le lecteur peut, s&#x27;il en est besoin, se reporter à ce portage.</span></p>
 <p><span style="color: #000000">Nous mettons tous les projets nécessaires au portage dans un nouveau dossier [rdvmedecins-pfm-spring] [1] :</span></p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000050E0000012E8297FB7D.png" style="display:inline-block; margin:4px;width:17.119cm;height:3.995cm;" class="odt-zoomable" data-zoom-src="images/100000000000050E0000012E8297FB7D.png" /></td></tr></table>
 
 <ul>
-<li><span style="color: #000000">[mv-rdvmedecins-spring-dao-jpa] : les couches [DAO] et [JPA] de la version 02 JSF / Spring,</span></li>
-<li><span style="color: #000000">[mv-rdvmedecins-spring-metier] : la couche [métier] de la version 02 JSF / Spring,</span></li>
-<li><span style="color: #000000">[mv-rdvmedecins-pfmobile] : la couche [web] de la version 05 Primefaces mobile / EJB,</span></li>
-<li><span style="color: #000000">en [2], nous les chargeons dans Netbeans,</span></li>
-<li><span style="color: #000000">en [3], les dépendances du projet web ne sont plus correctes :</span><ul>
-<li><span style="color: #000000">les dépendances sur les couches [DAO], [JPA], [métier] doivent être changées pour cibler désormais les projets Spring ;</span></li>
-<li><span style="color: #000000">le serveur Glassfish fournissait les bibliothèques de JSF. Ce n&#x27;est plus le cas avec le serveur Tomcat. Il faut donc les ajouter aux dépendances.</span></li>
+  <li><span style="color: #000000">[mv-rdvmedecins-spring-dao-jpa] : les couches [DAO] et [JPA] de la version 02 JSF / Spring,</span>
+  </li>
+  <li><span style="color: #000000">[mv-rdvmedecins-spring-metier] : la couche [métier] de la version 02 JSF / Spring,</span>
+  </li>
+  <li><span style="color: #000000">[mv-rdvmedecins-pfmobile] : la couche [web] de la version 05 Primefaces mobile / EJB,</span>
+  </li>
+  <li><span style="color: #000000">en [2], nous les chargeons dans Netbeans,</span>
+  </li>
+  <li><span style="color: #000000">en [3], les dépendances du projet web ne sont plus correctes :</span>
+    <ul>
+      <li><span style="color: #000000">les dépendances sur les couches [DAO], [JPA], [métier] doivent être changées pour cibler désormais les projets Spring ;</span>
+      </li>
+      <li><span style="color: #000000">le serveur Glassfish fournissait les bibliothèques de JSF. Ce n&#x27;est plus le cas avec le serveur Tomcat. Il faut donc les ajouter aux dépendances.</span>
+      </li>
+    </ul>
+  </li>
 </ul>
-</li>
-</ul>
+
 <p><span style="color: #000000">Le projet [web] évolue comme suit :</span></p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000002010000018764250CA2.png" style="display:inline-block; margin:4px;width:6.787cm;height:5.173cm;" class="odt-zoomable" data-zoom-src="images/10000000000002010000018764250CA2.png" /></td></tr></table>
 
@@ -824,13 +836,17 @@
 </code></pre></div>
 
 <ul>
-<li><span style="color: #000000">lignes 20-21 : instanciation de la couche [métier] à partir du fichier de configuration de Spring. Ce fichier est celui utilisé par la couche [métier] [1]. Nous le copions dans le projet web [2] :</span></li>
+  <li><span style="color: #000000">lignes 20-21 : instanciation de la couche [métier] à partir du fichier de configuration de Spring. Ce fichier est celui utilisé par la couche [métier] [1]. Nous le copions dans le projet web [2] :</span>
+  </li>
 </ul>
+
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000003420000014064DB3365.png" style="display:inline-block; margin:4px;width:11.033cm;height:4.233cm;" class="odt-zoomable" data-zoom-src="images/10000000000003420000014064DB3365.png" /></td></tr></table>
 
 <ul>
-<li><span style="color: #000000">lignes 22-31 : nous gérons une éventuelle exception et mémorisons sa pile dans le champ de la ligne 14.</span></li>
+  <li><span style="color: #000000">lignes 22-31 : nous gérons une éventuelle exception et mémorisons sa pile dans le champ de la ligne 14.</span>
+  </li>
 </ul>
+
 <p><span style="color: #000000">Ceci fait, le bean [Application] n&#x27;a plus d&#x27;erreurs. Regardons maintenant le bean [Form] [1], [2] :</span></p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004A0000002A4FC54EC56.png" style="display:inline-block; margin:4px;width:15.663cm;height:8.943cm;" class="odt-zoomable" data-zoom-src="images/10000000000004A0000002A4FC54EC56.png" /></td></tr></table>
 
@@ -913,10 +929,14 @@
 </code></pre></div>
 
 <ul>
-<li><span style="color: #000000">ligne 5 : si le bean [Application] s&#x27;est mal initialisé,</span></li>
-<li><span style="color: #000000">ligne 7 : on récupère la liste des erreurs,</span></li>
-<li><span style="color: #000000">ligne 9 : et on affiche la page d&#x27;erreur.</span></li>
+  <li><span style="color: #000000">ligne 5 : si le bean [Application] s&#x27;est mal initialisé,</span>
+  </li>
+  <li><span style="color: #000000">ligne 7 : on récupère la liste des erreurs,</span>
+  </li>
+  <li><span style="color: #000000">ligne 9 : et on affiche la page d&#x27;erreur.</span>
+  </li>
 </ul>
+
 <p><span style="color: #000000">Ainsi, si on arrête le SGBD MySQL et qu&#x27;on relance l&#x27;application, on reçoit maintenant la page suivante :</span></p>
 <p><img src="images/100000000000016B000002EB7C2C41F1.png" style="width:6.72cm;height:13.831cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000016B000002EB7C2C41F1.png" /></p>
 <p><a id="refheading105127100051761"></a></p>

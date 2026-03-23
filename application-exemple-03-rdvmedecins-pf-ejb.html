@@ -958,11 +958,16 @@
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000000CA0000007EE6EF75F4.png" style="display:inline-block; margin:4px;width:3.739cm;height:2.33cm;" class="odt-zoomable" data-zoom-src="images/10000000000000CA0000007EE6EF75F4.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
 
 <ul>
-<li><span style="color: #000000">[mv-rdvmedecins-ejb-dao-jpa] : projet EJB des couches [DAO] et [JPA] de l&#x27;exemple 01,</span></li>
-<li><span style="color: #000000">[mv-rdvmedecins-ejb-metier] : projet EJB de la couche [métier] de l&#x27;exemple 01,</span></li>
-<li><span style="color: #000000">[mv-rdvmedecins-pf] : projet de la couche [web] / Primefaces – nouveau,</span></li>
-<li><span style="color: #000000">[mv-rdvmedecins-app-ear] : projet d&#x27;entreprise pour déployer l&#x27;application sur le serveur Glassfish – nouveau.</span></li>
+  <li><span style="color: #000000">[mv-rdvmedecins-ejb-dao-jpa] : projet EJB des couches [DAO] et [JPA] de l&#x27;exemple 01,</span>
+  </li>
+  <li><span style="color: #000000">[mv-rdvmedecins-ejb-metier] : projet EJB de la couche [métier] de l&#x27;exemple 01,</span>
+  </li>
+  <li><span style="color: #000000">[mv-rdvmedecins-pf] : projet de la couche [web] / Primefaces – nouveau,</span>
+  </li>
+  <li><span style="color: #000000">[mv-rdvmedecins-app-ear] : projet d&#x27;entreprise pour déployer l&#x27;application sur le serveur Glassfish – nouveau.</span>
+  </li>
 </ul>
+
 <p><a id="refheading10509710005176"></a></p>
 <h2 id="62-le-projet-dentreprise">6.2. <span style="color: #000000">Le projet d&#x27;entreprise</span></h2>
 <p><span style="color: #000000">Le projet d&#x27;entreprise ne sert qu&#x27;au déploiement des trois modules [mv-rdvmedecins-ejb-dao-jpa], [mv-rdvmedecins-ejb-metier], [mv-rdvmedecins-pf] sur le serveur Glassfish. Le projet Netbeans est le suivant :</span></p>
@@ -1011,9 +1016,12 @@
 </code></pre></div>
 
 <ul>
-<li><span style="color: #000000">lignes 10-13 : l&#x27;artifact Maven du projet d&#x27;entreprise,</span></li>
-<li><span style="color: #000000">lignes 18-37 : les trois dépendances du projet. On notera bien le type de celles-ci (lignes 23, 29, 35).</span></li>
+  <li><span style="color: #000000">lignes 10-13 : l&#x27;artifact Maven du projet d&#x27;entreprise,</span>
+  </li>
+  <li><span style="color: #000000">lignes 18-37 : les trois dépendances du projet. On notera bien le type de celles-ci (lignes 23, 29, 35).</span>
+  </li>
 </ul>
+
 <p><span style="color: #000000">Pour exécuter l&#x27;application web, il faudra exécuter ce projet d&#x27;entreprise.</span></p>
 <p><a id="refheading10509910005176"></a></p>
 <h2 id="63-le-projet-web-primefaces">6.3. <span style="color: #000000">Le projet web Primefaces</span></h2>
@@ -1021,11 +1029,16 @@
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004EA000001E366B9CB59.png" style="display:inline-block; margin:4px;width:16.642cm;height:6.391cm;" class="odt-zoomable" data-zoom-src="images/10000000000004EA000001E366B9CB59.png" /></td></tr></table>
 
 <ul>
-<li><span style="color: #000000">en [1], les pages du projet. La page [index.xhtml] est l&#x27;unique page du projet. Elle comporte trois fragments [form1.xhtml], [form2.xhtml] et [erreur.xhtml]. Les autres pages ne sont là que pour la mise en forme.</span></li>
-<li><span style="color: #000000">en [2], les beans Java. Le bean [Application] de portée </span><em><span style="color: #000000">application</span></em><span style="color: #000000">, le bean [Form] de portée </span><em><span style="color: #000000">session</span></em><span style="color: #000000">. La classe [Erreur] encapsule une erreur. La classe [MyDataModel] sert de modèle à une balise &lt;</span><em><span style="color: #000000">dataTable</span></em><span style="color: #000000">&gt; de Primefaces,</span></li>
-<li><span style="color: #000000">en [3], les fichiers de messages pour l&#x27;internationalisation,</span></li>
-<li><span style="color: #000000">en [4], les dépendances. Le projet web a des dépendances sur le projet EJB de la couche [DAO], le projet EJB de la couche [métier] et Primefaces pour la couche [web].</span></li>
+  <li><span style="color: #000000">en [1], les pages du projet. La page [index.xhtml] est l&#x27;unique page du projet. Elle comporte trois fragments [form1.xhtml], [form2.xhtml] et [erreur.xhtml]. Les autres pages ne sont là que pour la mise en forme.</span>
+  </li>
+  <li><span style="color: #000000">en [2], les beans Java. Le bean [Application] de portée </span><i><span style="color: #000000">application</span></i><span style="color: #000000">, le bean [Form] de portée </span><i><span style="color: #000000">session</span></i><span style="color: #000000">. La classe [Erreur] encapsule une erreur. La classe [MyDataModel] sert de modèle à une balise &lt;</span><i><span style="color: #000000">dataTable</span></i><span style="color: #000000">&gt; de Primefaces,</span>
+  </li>
+  <li><span style="color: #000000">en [3], les fichiers de messages pour l&#x27;internationalisation,</span>
+  </li>
+  <li><span style="color: #000000">en [4], les dépendances. Le projet web a des dépendances sur le projet EJB de la couche [DAO], le projet EJB de la couche [métier] et Primefaces pour la couche [web].</span>
+  </li>
 </ul>
+
 <p><a id="refheading77382301146251"></a></p>
 <h2 id="64-la-configuration-du-projet">6.4. La configuration du projet</h2>
 <p>La configuration du projet est celle des projets Primefaces ou JSF que nous avons étudiés. Nous listons les fichiers de configuration sans les réexpliquer.</p>
@@ -1317,12 +1330,18 @@
 </code></pre></div>
 
 <ul>
-<li><span style="color: #000000">lignes 8-9 : ce fragment XHTML viendra s&#x27;insérer dans la zone dynamique du modèle [layout.xhtml],</span></li>
-<li><span style="color: #000000">la page comprend trois sous-fragments :</span></li>
-<li><span style="color: #000000">[form1.xhtml], lignes 10-12 ;</span></li>
-<li><span style="color: #000000">[form2.xhtml], lignes 13-15 ;</span></li>
-<li><span style="color: #000000">[erreur.xhtml], lignes 16-18.</span></li>
+  <li><span style="color: #000000">lignes 8-9 : ce fragment XHTML viendra s&#x27;insérer dans la zone dynamique du modèle [layout.xhtml],</span>
+  </li>
+  <li><span style="color: #000000">la page comprend trois sous-fragments :</span>
+  </li>
+  <li><span style="color: #000000">[form1.xhtml], lignes 10-12 ;</span>
+  </li>
+  <li><span style="color: #000000">[form2.xhtml], lignes 13-15 ;</span>
+  </li>
+  <li><span style="color: #000000">[erreur.xhtml], lignes 16-18.</span>
+  </li>
 </ul>
+
 <p><span style="color: #000000">La présence de ces fragments dans [index.xhtml] est contrôlée par des booléens du modèle [Form.java] associé à la page. Donc en jouant sur ceux-ci, la page rendue diffère.</span></p>
 <p><span style="color: #000000">Le fragment [form1.xhtml] a le rendu suivant :</span></p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000058700000044E9A92617.png" style="display:inline-block; margin:4px;width:16.85cm;height:0.81cm;" class="odt-zoomable" data-zoom-src="images/100000000000058700000044E9A92617.png" /></td></tr></table>
@@ -1370,10 +1389,14 @@
 </code></pre></div>
 
 <ul>
-<li><span style="color: #000000">ligne 8 : on donne au bean le nom </span><strong><span style="color: #000000">application</span></strong><span style="color: #000000">,</span></li>
-<li><span style="color: #000000">ligne 9 : il est de portée </span><strong><span style="color: #000000">application</span></strong><span style="color: #000000">,</span></li>
-<li><span style="color: #000000">lignes 13-14 : une référence sur l&#x27;interface locale de la couche [métier] lui sera injectée par le conteneur EJB du serveur d&#x27;application. </span>Rappelons-nous l&#x27;architecture de l&#x27;application :</li>
+  <li><span style="color: #000000">ligne 8 : on donne au bean le nom </span><b><span style="color: #000000">application</span></b><span style="color: #000000">,</span>
+  </li>
+  <li><span style="color: #000000">ligne 9 : il est de portée </span><b><span style="color: #000000">application</span></b><span style="color: #000000">,</span>
+  </li>
+  <li><span style="color: #000000">lignes 13-14 : une référence sur l&#x27;interface locale de la couche [métier] lui sera injectée par le conteneur EJB du serveur d&#x27;application. </span>Rappelons-nous l&#x27;architecture de l&#x27;application :
+  </li>
 </ul>
+
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004FE0000011945D8492D.png" style="display:inline-block; margin:4px;width:16.907cm;height:3.718cm;" class="odt-zoomable" data-zoom-src="images/10000000000004FE0000011945D8492D.png" /></td></tr></table>
 
 <p>L&#x27;application JSF et l&#x27;EJB [Metier] vont s&#x27;exécuter dans la même JVM (Java Virtual Machine). Donc la couche [JSF] va utiliser l&#x27;interface locale de l&#x27;EJB. C&#x27;est tout. Le bean [Application] ne contient rien d&#x27;autre. Pour avoir accès à la couche [métier], les autres beans iront la chercher dans ce bean.</p>
@@ -1381,8 +1404,10 @@
 <h3 id="672-le-bean-erreur">6.7.2. Le bean [Erreur]</h3>
 <p>La classe [Erreur] est la suivante :</p>
 <ol>
-<li><strong><span style="color: #7f0055">package</span></strong><span style="color: #000000"> beans;</span></li>
+  <li><b><span style="color: #7f0055">package</span></b><span style="color: #000000"> beans;</span>
+  </li>
 </ol>
+
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-text">
 <span class="odt-code-line"></span>
 <span class="odt-code-line"><span style="font-weight:bold;color:#7f0055">public</span><span style="color:#000000"> </span><span style="font-weight:bold;color:#7f0055">class</span><span style="color:#000000"> Erreur {</span></span>
@@ -1406,9 +1431,12 @@
 </code></pre></div>
 
 <ul>
-<li>ligne 9, le nom d&#x27;une classe d&#x27;exception si une exception a été lancée,</li>
-<li>ligne 10 : un message d&#x27;erreur.</li>
+  <li>ligne 9, le nom d&#x27;une classe d&#x27;exception si une exception a été lancée,
+  </li>
+  <li>ligne 10 : un message d&#x27;erreur.
+  </li>
 </ul>
+
 <p><a id="refheading77390301146251"></a></p>
 <h3 id="673-le-bean-form">6.7.3. Le bean [Form]</h3>
 <p>Son code est le suivant :</p>
@@ -1508,15 +1536,24 @@
 </code></pre></div>
 
 <ul>
-<li><span style="color: #000000">lignes 6-8 : la classe [Form] est un bean de nom </span><strong><span style="color: #000000">form</span></strong><span style="color: #000000"> et de portée </span><strong><span style="color: #000000">session</span></strong><span style="color: #000000">. On rappelle qu&#x27;alors la classe doit être sérialisable,</span></li>
-<li><span style="color: #000000">lignes 14-15 : le bean </span><strong><span style="color: #000000">form</span></strong><span style="color: #000000"> a une référence sur le bean </span><strong><span style="color: #000000">application</span></strong><span style="color: #000000">. Celle-ci sera injectée par le conteneur de servlets dans lequel s&#x27;exécute l&#x27;application (présence de l&#x27;annotation @</span><strong><span style="color: #000000">Inject</span></strong><span style="color: #000000">).</span></li>
-<li><span style="color: #000000">lignes 17-44 : le modèle des pages [form1.xhtml, form2.xhtml, erreur.xhtml]. L&#x27;affichage de ces pages est contrôlé par les booléens des lignes 27-29. On remarquera que par défaut, c&#x27;est la page [form1.xhtml] qui est rendue (ligne 27),</span></li>
-<li><span style="color: #000000">lignes 46-47 : la méthode </span><strong><span style="color: #000000">init</span></strong><span style="color: #000000"> est exécutée juste après l&#x27;instanciation de la classe (présence de l&#x27;annotation @</span><em><span style="color: #000000">PostConstruct</span></em><span style="color: #000000">),</span></li>
-<li><span style="color: #000000">lignes 50-51 : on demande à la couche [métier], la liste des médecins et des clients,</span></li>
-<li><span style="color: #000000">lignes 59-65 : si tout s&#x27;est bien passé, les dictionnaires des médecins et des clients sont construits. Ils sont indexés par leur numéro. Ensuite, la page [form1.xhtml] sera affichée (ligne 27),</span></li>
-<li><span style="color: #000000">ligne 54 : en cas d&#x27;erreur, le modèle de la page [erreur.xhtml] est construit. Ce modèle est la liste d&#x27;erreurs de la ligne 36,</span></li>
-<li><span style="color: #000000">lignes 78-88 : la méthode [prepareVueErreur] construit la liste d&#x27;erreurs à afficher. La page [index.xhtml] affiche alors les fragments [form1.xhtml] et [erreur.xhtml] (ligne 87).</span></li>
+  <li><span style="color: #000000">lignes 6-8 : la classe [Form] est un bean de nom </span><b><span style="color: #000000">form</span></b><span style="color: #000000"> et de portée </span><b><span style="color: #000000">session</span></b><span style="color: #000000">. On rappelle qu&#x27;alors la classe doit être sérialisable,</span>
+  </li>
+  <li><span style="color: #000000">lignes 14-15 : le bean </span><b><span style="color: #000000">form</span></b><span style="color: #000000"> a une référence sur le bean </span><b><span style="color: #000000">application</span></b><span style="color: #000000">. Celle-ci sera injectée par le conteneur de servlets dans lequel s&#x27;exécute l&#x27;application (présence de l&#x27;annotation @</span><b><span style="color: #000000">Inject</span></b><span style="color: #000000">).</span>
+  </li>
+  <li><span style="color: #000000">lignes 17-44 : le modèle des pages [form1.xhtml, form2.xhtml, erreur.xhtml]. L&#x27;affichage de ces pages est contrôlé par les booléens des lignes 27-29. On remarquera que par défaut, c&#x27;est la page [form1.xhtml] qui est rendue (ligne 27),</span>
+  </li>
+  <li><span style="color: #000000">lignes 46-47 : la méthode </span><b><span style="color: #000000">init</span></b><span style="color: #000000"> est exécutée juste après l&#x27;instanciation de la classe (présence de l&#x27;annotation @</span><i><span style="color: #000000">PostConstruct</span></i><span style="color: #000000">),</span>
+  </li>
+  <li><span style="color: #000000">lignes 50-51 : on demande à la couche [métier], la liste des médecins et des clients,</span>
+  </li>
+  <li><span style="color: #000000">lignes 59-65 : si tout s&#x27;est bien passé, les dictionnaires des médecins et des clients sont construits. Ils sont indexés par leur numéro. Ensuite, la page [form1.xhtml] sera affichée (ligne 27),</span>
+  </li>
+  <li><span style="color: #000000">ligne 54 : en cas d&#x27;erreur, le modèle de la page [erreur.xhtml] est construit. Ce modèle est la liste d&#x27;erreurs de la ligne 36,</span>
+  </li>
+  <li><span style="color: #000000">lignes 78-88 : la méthode [prepareVueErreur] construit la liste d&#x27;erreurs à afficher. La page [index.xhtml] affiche alors les fragments [form1.xhtml] et [erreur.xhtml] (ligne 87).</span>
+  </li>
 </ul>
+
 <p><span style="color: #000000">La page [erreur.xhtml] est la suivante :</span></p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-xml">
 <span class="odt-code-line"><span style="color:#008080">&lt;?</span><span style="color:#3f7f7f">xml</span> <span style="color:#7f007f">version</span>=<span style="font-style:italic;color:#2a00ff">&#x27;1.0&#x27;</span> <span style="color:#7f007f">encoding</span>=<span style="font-style:italic;color:#2a00ff">&#x27;UTF-8&#x27;</span> <span style="color:#008080">?&gt;</span></span>
@@ -1606,14 +1643,22 @@
 </code></pre></div>
 
 <ul>
-<li><span style="color: #000000">lignes 4-7 : le combo des médecins auquel on a ajouté un effet (</span><span style="color: #7f007f">effect</span><span style="color: #000000">=</span><em><span style="color: #2a00ff">&quot;fade&quot;</span></em><span style="color: #000000">),</span></li>
-<li><span style="color: #000000">ligne 6 : un comportement AJAX. Lorsqu&#x27;il y aura un changement dans le combo, la méthode </span><strong><span style="color: #000000">[Form].hideAgenda</span></strong><span style="color: #000000"> (</span><span style="color: #7f007f">listener</span><span style="color: #000000">=</span><em><span style="color: #2a00ff">&quot;#{form.hideAgenda}&quot;</span></em><span style="color: #000000">) sera exécutée et la zone dynamique </span><strong><span style="color: #000000">:formulaire:contenu</span></strong><span style="color: #000000"> (</span><span style="color: #7f007f">update</span><span style="color: #000000">=</span><em><span style="color: #2a00ff">&quot;:formulaire:contenu&quot;</span></em><span style="color: #000000">) sera mise à jour,</span></li>
-<li><span style="color: #000000">ligne 8 : inclut un séparateur dans la barre d&#x27;outils,</span></li>
-<li><span style="color: #000000">lignes 10-12 : la zone de saisie de la date. On utilise ici le calendrier de Primefaces. La zone de saisie est en lecture seule (</span><span style="color: #7f007f">readOnlyInputText</span><span style="color: #000000">=</span><em><span style="color: #2a00ff">&quot;true&quot;</span></em><span style="color: #000000">),</span></li>
-<li><span style="color: #000000">ligne 11 : un comportement AJAX. Lorsqu&#x27;il y aura un changement de date, la méthode </span><strong><span style="color: #000000">[Form].hideAgenda</span></strong><span style="color: #000000"> sera exécutée et la zone dynamique </span><strong><span style="color: #000000">:formulaire:contenu</span></strong><span style="color: #000000"> mise à jour,</span></li>
-<li><span style="color: #000000">ligne 14 : un bouton. Un clic dessus fait exécuter un appel AJAX vers la méthode </span><strong><span style="color: #000000">[Form].getAgenda ()</span></strong><span style="color: #000000">, le modèle sera alors modifié et la réponse du serveur sera utilisée pour mettre à jour la zone dynamique </span><strong><span style="color: #000000">:formulaire:contenu</span></strong><span style="color: #000000">,</span></li>
-<li><span style="color: #000000">ligne 15 : la balise &lt;</span><strong><span style="color: #000000">tooltip</span></strong><span style="color: #000000">&gt; permet d&#x27;associer une bulle d&#x27;aide à un composant. L&#x27;</span><strong><span style="color: #000000">id</span></strong><span style="color: #000000"> de ce dernier est désigné par l&#x27;attribut </span><strong><span style="color: #000000">for</span></strong><span style="color: #000000"> du tooltip. Ici (</span><span style="color: #7f007f">for</span><span style="color: #000000">=</span><em><span style="color: #2a00ff">&quot;resa-agenda&quot;</span></em><span style="color: #000000">) désigne le bouton de la ligne 14 :</span></li>
+  <li><span style="color: #000000">lignes 4-7 : le combo des médecins auquel on a ajouté un effet (</span><span style="color: #7f007f">effect</span><span style="color: #000000">=</span><i><span style="color: #2a00ff">&quot;fade&quot;</span></i><span style="color: #000000">),</span>
+  </li>
+  <li><span style="color: #000000">ligne 6 : un comportement AJAX. Lorsqu&#x27;il y aura un changement dans le combo, la méthode </span><b><span style="color: #000000">[Form].hideAgenda</span></b><span style="color: #000000"> (</span><span style="color: #7f007f">listener</span><span style="color: #000000">=</span><i><span style="color: #2a00ff">&quot;#{form.hideAgenda}&quot;</span></i><span style="color: #000000">) sera exécutée et la zone dynamique </span><b><span style="color: #000000">:formulaire:contenu</span></b><span style="color: #000000"> (</span><span style="color: #7f007f">update</span><span style="color: #000000">=</span><i><span style="color: #2a00ff">&quot;:formulaire:contenu&quot;</span></i><span style="color: #000000">) sera mise à jour,</span>
+  </li>
+  <li><span style="color: #000000">ligne 8 : inclut un séparateur dans la barre d&#x27;outils,</span>
+  </li>
+  <li><span style="color: #000000">lignes 10-12 : la zone de saisie de la date. On utilise ici le calendrier de Primefaces. La zone de saisie est en lecture seule (</span><span style="color: #7f007f">readOnlyInputText</span><span style="color: #000000">=</span><i><span style="color: #2a00ff">&quot;true&quot;</span></i><span style="color: #000000">),</span>
+  </li>
+  <li><span style="color: #000000">ligne 11 : un comportement AJAX. Lorsqu&#x27;il y aura un changement de date, la méthode </span><b><span style="color: #000000">[Form].hideAgenda</span></b><span style="color: #000000"> sera exécutée et la zone dynamique </span><b><span style="color: #000000">:formulaire:contenu</span></b><span style="color: #000000"> mise à jour,</span>
+  </li>
+  <li><span style="color: #000000">ligne 14 : un bouton. Un clic dessus fait exécuter un appel AJAX vers la méthode </span><b><span style="color: #000000">[Form].getAgenda ()</span></b><span style="color: #000000">, le modèle sera alors modifié et la réponse du serveur sera utilisée pour mettre à jour la zone dynamique </span><b><span style="color: #000000">:formulaire:contenu</span></b><span style="color: #000000">,</span>
+  </li>
+  <li><span style="color: #000000">ligne 15 : la balise &lt;</span><b><span style="color: #000000">tooltip</span></b><span style="color: #000000">&gt; permet d&#x27;associer une bulle d&#x27;aide à un composant. L&#x27;</span><b><span style="color: #000000">id</span></b><span style="color: #000000"> de ce dernier est désigné par l&#x27;attribut </span><b><span style="color: #000000">for</span></b><span style="color: #000000"> du tooltip. Ici (</span><span style="color: #7f007f">for</span><span style="color: #000000">=</span><i><span style="color: #2a00ff">&quot;resa-agenda&quot;</span></i><span style="color: #000000">) désigne le bouton de la ligne 14 :</span>
+  </li>
 </ul>
+
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000242000000750E4E6FD7.png" style="display:inline-block; margin:4px;width:10.71cm;height:2.17cm;" class="odt-zoomable" data-zoom-src="images/1000000000000242000000750E4E6FD7.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000010C0000007640E5C85E.png" style="display:inline-block; margin:4px;width:4.96cm;height:2.191cm;" class="odt-zoomable" data-zoom-src="images/100000000000010C0000007640E5C85E.png" /></td></tr></table>
 
 <p><span style="color: #000000">Cette page est alimentée par le modèle suivant :</span></p>
@@ -1649,11 +1694,16 @@
 </code></pre></div>
 
 <ul>
-<li><span style="color: #000000">le champ de la ligne 12 alimente en lecture et écriture la valeur de la liste de la ligne 4 de la page. A l&#x27;affichage initial de la page, elle fixe la valeur sélectionnée dans le combo. A l&#x27;affichage initial, </span><em><span style="color: #000000">idMedecin</span></em><span style="color: #000000"> est égal à </span><em><span style="color: #000000">null</span></em><span style="color: #000000">, donc c&#x27;est le premier médecin qui sera sélectionné,</span></li>
-<li><span style="color: #000000">la méthode des lignes 16-18 génère les éléments du combo des médecins (ligne 5 de la page). Chaque option générée aura pour </span><strong><span style="color: #000000">label</span></strong><span style="color: #000000"> (itemLabel) les </span><strong><span style="color: #000000">titre</span></strong><span style="color: #000000">, </span><strong><span style="color: #000000">nom</span></strong><span style="color: #000000">, </span><strong><span style="color: #000000">prénom</span></strong><span style="color: #000000"> du médecin et pour valeur (itemValue), l&#x27;</span><strong><span style="color: #000000">id</span></strong><span style="color: #000000"> du médecin,</span></li>
-<li><span style="color: #000000">le champ de la ligne 13 alimente en lecture / écriture le champ de saisie de la ligne 10 de la page. A l&#x27;affichage initial, c&#x27;est donc la date du jour qui est affichée,</span></li>
-<li><span style="color: #000000">lignes 26-28 : la méthode </span><strong><span style="color: #000000">getAgenda</span></strong><span style="color: #000000"> gère le clic sur le bouton [Agenda] de la ligne 14 de la page. Elle est quasi identique à ce qu&#x27;elle était dans la version JSF :</span></li>
+  <li><span style="color: #000000">le champ de la ligne 12 alimente en lecture et écriture la valeur de la liste de la ligne 4 de la page. A l&#x27;affichage initial de la page, elle fixe la valeur sélectionnée dans le combo. A l&#x27;affichage initial, </span><i><span style="color: #000000">idMedecin</span></i><span style="color: #000000"> est égal à </span><i><span style="color: #000000">null</span></i><span style="color: #000000">, donc c&#x27;est le premier médecin qui sera sélectionné,</span>
+  </li>
+  <li><span style="color: #000000">la méthode des lignes 16-18 génère les éléments du combo des médecins (ligne 5 de la page). Chaque option générée aura pour </span><b><span style="color: #000000">label</span></b><span style="color: #000000"> (itemLabel) les </span><b><span style="color: #000000">titre</span></b><span style="color: #000000">, </span><b><span style="color: #000000">nom</span></b><span style="color: #000000">, </span><b><span style="color: #000000">prénom</span></b><span style="color: #000000"> du médecin et pour valeur (itemValue), l&#x27;</span><b><span style="color: #000000">id</span></b><span style="color: #000000"> du médecin,</span>
+  </li>
+  <li><span style="color: #000000">le champ de la ligne 13 alimente en lecture / écriture le champ de saisie de la ligne 10 de la page. A l&#x27;affichage initial, c&#x27;est donc la date du jour qui est affichée,</span>
+  </li>
+  <li><span style="color: #000000">lignes 26-28 : la méthode </span><b><span style="color: #000000">getAgenda</span></b><span style="color: #000000"> gère le clic sur le bouton [Agenda] de la ligne 14 de la page. Elle est quasi identique à ce qu&#x27;elle était dans la version JSF :</span>
+  </li>
 </ul>
+
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
 <span class="odt-code-line">  <span style="color:#3f7f5f">// bean Application</span></span>
 <span class="odt-code-line"><span style="color:#000000">  </span><span style="color:#646464">@</span><span style="color:#000000">Inject</span></span>
@@ -1699,9 +1749,12 @@
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000536000000BFD486CFEC.png" style="display:inline-block; margin:4px;width:17.648cm;height:2.528cm;" class="odt-zoomable" data-zoom-src="images/1000000000000536000000BFD486CFEC.png" /></td></tr></table>
 
 <ul>
-<li><span style="color: #000000">en [1], on sélectionne un médecin [1] et un jour [2] puis on demande [3] l&#x27;agenda du médecin pour le jour choisi,</span></li>
-<li><span style="color: #000000">en [4], celui-ci apparaît sous la barre d&#x27;outils.</span></li>
+  <li><span style="color: #000000">en [1], on sélectionne un médecin [1] et un jour [2] puis on demande [3] l&#x27;agenda du médecin pour le jour choisi,</span>
+  </li>
+  <li><span style="color: #000000">en [4], celui-ci apparaît sous la barre d&#x27;outils.</span>
+  </li>
 </ul>
+
 <p><span style="color: #000000">Le code de la page [form2.xhtml] est le suivant :</span></p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-xml">
 <span class="odt-code-line"><span style="color:#008080">&lt;?</span><span style="color:#3f7f7f">xml</span> <span style="color:#7f007f">version</span>=<span style="font-style:italic;color:#2a00ff">&#x27;1.0&#x27;</span> <span style="color:#7f007f">encoding</span>=<span style="font-style:italic;color:#2a00ff">&#x27;UTF-8&#x27;</span> <span style="color:#008080">?&gt;</span></span>
@@ -1752,28 +1805,38 @@
 </code></pre></div>
 
 <ul>
-<li>lignes 16-26 : l&#x27;élément principal de la page est la table &lt;<strong>dataTable</strong>&gt; qui affiche l&#x27;agenda du médecin,</li>
+  <li>lignes 16-26 : l&#x27;élément principal de la page est la table &lt;<b>dataTable</b>&gt; qui affiche l&#x27;agenda du médecin,
+  </li>
 </ul>
+
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000282000000928CDB5683.png" style="display:inline-block; margin:4px;width:8.493cm;height:1.931cm;" class="odt-zoomable" data-zoom-src="images/1000000000000282000000928CDB5683.png" /></td></tr></table>
 
 <ul>
-<li>lignes 12-14 : nous utiliserons un menu contextuel pour ajouter / supprimer un rendez-vous :</li>
+  <li>lignes 12-14 : nous utiliserons un menu contextuel pour ajouter / supprimer un rendez-vous :
+  </li>
 </ul>
+
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000001FF000000748294C761.png" style="display:inline-block; margin:4px;width:6.759cm;height:1.529cm;" class="odt-zoomable" data-zoom-src="images/10000000000001FF000000748294C761.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
 
 <ul>
-<li>lignes 29-32 : une boîte de confirmation sera affichée lorsque l&#x27;utilisateur voudra supprimer un rendez-vous :</li>
+  <li>lignes 29-32 : une boîte de confirmation sera affichée lorsque l&#x27;utilisateur voudra supprimer un rendez-vous :
+  </li>
 </ul>
+
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000188000000F82BC6273A.png" style="display:inline-block; margin:4px;width:5.189cm;height:3.281cm;" class="odt-zoomable" data-zoom-src="images/1000000000000188000000F82BC6273A.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
 
 <ul>
-<li>lignes 35-37 : une boîte de dialogue sera utilisée pour signaler une erreur :</li>
+  <li>lignes 35-37 : une boîte de dialogue sera utilisée pour signaler une erreur :
+  </li>
 </ul>
+
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000012C00000077625824E5.png" style="display:inline-block; margin:4px;width:3.971cm;height:1.57cm;" class="odt-zoomable" data-zoom-src="images/100000000000012C00000077625824E5.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
 
 <ul>
-<li>lignes 40-43 : nous aurons besoin d&#x27;introduire un peu de Javascript.</li>
+  <li>lignes 40-43 : nous aurons besoin d&#x27;introduire un peu de Javascript.
+  </li>
 </ul>
+
 <p><a id="refheading10510910005176"></a></p>
 <h3 id="692-le-tableau-des-rendez-vous">6.9.2. Le tableau des rendez-vous</h3>
 <p>Nous abordons ici le modèle d&#x27;un tableau de données tel qu&#x27;étudié au paragraphe <a href="introduction-a-la-bibliotheque-de-composants-primefaces.html#pf-exemple-12">5.15</a>, page <a href="introduction-a-la-bibliotheque-de-composants-primefaces.html#pf-exemple-12">327</a>.</p>
@@ -1853,12 +1916,18 @@
 </code></pre></div>
 
 <ul>
-<li>ligne 7 : la classe [MyDataModel] est le modèle de la balise &lt;p<strong>:dataTable</strong>&gt;. Cette classe a pour but de faire le lien entre l&#x27;élément <strong>rowkey</strong> qui est posté, avec l&#x27;élément associé à cette ligne,</li>
-<li>ligne 7 : la classe implémente l&#x27;interface [SelectableDataModel] au travers de la classe [ArrayDataModel]. Cela signifie que le paramètre du constructeur est un tableau. C&#x27;est ce tableau qui alimente la balise &lt;<strong>dataTable</strong>&gt;. Ici chaque ligne du tableau sera associée à un élément de type [CreneauMedecinJour],</li>
-<li>lignes 13-15 : le constructeur passe son paramètre à sa classe parent,</li>
-<li>lignes 18-20 : chaque ligne du tableau correspond à un créneau horaire et sera identifiée par l&#x27;<strong>id</strong> du créneau horaire (ligne 19). C&#x27;est cet <strong>id</strong> qui sera posté au serveur,</li>
-<li>ligne 23 : le code qui sera exécuté côté serveur lorsque l&#x27;<strong>id</strong> d&#x27;un créneau horaire sera posté. Le but de cette méthode est de rendre la référence de l&#x27;objet [CreneauMedecinJour] associé à cet <strong>id</strong>. Cette référence sera affectée à la cible de l&#x27;attribut <strong>selection</strong> de la balise &lt;<strong>dataTable</strong>&gt; :</li>
+  <li>ligne 7 : la classe [MyDataModel] est le modèle de la balise &lt;p<b>:dataTable</b>&gt;. Cette classe a pour but de faire le lien entre l&#x27;élément <b>rowkey</b> qui est posté, avec l&#x27;élément associé à cette ligne,
+  </li>
+  <li>ligne 7 : la classe implémente l&#x27;interface [SelectableDataModel] au travers de la classe [ArrayDataModel]. Cela signifie que le paramètre du constructeur est un tableau. C&#x27;est ce tableau qui alimente la balise &lt;<b>dataTable</b>&gt;. Ici chaque ligne du tableau sera associée à un élément de type [CreneauMedecinJour],
+  </li>
+  <li>lignes 13-15 : le constructeur passe son paramètre à sa classe parent,
+  </li>
+  <li>lignes 18-20 : chaque ligne du tableau correspond à un créneau horaire et sera identifiée par l&#x27;<b>id</b> du créneau horaire (ligne 19). C&#x27;est cet <b>id</b> qui sera posté au serveur,
+  </li>
+  <li>ligne 23 : le code qui sera exécuté côté serveur lorsque l&#x27;<b>id</b> d&#x27;un créneau horaire sera posté. Le but de cette méthode est de rendre la référence de l&#x27;objet [CreneauMedecinJour] associé à cet <b>id</b>. Cette référence sera affectée à la cible de l&#x27;attribut <b>selection</b> de la balise &lt;<b>dataTable</b>&gt; :
+  </li>
 </ul>
+
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-text">
 <span class="odt-code-line"><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">p:dataTable</span> <span style="color:#7f007f">id</span><span style="color:#000000">=</span><span style="font-style:italic;color:#2a00ff">&quot;agenda&quot;</span> <span style="color:#7f007f">value</span><span style="color:#000000">=</span><span style="font-style:italic;color:#2a00ff">&quot;#{form.myDataModel}&quot;</span> <span style="color:#7f007f">var</span><span style="color:#000000">=</span><span style="font-style:italic;color:#2a00ff">&quot;creneauMedecinJour&quot;</span> <span style="color:#7f007f">style</span><span style="color:#000000">=&quot;</span><span style="color:#7f007f">width</span><span style="color:#000000">: </span><span style="font-style:italic;color:#2a00e1">800px</span><span style="color:#000000">&quot;</span></span>
 <span class="odt-code-line"><span style="color:#7f007f">selectionMode</span><span style="color:#000000">=</span><span style="font-style:italic;color:#2a00ff">&quot;single&quot;</span> <span style="color:#7f007f">selection</span><span style="color:#000000">=</span><span style="font-style:italic;color:#2a00ff">&quot;#{form.creneauChoisi}&quot;</span> <span style="color:#7f007f">emptyMessage</span><span style="color:#000000">=</span><span style="font-style:italic;color:#2a00ff">&quot;#{msg[&#x27;form2.emtyMessage&#x27;]}&quot;</span><span style="color:#008080">&gt;</span></span>
@@ -1896,10 +1965,14 @@
 </code></pre></div>
 
 <ul>
-<li><span style="color: #000000">lignes 5-7 : l&#x27;entête de la colonne,</span></li>
-<li><span style="color: #000000">lignes 8-15 : l&#x27;élément courant de la colonne. On notera ligne 9, l&#x27;utilisation de la balise &lt;<strong>h:outputFormat</strong>&gt; qui permet de formater des éléments à afficher. Le paramètre <strong>value</strong> indique la chaîne de caractères à afficher. La notation <strong>{i,type,format}</strong> désigne le paramètre n° i, le type de ce paramètre et son format. Il y a ici 4 paramètres numérotés de 0 à 3, le type de ceux-ci est numérique et il seront affichés avec deux chiffres,</span></li>
-<li><span style="color: #000000">lignes 10-13 : les quatre paramètres attendus par la balise &lt;h:outputFormat&gt;.</span></li>
+  <li><span style="color: #000000">lignes 5-7 : l&#x27;entête de la colonne,</span>
+  </li>
+  <li><span style="color: #000000">lignes 8-15 : l&#x27;élément courant de la colonne. On notera ligne 9, l&#x27;utilisation de la balise &lt;<b>h:outputFormat</b>&gt; qui permet de formater des éléments à afficher. Le paramètre <b>value</b> indique la chaîne de caractères à afficher. La notation <b>{i,type,format}</b> désigne le paramètre n° i, le type de ce paramètre et son format. Il y a ici 4 paramètres numérotés de 0 à 3, le type de ceux-ci est numérique et il seront affichés avec deux chiffres,</span>
+  </li>
+  <li><span style="color: #000000">lignes 10-13 : les quatre paramètres attendus par la balise &lt;h:outputFormat&gt;.</span>
+  </li>
 </ul>
+
 <p><a id="refheading10511310005176"></a></p>
 <h3 id="694-la-colonne-des-clients">6.9.4. La colonne des clients</h3>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000030D000000A33EDA8443.png" style="display:inline-block; margin:4px;width:10.333cm;height:2.157cm;" class="odt-zoomable" data-zoom-src="images/100000000000030D000000A33EDA8443.png" /></td></tr></table>
@@ -1927,10 +2000,14 @@
 </code></pre></div>
 
 <ul>
-<li><span style="color: #000000">lignes 8-10 : l&#x27;entête de la colonne,</span></li>
-<li><span style="color: #000000">lignes 11-13 : l&#x27;élément courant lorsqu&#x27;il y a un rendez-vous pour le créneau horaire. Dans ce cas, on affiche les titre, prénom et nom du client pour qui ce rendez-vous a été pris,</span></li>
-<li><span style="color: #000000">lignes 14-16 : un autre fragment sur lequel nous reviendrons.</span></li>
+  <li><span style="color: #000000">lignes 8-10 : l&#x27;entête de la colonne,</span>
+  </li>
+  <li><span style="color: #000000">lignes 11-13 : l&#x27;élément courant lorsqu&#x27;il y a un rendez-vous pour le créneau horaire. Dans ce cas, on affiche les titre, prénom et nom du client pour qui ce rendez-vous a été pris,</span>
+  </li>
+  <li><span style="color: #000000">lignes 14-16 : un autre fragment sur lequel nous reviendrons.</span>
+  </li>
 </ul>
+
 <p><a id="refheading77398301146251"></a></p>
 <h2 id="610-suppression-dun-rendez-vous">6.10. Suppression d&#x27;un rendez-vous</h2>
 <p><span style="color: #000000">La suppression d&#x27;un rendez-vous correspond à la séquence suivante :</span></p>
@@ -1963,15 +2040,21 @@
 </code></pre></div>
 
 <ul>
-<li><span style="color: #000000">lignes 2-5 : un menu contextuel lié au tableau de données (attribut </span><strong><span style="color: #000000">for</span></strong><span style="color: #000000">). Il a deux options [1] :</span></li>
+  <li><span style="color: #000000">lignes 2-5 : un menu contextuel lié au tableau de données (attribut </span><b><span style="color: #000000">for</span></b><span style="color: #000000">). Il a deux options [1] :</span>
+  </li>
 </ul>
+
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000049D00000110F2454D57.png" style="display:inline-block; margin:4px;width:15.625cm;height:3.598cm;" class="odt-zoomable" data-zoom-src="images/100000000000049D00000110F2454D57.png" /></td></tr></table>
 
 <ul>
-<li><span style="color: #000000">ligne 4 : l&#x27;option [Supprimer] déclenche l&#x27;affichage de la boîte de dialogue [2] des lignes 13-20,</span></li>
-<li><span style="color: #000000">ligne 15 : le clic sur le [Oui] déclenche l&#x27;exécution de [Form.action] qui va supprimer le rendez-vous. Normalement, le menu contextuel ne devrait pas offrir l&#x27;option [Supprimer] si l&#x27;élément sélectionné n&#x27;a pas de rendez-vous, et pas l&#x27;option [Réserver] si l&#x27;élément sélectionné a un rendez-vous. Nous n&#x27;avons pas réussi à ce que le menu contextuel soit aussi subtil. On y arrive pour le premier élément sélectionné mais ensuite on constate que le menu contextuel garde la configuration acquise pour cette première sélection. Il devient alors incorrect. Donc on a gardé les deux options et on a décidé de fournir un retour à l&#x27;utilisateur s&#x27;il supprimait un élément sans rendez-vous,</span></li>
-<li><span style="color: #000000">ligne 16 : l&#x27;attribut <em>oncomplete</em> qui permet de définir du code Javascript à exécuter après exécution de l&#x27;appel AJAX. Ce code sera ici le suivant :</span></li>
+  <li><span style="color: #000000">ligne 4 : l&#x27;option [Supprimer] déclenche l&#x27;affichage de la boîte de dialogue [2] des lignes 13-20,</span>
+  </li>
+  <li><span style="color: #000000">ligne 15 : le clic sur le [Oui] déclenche l&#x27;exécution de [Form.action] qui va supprimer le rendez-vous. Normalement, le menu contextuel ne devrait pas offrir l&#x27;option [Supprimer] si l&#x27;élément sélectionné n&#x27;a pas de rendez-vous, et pas l&#x27;option [Réserver] si l&#x27;élément sélectionné a un rendez-vous. Nous n&#x27;avons pas réussi à ce que le menu contextuel soit aussi subtil. On y arrive pour le premier élément sélectionné mais ensuite on constate que le menu contextuel garde la configuration acquise pour cette première sélection. Il devient alors incorrect. Donc on a gardé les deux options et on a décidé de fournir un retour à l&#x27;utilisateur s&#x27;il supprimait un élément sans rendez-vous,</span>
+  </li>
+  <li><span style="color: #000000">ligne 16 : l&#x27;attribut <i>oncomplete</i> qui permet de définir du code Javascript à exécuter après exécution de l&#x27;appel AJAX. Ce code sera ici le suivant :</span>
+  </li>
 </ul>
+
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-js">
 <span class="odt-code-line">&lt;!-- message d&#x27;erreur --&gt;</span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">p:dialog</span> <span style="color:#7f007f">header</span><span style="color:#000000">=</span><span style="font-style:italic;color:#2a00ff">&quot;#{msg[&#x27;form2.erreur&#x27;]}&quot;</span> <span style="color:#7f007f">widgetVar</span><span style="color:#000000">=</span><span style="font-style:italic;color:#2a00ff">&quot;dlgErreur&quot;</span> <span style="color:#7f007f">height</span><span style="color:#000000">=</span><span style="font-style:italic;color:#2a00ff">&quot;100&quot;</span> <span style="color:#008080">&gt;</span><span style="color:#000000">  </span></span>
@@ -1990,8 +2073,10 @@
 </code></pre></div>
 
 <ul>
-<li><span style="color: #000000">ligne 10 : le code Javascript regarde si le dictionnaire <em>args</em> a l&#x27;attribut <em>erreur</em>. Si oui, il fait afficher la boîte de dialogue de la ligne 2 (attribut <em>widgetVar</em>). Cette boîte affiche le modèle <em>[Form].msgErreur</em>.</span></li>
+  <li><span style="color: #000000">ligne 10 : le code Javascript regarde si le dictionnaire <i>args</i> a l&#x27;attribut <i>erreur</i>. Si oui, il fait afficher la boîte de dialogue de la ligne 2 (attribut <i>widgetVar</i>). Cette boîte affiche le modèle <i>[Form].msgErreur</i>.</span>
+  </li>
 </ul>
+
 <p><span style="color: #000000">Regardons le code exécuté pour gérer la suppression d&#x27;un rendez-vous :</span></p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-text">
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">p:confirmDialog</span> <span style="font-style:italic;color:#2a00ff">...</span><span style="color:#008080">&gt;</span><span style="color:#000000">                   </span></span>
@@ -2004,9 +2089,12 @@
 </code></pre></div>
 
 <ul>
-<li><span style="color: #000000">ligne 2 : la méthode [Form].action va être exécutée,</span></li>
-<li><span style="color: #000000">ligne 4 : avant son exécution, le champ <em>action</em> aura reçu la valeur &#x27;<em>supprimer</em>&#x27;.</span></li>
+  <li><span style="color: #000000">ligne 2 : la méthode [Form].action va être exécutée,</span>
+  </li>
+  <li><span style="color: #000000">ligne 4 : avant son exécution, le champ <i>action</i> aura reçu la valeur &#x27;<i>supprimer</i>&#x27;.</span>
+  </li>
 </ul>
+
 <p><span style="color: #000000">La méthode [action] est la suivante :</span></p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
 <span class="odt-code-line">// action sur RV</span>
@@ -2042,12 +2130,18 @@
 </code></pre></div>
 
 <ul>
-<li><span style="color: #000000">ligne 4 : si l&#x27;action est &#x27;supprimer&#x27;, on exécute la méthode [supprimer],</span></li>
-<li><span style="color: #000000">ligne 12 : on récupère le rendez-vous du créneau sélectionné. On rappelle que [creneauChoisi] a été initialisé par la référence de l&#x27;élément [CreneauMedecinJour] sélectionné,</span></li>
-<li><span style="color: #000000">si ce rendez-vous existe, il est supprimé (ligne 19), l&#x27;agenda est régénéré (ligne 21) puis réaffiché (ligne 23),</span></li>
-<li><span style="color: #000000">si la suppression a échoué, on affiche la page d&#x27;erreurs (ligne 26),</span></li>
-<li><span style="color: #000000">si l&#x27;élément sélectionné n&#x27;a pas de rendez-vous (ligne 13) alors on est dans la situation où l&#x27;utilisateur a cliqué [Supprimer] sur un créneau qui n&#x27;a pas de rendez-vous. On signale cette erreur :</span></li>
+  <li><span style="color: #000000">ligne 4 : si l&#x27;action est &#x27;supprimer&#x27;, on exécute la méthode [supprimer],</span>
+  </li>
+  <li><span style="color: #000000">ligne 12 : on récupère le rendez-vous du créneau sélectionné. On rappelle que [creneauChoisi] a été initialisé par la référence de l&#x27;élément [CreneauMedecinJour] sélectionné,</span>
+  </li>
+  <li><span style="color: #000000">si ce rendez-vous existe, il est supprimé (ligne 19), l&#x27;agenda est régénéré (ligne 21) puis réaffiché (ligne 23),</span>
+  </li>
+  <li><span style="color: #000000">si la suppression a échoué, on affiche la page d&#x27;erreurs (ligne 26),</span>
+  </li>
+  <li><span style="color: #000000">si l&#x27;élément sélectionné n&#x27;a pas de rendez-vous (ligne 13) alors on est dans la situation où l&#x27;utilisateur a cliqué [Supprimer] sur un créneau qui n&#x27;a pas de rendez-vous. On signale cette erreur :</span>
+  </li>
 </ul>
+
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000000F8000000C885F9E690.png" style="display:inline-block; margin:4px;width:3.281cm;height:2.649cm;" class="odt-zoomable" data-zoom-src="images/10000000000000F8000000C885F9E690.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
 
 <p><span style="color: #000000">La méthode [signalerActionIncorrecte] est la suivante :</span></p>
@@ -2063,10 +2157,14 @@
 </code></pre></div>
 
 <ul>
-<li><span style="color: #000000">ligne 4 : on enlève la sélection,</span></li>
-<li><span style="color: #000000">ligne 6 : on génère un message d&#x27;erreur internationalisé,</span></li>
-<li><span style="color: #000000">ligne 7 : on ajoute dans le dictionnaire <strong>args</strong> de l&#x27;appel AJAX l&#x27;attribut (&#x27;erreur&#x27;, true).</span></li>
+  <li><span style="color: #000000">ligne 4 : on enlève la sélection,</span>
+  </li>
+  <li><span style="color: #000000">ligne 6 : on génère un message d&#x27;erreur internationalisé,</span>
+  </li>
+  <li><span style="color: #000000">ligne 7 : on ajoute dans le dictionnaire <b>args</b> de l&#x27;appel AJAX l&#x27;attribut (&#x27;erreur&#x27;, true).</span>
+  </li>
 </ul>
+
 <p><span style="color: #000000">Revenons au code XHTML du bouton [Oui] :</span></p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-javascript">
 <span class="odt-code-line"><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">p:commandButton</span> <span style="color:#7f007f">value</span>=<span style="font-style:italic;color:#2a00ff">&quot;#{msg[&#x27;form2.supprimer.oui&#x27;]}&quot;</span> <span style="color:#7f007f">update</span>=<span style="font-style:italic;color:#2a00ff">&quot;:formulaire:contenu&quot;</span> <span style="color:#7f007f">action</span>=<span style="font-style:italic;color:#2a00ff">&quot;#{form.action}&quot;</span></span>
@@ -2074,8 +2172,10 @@
 </code></pre></div>
 
 <ul>
-<li><span style="color: #000000">ligne 2 : après exécution de la méthode [Form].action, la méthode Javascript <em>handleRequest</em> est exécutée :</span></li>
+  <li><span style="color: #000000">ligne 2 : après exécution de la méthode [Form].action, la méthode Javascript <i>handleRequest</i> est exécutée :</span>
+  </li>
 </ul>
+
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-js">
 <span class="odt-code-line">    <span style="color:#3f5fbf">&lt;!-- message d&#x27;erreur --&gt;</span></span>
 <span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">p:dialog</span> <span style="color:#7f007f">header</span><span style="color:#000000">=</span><span style="font-style:italic;color:#2a00ff">&quot;#{msg[&#x27;form2.erreur&#x27;]}&quot;</span> <span style="color:#7f007f">widgetVar</span><span style="color:#000000">=</span><span style="font-style:italic;color:#2a00ff">&quot;dlgErreur&quot;</span> <span style="color:#7f007f">height</span><span style="color:#000000">=</span><span style="font-style:italic;color:#2a00ff">&quot;100&quot;</span> <span style="color:#008080">&gt;</span><span style="color:#000000">  </span></span>
@@ -2094,9 +2194,12 @@
 </code></pre></div>
 
 <ul>
-<li><span style="color: #000000">ligne 10 : on regarde si le dictionnaire <strong>args</strong> a l&#x27;attribut nommé &#x27;<em>erreur</em>&#x27;. Si oui, la boîte de dialogue de la ligne 2 est affichée,</span></li>
-<li><span style="color: #000000">ligne 3 : elle fait afficher le message d&#x27;erreur construit par le modèle.</span></li>
+  <li><span style="color: #000000">ligne 10 : on regarde si le dictionnaire <b>args</b> a l&#x27;attribut nommé &#x27;<i>erreur</i>&#x27;. Si oui, la boîte de dialogue de la ligne 2 est affichée,</span>
+  </li>
+  <li><span style="color: #000000">ligne 3 : elle fait afficher le message d&#x27;erreur construit par le modèle.</span>
+  </li>
 </ul>
+
 <p><a id="refheading77400301146251"></a></p>
 <h2 id="611-prise-de-rendez-vous">6.11. Prise de rendez-vous</h2>
 <p><span style="color: #000000">La prise de rendez-vous correspond à la séquence suivante :</span></p>
@@ -2141,16 +2244,23 @@
 </code></pre></div>
 
 <ul>
-<li><span style="color: #000000">lignes 21-31 : affichent la chose suivante :</span></li>
+  <li><span style="color: #000000">lignes 21-31 : affichent la chose suivante :</span>
+  </li>
 </ul>
+
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000003510000008139DCB988.png" style="display:inline-block; margin:4px;width:11.232cm;height:1.707cm;" class="odt-zoomable" data-zoom-src="images/10000000000003510000008139DCB988.png" /></td></tr></table>
 
 <ul>
-<li><span style="color: #000000">ligne 21 : l&#x27;affichage a lieu s&#x27;il n&#x27;y a pas de rendez-vous et qu&#x27;il y a bien eu sélection et que l&#x27;id du créneau choisi correspond à celui de l&#x27;élément courant du tableau. Si on ne met pas cette condition, le fragment est affiché pour tous les créneaux,</span></li>
-<li><span style="color: #000000">ligne 22 : la zone de saisie sera une zone de saisie assistée. On suppose ici qu&#x27;il peut y avoir beaucoup de clients,</span></li>
-<li><span style="color: #000000">lignes 24-26 : le lien [Valider],</span></li>
-<li><span style="color: #000000">lignes 28-30 : le lien [Annuler].</span></li>
+  <li><span style="color: #000000">ligne 21 : l&#x27;affichage a lieu s&#x27;il n&#x27;y a pas de rendez-vous et qu&#x27;il y a bien eu sélection et que l&#x27;id du créneau choisi correspond à celui de l&#x27;élément courant du tableau. Si on ne met pas cette condition, le fragment est affiché pour tous les créneaux,</span>
+  </li>
+  <li><span style="color: #000000">ligne 22 : la zone de saisie sera une zone de saisie assistée. On suppose ici qu&#x27;il peut y avoir beaucoup de clients,</span>
+  </li>
+  <li><span style="color: #000000">lignes 24-26 : le lien [Valider],</span>
+  </li>
+  <li><span style="color: #000000">lignes 28-30 : le lien [Annuler].</span>
+  </li>
 </ul>
+
 <p><span style="color: #000000">La zone de saisie assistée est générée par le code suivant :</span></p>
 <div class="odt-code-rich" data-linenums="false" style="counter-reset: odtline 0;"><pre><code class="language-javascript">
 <span class="odt-code-line"><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">p:autoComplete</span> <span style="color:#7f007f">completeMethod</span>=<span style="font-style:italic;color:#2a00ff">&quot;#{form.completeClients}&quot;</span> <span style="color:#7f007f">value</span>=<span style="font-style:italic;color:#2a00ff">&quot;#{form.identiteClient}&quot;</span> <span style="color:#7f007f">size</span>=<span style="font-style:italic;color:#2a00ff">&quot;30&quot;</span><span style="color:#008080">/&gt;</span></span>
@@ -2180,10 +2290,14 @@
 </code></pre></div>
 
 <ul>
-<li><span style="color: #000000">ligne 2 : <em>query</em> est la chaîne de caractères tapée par l&#x27;utilisateur,</span></li>
-<li><span style="color: #000000">ligne 3 : la liste des propositions. Au départ une liste vide,</span></li>
-<li><span style="color: #000000">lignes 5-10 : on construit les identités [Nom prénom titre] des clients. Si une identité commence par <em>query</em> (ligne 7), elle est retenue dans la liste des propositions (ligne 8).</span></li>
+  <li><span style="color: #000000">ligne 2 : <i>query</i> est la chaîne de caractères tapée par l&#x27;utilisateur,</span>
+  </li>
+  <li><span style="color: #000000">ligne 3 : la liste des propositions. Au départ une liste vide,</span>
+  </li>
+  <li><span style="color: #000000">lignes 5-10 : on construit les identités [Nom prénom titre] des clients. Si une identité commence par <i>query</i> (ligne 7), elle est retenue dans la liste des propositions (ligne 8).</span>
+  </li>
 </ul>
+
 <p><a id="refheading77402301146251"></a></p>
 <h2 id="612-validation-dun-rendez-vous">6.12. Validation d&#x27;un rendez-vous</h2>
 <p><span style="color: #000000">La validation d&#x27;un rendez-vous correspond à la séquence suivante :</span></p>
@@ -2264,12 +2378,18 @@
 </code></pre></div>
 
 <ul>
-<li><span style="color: #000000">lignes 33-35 : à cause du valeur du champ <em>action</em>, la méthode [validerResa] va être exécutée,</span></li>
-<li><span style="color: #000000">ligne 43 : on vérifie d&#x27;abord que le client existe. En effet, dans la zone de saisie assistée, l&#x27;utilisateur a pu faire une saisie en dur sans s&#x27;aider des propositions qui lui ont été faites. La saisie assistée est associée au modèle <em>[Form].identiteClient</em>. On regarde donc si cette identité existe dans le dictionnaire <em>identitesClients</em> construit à l&#x27;instanciation du modèle (ligne 20). Celui-ci associe à une identité client de type [Nom prénom titre], le client lui-même (ligne 25),</span></li>
-<li><span style="color: #000000">ligne 44 : si le client n&#x27;existe pas, on renvoie une erreur au navigateur,</span></li>
-<li><span style="color: #000000">ligne 45 : un message d&#x27;erreur internationalisé,</span></li>
-<li><span style="color: #000000">ligne 46 : on ajoute l&#x27;attribut (&#x27;erreur&#x27;,true) au dictionnaire <strong>args</strong> de l&#x27;appel AJAX. L&#x27;appel AJAX a été défini de la façon suivante :</span></li>
+  <li><span style="color: #000000">lignes 33-35 : à cause du valeur du champ <i>action</i>, la méthode [validerResa] va être exécutée,</span>
+  </li>
+  <li><span style="color: #000000">ligne 43 : on vérifie d&#x27;abord que le client existe. En effet, dans la zone de saisie assistée, l&#x27;utilisateur a pu faire une saisie en dur sans s&#x27;aider des propositions qui lui ont été faites. La saisie assistée est associée au modèle <i>[Form].identiteClient</i>. On regarde donc si cette identité existe dans le dictionnaire <i>identitesClients</i> construit à l&#x27;instanciation du modèle (ligne 20). Celui-ci associe à une identité client de type [Nom prénom titre], le client lui-même (ligne 25),</span>
+  </li>
+  <li><span style="color: #000000">ligne 44 : si le client n&#x27;existe pas, on renvoie une erreur au navigateur,</span>
+  </li>
+  <li><span style="color: #000000">ligne 45 : un message d&#x27;erreur internationalisé,</span>
+  </li>
+  <li><span style="color: #000000">ligne 46 : on ajoute l&#x27;attribut (&#x27;erreur&#x27;,true) au dictionnaire <b>args</b> de l&#x27;appel AJAX. L&#x27;appel AJAX a été défini de la façon suivante :</span>
+  </li>
 </ul>
+
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-javascript">
 <span class="odt-code-line"><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">p:commandLink</span> <span style="color:#7f007f">action</span>=<span style="font-style:italic;color:#2a00ff">&quot;#{form.action()}&quot;</span> <span style="color:#7f007f">value</span>=<span style="font-style:italic;color:#2a00ff">&quot;#{msg[&#x27;form2.valider&#x27;]}&quot;</span> <span style="color:#7f007f">update</span>=<span style="font-style:italic;color:#2a00ff">&quot;:formulaire:contenu&quot;</span> <span style="color:#7f007f">oncomplete</span>=<span style="font-style:italic;color:#2a00ff">&quot;handleRequest(xhr, status, args)&quot;</span><span style="color:#008080">&gt;</span></span>
 <span class="odt-code-line"><span style="color:#000000">            </span><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">f:setPropertyActionListener</span> <span style="color:#7f007f">value</span><span style="color:#000000">=</span><span style="font-style:italic;color:#2a00ff">&quot;valider&quot;</span> <span style="color:#7f007f">target</span><span style="color:#000000">=</span><span style="font-style:italic;color:#2a00ff">&quot;#{form.action}&quot;</span><span style="color:#008080">/&gt;</span></span>
@@ -2278,11 +2398,16 @@
 
 <p><span style="color: #000000">Ligne 3 ci-dessus, on voit que le lien [Valider] a un attribut <strong>oncomplete</strong>. C&#x27;est cet attribut qui va faire afficher le message d&#x27;erreur selon une technique déjà rencontrée.</span></p>
 <ul>
-<li><span style="color: #000000">ligne 50 : on demande à la couche [métier] d&#x27;ajouter un rendez-vous pour le jour choisi (<em>jour</em>), le créneau horaire choisi (<em>creneauChoisi.getCreneau()</em>) et le client choisi (<em>hIdentitesClients.get(identiteClient)</em>),</span></li>
-<li><span style="color: #000000">ligne 52 : on demande à la couche [métier] de rafraîchir l&#x27;agenda du médecin. On verra le rendez-vous ajouté plus toutes les modifications que d&#x27;autres utilisateurs de l&#x27;application ont pu faire,</span></li>
-<li><span style="color: #000000">ligne 54 : on réaffiche l&#x27;agenda [form2.xhtml],</span></li>
-<li><span style="color: #000000">ligne 57 : on affiche la page d&#x27;erreur si une erreur se produit.</span></li>
+  <li><span style="color: #000000">ligne 50 : on demande à la couche [métier] d&#x27;ajouter un rendez-vous pour le jour choisi (<i>jour</i>), le créneau horaire choisi (<i>creneauChoisi.getCreneau()</i>) et le client choisi (<i>hIdentitesClients.get(identiteClient)</i>),</span>
+  </li>
+  <li><span style="color: #000000">ligne 52 : on demande à la couche [métier] de rafraîchir l&#x27;agenda du médecin. On verra le rendez-vous ajouté plus toutes les modifications que d&#x27;autres utilisateurs de l&#x27;application ont pu faire,</span>
+  </li>
+  <li><span style="color: #000000">ligne 54 : on réaffiche l&#x27;agenda [form2.xhtml],</span>
+  </li>
+  <li><span style="color: #000000">ligne 57 : on affiche la page d&#x27;erreur si une erreur se produit.</span>
+  </li>
 </ul>
+
 <p><a id="refheading77404301146251"></a></p>
 <h2 id="613-annulation-dune-prise-de-rendez-vous">6.13. Annulation d&#x27;une prise de rendez-vous</h2>
 <p><span style="color: #000000">Cela correspond à la séquence suivante :</span></p>
@@ -2391,13 +2516,20 @@
 </code></pre></div>
 
 <ul>
-<li><span style="color: #000000">ligne 1 : le jour d&#x27;affichage de l&#x27;agenda,</span></li>
-<li><span style="color: #000000">ligne 5 : on utilise un calendrier,</span></li>
-<li><span style="color: #000000">ligne 6 : qu&#x27;on initialise au jour actuel de l&#x27;agenda,</span></li>
-<li><span style="color: #000000">ligne 7 : on retire un jour au calendrier,</span></li>
-<li><span style="color: #000000">ligne 8 : et on rénitialise avec, le jour d&#x27;affichage de l&#x27;agenda,</span></li>
-<li><span style="color: #000000">ligne 11 : on réaffiche l&#x27;agenda si celui-ci est affiché. En effet, l&#x27;utilisateur peut utiliser la barre d&#x27;outils sans que l&#x27;agenda soit affiché.</span></li>
+  <li><span style="color: #000000">ligne 1 : le jour d&#x27;affichage de l&#x27;agenda,</span>
+  </li>
+  <li><span style="color: #000000">ligne 5 : on utilise un calendrier,</span>
+  </li>
+  <li><span style="color: #000000">ligne 6 : qu&#x27;on initialise au jour actuel de l&#x27;agenda,</span>
+  </li>
+  <li><span style="color: #000000">ligne 7 : on retire un jour au calendrier,</span>
+  </li>
+  <li><span style="color: #000000">ligne 8 : et on rénitialise avec, le jour d&#x27;affichage de l&#x27;agenda,</span>
+  </li>
+  <li><span style="color: #000000">ligne 11 : on réaffiche l&#x27;agenda si celui-ci est affiché. En effet, l&#x27;utilisateur peut utiliser la barre d&#x27;outils sans que l&#x27;agenda soit affiché.</span>
+  </li>
 </ul>
+
 <p><span style="color: #000000">Les autres méthodes sont analogues.</span></p>
 <p><a id="refheading10511510005176"></a></p>
 <h2 id="615-changement-de-langue-daffichage">6.15. Changement de langue d&#x27;affichage</h2>
@@ -2451,9 +2583,12 @@
 
 <p><span style="color: #000000">Les méthodes des lignes 3 et 9 se contentent d&#x27;initialiser le champ <em>locale</em> de la ligne 1 puis redirigent le navigateur client vers la même page. Une redirection est une réponse dans laquelle le serveur demande au navigateur de charger une autre page. Le navigateur fait alors un GET vers cette nouvelle page.</span></p>
 <ul>
-<li><span style="color: #000000">ligne 17 : [ExternalContext] est une classe JSF qui permet d&#x27;accéder à la servlet en cours d&#x27;exécution,</span></li>
-<li><span style="color: #000000">ligne 19 : on fait la redirection. Le paramètre de la méthode <em>redirect</em> est l&#x27;URL de la page vers laquelle le navigateur client doit se rediriger. Ici nous voulons nous rediriger vers [/mv-rdvmedecins-pf] qui est le nom de notre application : </span></li>
+  <li><span style="color: #000000">ligne 17 : [ExternalContext] est une classe JSF qui permet d&#x27;accéder à la servlet en cours d&#x27;exécution,</span>
+  </li>
+  <li><span style="color: #000000">ligne 19 : on fait la redirection. Le paramètre de la méthode <i>redirect</i> est l&#x27;URL de la page vers laquelle le navigateur client doit se rediriger. Ici nous voulons nous rediriger vers [/mv-rdvmedecins-pf] qui est le nom de notre application : </span>
+  </li>
 </ul>
+
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000012D0000005E1FFDC974.png" style="display:inline-block; margin:4px;width:5.609cm;height:1.752cm;" class="odt-zoomable" data-zoom-src="images/100000000000012D0000005E1FFDC974.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
 
 <p><span style="color: #000000">la méthode [getRequestContextPath] permet d&#x27;avoir ce nom. Il va donc y avoir chargement de la page d&#x27;accueil [index.xhtml] de notre application. Cette page est associée au modèle [Form] de portée <strong>session</strong>. Ce modèle gère trois booléens qui commandent l&#x27;apparence de la page [index.xhtml] :</span></p>
@@ -2556,10 +2691,14 @@
 
 <p><span style="color: #000000">Nous nous sommes largement appuyés sur la version JSF2 déjà construite :</span></p>
 <ul>
-<li><span style="color: #000000">les couches [métier], [DAO], [JPA] ont été conservées,</span></li>
-<li><span style="color: #000000">les beans [Application] et [Form] de la couche web ont été conservés mais de nouvelles fonctionnalités leur ont été ajoutées à cause de l&#x27;enrichissement de l&#x27;interface utilisateur,</span></li>
-<li><span style="color: #000000">l&#x27;interface utilisateur a été profondément modifiée. Elle est notamment plus riche en fonctionnalités et plus conviviale.</span></li>
+  <li><span style="color: #000000">les couches [métier], [DAO], [JPA] ont été conservées,</span>
+  </li>
+  <li><span style="color: #000000">les beans [Application] et [Form] de la couche web ont été conservés mais de nouvelles fonctionnalités leur ont été ajoutées à cause de l&#x27;enrichissement de l&#x27;interface utilisateur,</span>
+  </li>
+  <li><span style="color: #000000">l&#x27;interface utilisateur a été profondément modifiée. Elle est notamment plus riche en fonctionnalités et plus conviviale.</span>
+  </li>
 </ul>
+
 <p><span style="color: #000000">Le passage de JSF à Primefaces pour construire l&#x27;interface web nécessite une certaine expérience car au départ on est un peu noyés devant le grand nombre de composants utilisables et au final on ne sait trop lesquels utiliser. Il faut alors se pencher sur l&#x27;ergonomie souhaitée pour l&#x27;interface.</span></p>
 <p><a id="refheading10512110005176"></a></p>
 <h2 id="618-tests-eclipse">6.18. Tests Eclipse</h2>
@@ -2567,18 +2706,27 @@
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004F0000001341DD07045.png" style="display:inline-block; margin:4px;width:16.722cm;height:4.075cm;" class="odt-zoomable" data-zoom-src="images/10000000000004F0000001341DD07045.png" /></td></tr></table>
 
 <ul>
-<li><span style="color: #000000">[mv-rdvmedecins-ejb-dao-jpa] : les couches [DAO] et [JPA],</span></li>
-<li><span style="color: #000000">[mv-rdvmedecins-ejb-metier] : la couche [métier],</span></li>
-<li><span style="color: #000000">[mv-rdvmedecins-pf] : la couche [web] implémentée avec JSF et Primefaces,</span></li>
-<li><span style="color: #000000">[mv-rdvmedecins-app] : le parent du projet d&#x27;entreprise [mv-rdvmedecins-app-ear]. Lorsqu&#x27;on importe le projet parent, le projet fils est automatiquement importé,</span></li>
-<li><span style="color: #000000">en [2], on exécute le projet d&#x27;entreprise [mv-rdvmedecins-app-ear],</span></li>
+  <li><span style="color: #000000">[mv-rdvmedecins-ejb-dao-jpa] : les couches [DAO] et [JPA],</span>
+  </li>
+  <li><span style="color: #000000">[mv-rdvmedecins-ejb-metier] : la couche [métier],</span>
+  </li>
+  <li><span style="color: #000000">[mv-rdvmedecins-pf] : la couche [web] implémentée avec JSF et Primefaces,</span>
+  </li>
+  <li><span style="color: #000000">[mv-rdvmedecins-app] : le parent du projet d&#x27;entreprise [mv-rdvmedecins-app-ear]. Lorsqu&#x27;on importe le projet parent, le projet fils est automatiquement importé,</span>
+  </li>
+  <li><span style="color: #000000">en [2], on exécute le projet d&#x27;entreprise [mv-rdvmedecins-app-ear],</span>
+  </li>
 </ul>
+
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000003C900000140E912C70F.png" style="display:inline-block; margin:4px;width:12.82cm;height:4.233cm;" class="odt-zoomable" data-zoom-src="images/10000000000003C900000140E912C70F.png" /></td></tr></table>
 
 <ul>
-<li><span style="color: #000000">en [3], on choisit le serveur Glassfish,</span></li>
-<li><span style="color: #000000">en [4], dans l&#x27;onglet [Servers], l&#x27;application a été déployée. Elle ne s&#x27;exécute pas d&#x27;elle-même. Il faut demander son URL [http://localhost:8080/mv-rdvmedecins-pf/] dans un navigateur [5] :</span></li>
+  <li><span style="color: #000000">en [3], on choisit le serveur Glassfish,</span>
+  </li>
+  <li><span style="color: #000000">en [4], dans l&#x27;onglet [Servers], l&#x27;application a été déployée. Elle ne s&#x27;exécute pas d&#x27;elle-même. Il faut demander son URL [http://localhost:8080/mv-rdvmedecins-pf/] dans un navigateur [5] :</span>
+  </li>
 </ul>
+
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000052A00000110352E82C5.png" style="display:inline-block; margin:4px;width:17.489cm;height:3.598cm;" class="odt-zoomable" data-zoom-src="images/100000000000052A00000110352E82C5.png" /></td></tr></table>
 
 

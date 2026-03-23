@@ -903,11 +903,16 @@
 </code></pre></div>
 
 <ul>
-<li>ligne 7 : un nouvel espace de noms apparaît, celui des composants Primefaces mobile de préfixe <strong>pm</strong>,</li>
-<li>ligne 10 : définit une page. Une page va être composée de plusieurs vues (ligne 12). Une seule vue est visible à un moment donné. On retrouve là un concept que nous avons abondamment utilisé dans nos exemples Primefaces, une unique page avec plusieurs fragments qu&#x27;on affiche ou qu&#x27;on cache. Ici, nous n&#x27;aurons pas à faire ce jeu. Nous désignerons simplement la vue à afficher, les autres étant forcément cachées,</li>
-<li>ligne 12 : une vue,</li>
-<li>lignes 13-15 : définissent l&#x27;en-tête de la vue :</li>
+  <li>ligne 7 : un nouvel espace de noms apparaît, celui des composants Primefaces mobile de préfixe <b>pm</b>,
+  </li>
+  <li>ligne 10 : définit une page. Une page va être composée de plusieurs vues (ligne 12). Une seule vue est visible à un moment donné. On retrouve là un concept que nous avons abondamment utilisé dans nos exemples Primefaces, une unique page avec plusieurs fragments qu&#x27;on affiche ou qu&#x27;on cache. Ici, nous n&#x27;aurons pas à faire ce jeu. Nous désignerons simplement la vue à afficher, les autres étant forcément cachées,
+  </li>
+  <li>ligne 12 : une vue,
+  </li>
+  <li>lignes 13-15 : définissent l&#x27;en-tête de la vue :
+  </li>
 </ul>
+
 <div class="odt-code-rich" data-linenums="false" style="counter-reset: odtline 0;"><pre><code class="language-html">
 <span class="odt-code-line"></span>
 <span class="odt-code-line"><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">pm:header</span> <span style="color:#7f007f">title</span><span style="color:#000000">=</span><span style="font-style:italic;color:#2a00ff">&quot;Forms&quot;</span><span style="color:#008080">&gt;</span></span>
@@ -919,9 +924,12 @@
 
 <p>On notera la balise pour générer un bouton. L&#x27;attribut <strong>href</strong> permet de naviguer. Sa valeur ici est le nom d&#x27;une vue. Un clic sur le bouton va ramener (<strong>reverse=true</strong>) vers la vue nommée <strong>main</strong> (non représentée ici).</p>
 <ul>
-<li>ligne 16 : introduit le contenu de la vue,</li>
-<li>ligne 17 : génère une zone de saisie :</li>
+  <li>ligne 16 : introduit le contenu de la vue,
+  </li>
+  <li>ligne 17 : génère une zone de saisie :
+  </li>
 </ul>
+
 <div class="odt-code-rich" data-linenums="false" style="counter-reset: odtline 0;"><pre><code class="language-text">
 <span class="odt-code-line"><span style="color:#000000">  </span><span style="color:#000000">              </span><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">p:inputText</span> <span style="color:#7f007f">label</span><span style="color:#000000">=</span><span style="font-style:italic;color:#2a00ff">&quot;Input:&quot;</span> <span style="color:#008080">/&gt;</span></span>
 </code></pre></div>
@@ -929,8 +937,10 @@
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000001320000004D3F1356BC.png" style="display:inline-block; margin:4px;width:5.669cm;height:1.431cm;" class="odt-zoomable" data-zoom-src="images/10000000000001320000004D3F1356BC.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
 
 <ul>
-<li>ligne 18 : une zone de saisie avec une icône particulière :</li>
+  <li>ligne 18 : une zone de saisie avec une icône particulière :
+  </li>
 </ul>
+
 <div class="odt-code-rich" data-linenums="false" style="counter-reset: odtline 0;"><pre><code class="language-text">
 <span class="odt-code-line"><span style="color:#000000">  </span><span style="color:#000000">              </span><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">p:inputText</span><span style="color:#008080"> </span><span style="color:#7f007f">label</span><span style="color:#000000">=</span><span style="font-style:italic;color:#2a00ff">&quot;Search:&quot;</span><span style="color:#008080"> </span><span style="color:#7f007f">type</span><span style="color:#000000">=</span><span style="font-style:italic;color:#2a00ff">&quot;search&quot;</span><span style="color:#008080">/&gt;</span></span>
 </code></pre></div>
@@ -938,8 +948,10 @@
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000012D00000048A7F97D8B.png" style="display:inline-block; margin:4px;width:5.57cm;height:1.33cm;" class="odt-zoomable" data-zoom-src="images/100000000000012D00000048A7F97D8B.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
 
 <ul>
-<li>ligne 19 : une zone de saisie pour un n° de téléphone :</li>
+  <li>ligne 19 : une zone de saisie pour un n° de téléphone :
+  </li>
 </ul>
+
 <div class="odt-code-rich" data-linenums="false" style="counter-reset: odtline 0;"><pre><code class="language-text">
 <span class="odt-code-line"><span style="color:#000000">  </span><span style="color:#000000">              </span><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">p:inputText</span><span style="color:#008080"> </span><span style="color:#7f007f">label</span><span style="color:#000000">=</span><span style="font-style:italic;color:#2a00ff">&quot;Phone:&quot;</span><span style="color:#008080"> </span><span style="color:#7f007f">type</span><span style="color:#000000">=</span><span style="font-style:italic;color:#2a00ff">&quot;tel&quot;</span><span style="color:#008080">/&gt;</span></span>
 </code></pre></div>
@@ -948,8 +960,10 @@
 
 <p>L&#x27;attribut <strong>type</strong> d&#x27;une balise &lt;<strong>inputText</strong>&gt; a une signification : elle induit le type du clavier proposé à l&#x27;utilisateur pour faire sa saisie. Ainsi pour le <strong>type=&#x27;tel&#x27;</strong> sera proposé un clavier numérique,</p>
 <ul>
-<li>ligne 20 : une zone de saisie multi-lignes et extensible :</li>
+  <li>ligne 20 : une zone de saisie multi-lignes et extensible :
+  </li>
 </ul>
+
 <div class="odt-code-rich" data-linenums="false" style="counter-reset: odtline 0;"><pre><code class="language-text">
 <span class="odt-code-line"><span style="color:#000000">  </span><span style="color:#000000">              </span><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">p:inputTextarea</span><span style="color:#008080"> </span><span style="color:#7f007f">id</span><span style="color:#000000">=</span><span style="font-style:italic;color:#2a00ff">&quot;inputTextarea&quot;</span><span style="color:#008080"> </span><span style="color:#7f007f">label</span><span style="color:#000000">=</span><span style="font-style:italic;color:#2a00ff">&quot;Textarea:&quot;</span><span style="color:#008080">/&gt;</span></span>
 </code></pre></div>
@@ -957,8 +971,10 @@
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000001340000006ED76FD3C0.png" style="display:inline-block; margin:4px;width:5.72cm;height:2.041cm;" class="odt-zoomable" data-zoom-src="images/10000000000001340000006ED76FD3C0.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
 
 <ul>
-<li>lignes 21-29 : un champ rassemblant plusieurs composants :</li>
+  <li>lignes 21-29 : un champ rassemblant plusieurs composants :
+  </li>
 </ul>
+
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-vbscript">
 <span class="odt-code-line"><span style="color:#000000">                </span><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">pm:field</span><span style="color:#008080">&gt;</span></span>
 <span class="odt-code-line"><span style="color:#000000">                    </span><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">h:outputLabel</span> <span style="color:#7f007f">for</span><span style="color:#000000">=</span><span style="font-style:italic;color:#2a00ff">&quot;selectOneMenu&quot;</span> <span style="color:#7f007f">value</span><span style="color:#000000">=</span><span style="font-style:italic;color:#2a00ff">&quot;Dropdown: &quot;</span><span style="color:#008080">/&gt;</span></span>
@@ -974,15 +990,19 @@
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000012C0000006074104C29.png" style="display:inline-block; margin:4px;width:5.56cm;height:1.78cm;" class="odt-zoomable" data-zoom-src="images/100000000000012C0000006074104C29.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000012C000000A9FB2B43CE.png" style="display:inline-block; margin:4px;width:5.56cm;height:3.129cm;" class="odt-zoomable" data-zoom-src="images/100000000000012C000000A9FB2B43CE.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
 
 <ul>
-<li>ligne 2 : le libellé pour le composant de la ligne 3 ;</li>
-<li>ligne 3 : une liste déroulante ;</li>
-<li>
-<p>lignes 4-7 : son contenu,</p>
-</li>
-<li>
-<p>ligne 30 : un slider :</p>
-</li>
+  <li>ligne 2 : le libellé pour le composant de la ligne 3 ;
+  </li>
+  <li>ligne 3 : une liste déroulante ;
+  </li>
+  <li>lignes 4-7 : son contenu,
+  </li>
 </ul>
+
+<ul>
+  <li>ligne 30 : un slider :
+  </li>
+</ul>
+
 <div class="odt-code-rich" data-linenums="false" style="counter-reset: odtline 0;"><pre><code class="language-text">
 <span class="odt-code-line"><span style="color:#000000">                </span><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">pm:inputRange</span><span style="color:#000000"> </span><span style="color:#7f007f">id</span><span style="color:#000000">=</span><span style="font-style:italic;color:#2a00ff">&quot;range&quot;</span><span style="color:#000000"> </span><span style="color:#7f007f">minValue</span><span style="color:#000000">=</span><span style="font-style:italic;color:#2a00ff">&quot;0&quot;</span><span style="color:#000000"> </span><span style="color:#7f007f">maxValue</span><span style="color:#000000">=</span><span style="font-style:italic;color:#2a00ff">&quot;100&quot;</span><span style="color:#000000"> </span><span style="color:#7f007f">label</span><span style="color:#000000">=</span><span style="font-style:italic;color:#2a00ff">&quot;Range:&quot;</span><span style="color:#000000"> </span><span style="color:#008080">/&gt;</span></span>
 </code></pre></div>
@@ -990,8 +1010,10 @@
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000001200000004D88224EDF.png" style="display:inline-block; margin:4px;width:5.33cm;height:1.431cm;" class="odt-zoomable" data-zoom-src="images/10000000000001200000004D88224EDF.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
 
 <ul>
-<li>ligne 31 : un bouton à deux valeurs :</li>
+  <li>ligne 31 : un bouton à deux valeurs :
+  </li>
 </ul>
+
 <div class="odt-code-rich" data-linenums="false" style="counter-reset: odtline 0;"><pre><code class="language-text">
 <span class="odt-code-line"><span style="color:#000000">                </span><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">pm:switch</span><span style="color:#008080"> </span><span style="color:#7f007f">id</span><span style="color:#000000">=</span><span style="font-style:italic;color:#2a00ff">&quot;switch&quot;</span><span style="color:#008080"> </span><span style="color:#7f007f">onLabel</span><span style="color:#000000">=</span><span style="font-style:italic;color:#2a00ff">&quot;yes&quot;</span><span style="color:#008080"> </span><span style="color:#7f007f">offLabel</span><span style="color:#000000">=</span><span style="font-style:italic;color:#2a00ff">&quot;no&quot;</span><span style="color:#008080"> </span><span style="color:#7f007f">label</span><span style="color:#000000">=</span><span style="font-style:italic;color:#2a00ff">&quot;Switch:&quot;</span><span style="color:#008080"> /&gt;</span></span>
 </code></pre></div>
@@ -999,8 +1021,10 @@
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000006B0000004EB7D35385.png" style="display:inline-block; margin:4px;width:1.981cm;height:1.439cm;" class="odt-zoomable" data-zoom-src="images/100000000000006B0000004EB7D35385.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000006B0000004F74709D0C.png" style="display:inline-block; margin:4px;width:1.981cm;height:1.461cm;" class="odt-zoomable" data-zoom-src="images/100000000000006B0000004F74709D0C.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
 
 <ul>
-<li>ligne 32 : une case à cocher :</li>
+  <li>ligne 32 : une case à cocher :
+  </li>
 </ul>
+
 <div class="odt-code-rich" data-linenums="false" style="counter-reset: odtline 0;"><pre><code class="language-text">
 <span class="odt-code-line"><span style="color:#000000">      </span><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">p:selectBooleanCheckbox</span><span style="color:#008080"> </span><span style="color:#7f007f">id</span><span style="color:#000000">=</span><span style="font-style:italic;color:#2a00ff">&quot;booleanCheckbox&quot;</span><span style="color:#008080"> </span><span style="color:#7f007f">value</span><span style="color:#000000">=</span><span style="font-style:italic;color:#2a00ff">&quot;false&quot;</span><span style="color:#008080"> </span><span style="color:#7f007f">itemLabel</span><span style="color:#000000">=</span><span style="font-style:italic;color:#2a00ff">&quot;I agree&quot;</span><span style="color:#008080"> </span><span style="color:#7f007f">label</span><span style="color:#000000">=</span><span style="font-style:italic;color:#2a00ff">&quot;Checkbox&quot;</span><span style="color:#008080">/&gt;</span></span>
 </code></pre></div>
@@ -1008,8 +1032,10 @@
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000012D0000005413751E91.png" style="display:inline-block; margin:4px;width:5.57cm;height:1.559cm;" class="odt-zoomable" data-zoom-src="images/100000000000012D0000005413751E91.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
 
 <ul>
-<li>lignes 33-37 : un groupe de cases à cocher :</li>
+  <li>lignes 33-37 : un groupe de cases à cocher :
+  </li>
 </ul>
+
 <div class="odt-code-rich" data-linenums="false" style="counter-reset: odtline 0;"><pre><code class="language-vbscript">
 <span class="odt-code-line"><span style="color:#000000">  </span><span style="color:#000000">                </span><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">p:selectManyCheckbox</span> <span style="color:#7f007f">id</span><span style="color:#000000">=</span><span style="font-style:italic;color:#2a00ff">&quot;checkbox&quot;</span> <span style="color:#7f007f">label</span><span style="color:#000000">=</span><span style="font-style:italic;color:#2a00ff">&quot;Checkboxes: &quot;</span><span style="color:#008080">&gt;</span></span>
 <span class="odt-code-line"><span style="color:#000000">                    </span><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">f:selectItem</span> <span style="color:#7f007f">itemLabel</span><span style="color:#000000">=</span><span style="font-style:italic;color:#2a00ff">&quot;Option 1&quot;</span> <span style="color:#7f007f">itemValue</span><span style="color:#000000">=</span><span style="font-style:italic;color:#2a00ff">&quot;Option 1&quot;</span> <span style="color:#008080">/&gt;</span></span>
@@ -1021,8 +1047,10 @@
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000131000000A9F1A806B2.png" style="display:inline-block; margin:4px;width:5.65cm;height:3.129cm;" class="odt-zoomable" data-zoom-src="images/1000000000000131000000A9F1A806B2.png" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
 
 <ul>
-<li>lignes 38-42 : un groupe de boutons radio</li>
+  <li>lignes 38-42 : un groupe de boutons radio
+  </li>
 </ul>
+
 <div class="odt-code-rich" data-linenums="false" style="counter-reset: odtline 0;"><pre><code class="language-vbscript">
 <span class="odt-code-line"><span style="color:#000000">                    </span><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">p:selectOneRadio</span><span style="color:#008080"> </span><span style="color:#7f007f">id</span><span style="color:#000000">=</span><span style="font-style:italic;color:#2a00ff">&quot;radio&quot;</span><span style="color:#008080"> </span><span style="color:#7f007f">label</span><span style="color:#000000">=</span><span style="font-style:italic;color:#2a00ff">&quot;Radios: &quot;</span><span style="color:#008080">&gt;</span></span>
 <span class="odt-code-line"><span style="color:#000000">                    </span><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">f:selectItem</span> <span style="color:#7f007f">itemLabel</span><span style="color:#000000">=</span><span style="font-style:italic;color:#2a00ff">&quot;Option 1&quot;</span> <span style="color:#7f007f">itemValue</span><span style="color:#000000">=</span><span style="font-style:italic;color:#2a00ff">&quot;Option 1&quot;</span> <span style="color:#008080">/&gt;</span></span>
@@ -1137,8 +1165,10 @@
 </code></pre></div>
 
 <ul>
-<li>ligne 11 : fixe la valeur du paramètre [<strong>javax.faces.RenderKitId</strong>].</li>
+  <li>ligne 11 : fixe la valeur du paramètre [<b>javax.faces.RenderKitId</b>].
+  </li>
 </ul>
+
 <p>A l&#x27;exécution, on obtient la même page que précédemment mais sans avoir à mettre de paramètre à l&#x27;URL [4]. Nous laissons au lecteur le soin de tester cette application. On y découvre des bogues : la balise &lt;<em>p:selectManyCheckbox</em>&gt; ne s&#x27;affiche pas, idem pour la balise &lt;<em>p:selectOneRadio</em>&gt;, la balise &lt;<em>pm:range</em>&gt; ne fonctionne pas. Ces dysfonctionnements, qui n&#x27;existent pas sur le site de la démo, laissent à penser que celle-ci ne fonctionne pas avec la combinaisons utilisée ici de Primefaces mobile 0.9.1 avec Primefaces 3.2. Mais c&#x27;est néanmoins un point de départ pour découvrir les balises de cette bibliothèque en cours de construction.</p>
 <p>Pour avoir un rendu plus réaliste, on pourra tester l&#x27;application sur un simulateur comme celui de l&#x27;iphone 4 [<a href="http://iphone4simulator.com/">http://iphone4simulator.com/</a>]. On obtient la chose suivante :</p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000001A2000002EA1BCA6DC2.png" style="display:inline-block; margin:4px;width:5.53cm;height:9.869cm;" class="odt-zoomable" data-zoom-src="images/10000000000001A2000002EA1BCA6DC2.png" /></td></tr></table>
@@ -1153,25 +1183,36 @@
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000002F6000001C6B8807623.png" style="display:inline-block; margin:4px;width:10.028cm;height:6.006cm;" class="odt-zoomable" data-zoom-src="images/10000000000002F6000001C6B8807623.png" /></td></tr></table>
 
 <ul>
-<li>la vue 1 [1] présente un formulaire qu&#x27;on peut valider [2],</li>
-<li>la vue 2 [3] confirme les saisies et offre la posibilité de revenir au formulaire [4].</li>
+  <li>la vue 1 [1] présente un formulaire qu&#x27;on peut valider [2],
+  </li>
+  <li>la vue 2 [3] confirme les saisies et offre la posibilité de revenir au formulaire [4].
+  </li>
 </ul>
+
 <p>Le projet montre deux choses :</p>
 <ul>
-<li>la relation entre une page et son modèle,</li>
-<li>la navigation entre vues de la page.</li>
+  <li>la relation entre une page et son modèle,
+  </li>
+  <li>la navigation entre vues de la page.
+  </li>
 </ul>
+
 <p><a id="refheading1267391553644564"></a></p>
 <h3 id="852-le-projet-netbeans">8.5.2. Le projet Netbeans</h3>
 <p>Le projet Netbeans est le suivant :</p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000002F0000001EBE6C50E56.png" style="display:inline-block; margin:4px;width:9.948cm;height:6.496cm;" class="odt-zoomable" data-zoom-src="images/10000000000002F0000001EBE6C50E56.png" /></td></tr></table>
 
 <ul>
-<li>en [1], la page Primefaces mobile,</li>
-<li>en [2], son modèle</li>
-<li>en [3], les fichiers de messages car l&#x27;application est internationalisée,</li>
-<li>en [4], les dépendances du projet.</li>
+  <li>en [1], la page Primefaces mobile,
+  </li>
+  <li>en [2], son modèle
+  </li>
+  <li>en [3], les fichiers de messages car l&#x27;application est internationalisée,
+  </li>
+  <li>en [4], les dépendances du projet.
+  </li>
 </ul>
+
 <p><a id="refheading1267411553644564"></a></p>
 <h3 id="853-configuration-du-projet">8.5.3. Configuration du projet</h3>
 <p>Nous donnons les fichiers de configuration sans les expliquer. Ils sont désormais classiques.</p>
@@ -1321,11 +1362,16 @@
 
 <p>Nous avons repris l&#x27;exemple de démonstration du site de Primefaces mobile en l&#x27;aménageant pour qu&#x27;il fonctionne :</p>
 <ul>
-<li>la balise &lt;<em>p:selectManyCheckbox</em>&gt; n&#x27;était pas affichée. Nous l&#x27;avons remplacée par une balise &lt;<em>h:selectManyCheckbox</em>&gt; (ligne 32),</li>
-<li>la balise &lt;<em>p:selectOneRadio</em>&gt; n&#x27;était pas affichée. Nous l&#x27;avons remplacée par une balise &lt;<em>p:selectOneRadio</em>&gt; (ligne 40),</li>
-<li>ligne 27 : nous avons gardé la balise &lt;<em>pm:inputRange</em>&gt; qui affiche un slider. Celui-ci est bogué : on ne peut pas déplacer le curseur du slider. Mais on peut saisir un nombre qui le fait alors bouger,</li>
-<li>on notera qu&#x27;il y a peu de balises propres à PFM (lignes 13, 14, 15, 19, 27, 28 dans la première vue). Les autres balises sont des balises JSF et PF classiques. Primefaces mobile repose sur ces deux frameworks.</li>
+  <li>la balise &lt;<i>p:selectManyCheckbox</i>&gt; n&#x27;était pas affichée. Nous l&#x27;avons remplacée par une balise &lt;<i>h:selectManyCheckbox</i>&gt; (ligne 32),
+  </li>
+  <li>la balise &lt;<i>p:selectOneRadio</i>&gt; n&#x27;était pas affichée. Nous l&#x27;avons remplacée par une balise &lt;<i>p:selectOneRadio</i>&gt; (ligne 40),
+  </li>
+  <li>ligne 27 : nous avons gardé la balise &lt;<i>pm:inputRange</i>&gt; qui affiche un slider. Celui-ci est bogué : on ne peut pas déplacer le curseur du slider. Mais on peut saisir un nombre qui le fait alors bouger,
+  </li>
+  <li>on notera qu&#x27;il y a peu de balises propres à PFM (lignes 13, 14, 15, 19, 27, 28 dans la première vue). Les autres balises sont des balises JSF et PF classiques. Primefaces mobile repose sur ces deux frameworks.
+  </li>
 </ul>
+
 <p>Notons la structure de la page :</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-xml">
 <span class="odt-code-line"><span style="color:#008080">&lt;?</span><span style="color:#3f7f7f">xml</span> <span style="color:#7f007f">version</span><span style="color:#000000">=</span><span style="font-style:italic;color:#2a00ff">&quot;1.0&quot;</span> <span style="color:#7f007f">encoding</span><span style="color:#000000">=</span><span style="font-style:italic;color:#2a00ff">&#x27;UTF-8&#x27;</span><span style="color:#008080">?&gt;</span></span>
@@ -1364,15 +1410,24 @@
 </code></pre></div>
 
 <ul>
-<li>ligne 10 : définit une page PFM. L&#x27;attribut <strong>title</strong> fixe le titre affiché par le navigateur,</li>
-<li>une page est composée d&#x27;une ou plusieurs vues. Au premier affichage de la page, c&#x27;est la première vue qui est affichée. Ensuite on passe d&#x27;une vue à l&#x27;autre par navigation. Ici il y a deux vues <strong>forms</strong> ligne 13 et <strong>infos</strong> ligne 24,</li>
-<li>ligne 14 : la balise <strong>header</strong> définit l&#x27;entête d&#x27;une vue,</li>
-<li>ligne 15 : la balise <strong>content</strong> définit le contenu d&#x27;une vue,</li>
-<li>ligne 16 : la vue <strong>forms</strong> contient un formulaire JSF,</li>
-<li>ligne 18 : ce formulaire sera validé par un bouton Primefaces classique. Le formulaire sera posté au modèle [Form] et sera traité par la méthode <em>[Form].valider</em>. Cette méthode fera son travail. Nous verrons qu&#x27;elle demande l&#x27;affichage de la vue <strong>infos</strong>. Auparavant cette vue aura été mise à jour par l&#x27;appel AJAX (attribut <strong>update</strong>),</li>
-<li>ligne 26 : on pourra passer de la vue <strong>infos</strong> à la vue <strong>forms</strong> avec un bouton. On notera la forme de l&#x27;attribut <strong>href</strong> [<span style="color: #7f007f">href</span><span style="color: #000000">=</span><em><span style="color: #2a00ff">&quot;#forms?reverse=true&quot;</span></em>]. La notation <strong>#forms</strong> désigne la vue <strong>forms</strong>. Le paramètre <em>reverse=true</em> demande un retour en arrière. J&#x27;ai repris cet attribut de la démo. Lorsqu&#x27;on l&#x27;enlève, on ne voit aucune différence sur un simulateur... Peut-être y-en-a-t-il une sur de vrais smartphones,</li>
-<li>on notera enfin l&#x27;utilisation de la bibliothèque Primefaces mobile ligne 7.</li>
+  <li>ligne 10 : définit une page PFM. L&#x27;attribut <b>title</b> fixe le titre affiché par le navigateur,
+  </li>
+  <li>une page est composée d&#x27;une ou plusieurs vues. Au premier affichage de la page, c&#x27;est la première vue qui est affichée. Ensuite on passe d&#x27;une vue à l&#x27;autre par navigation. Ici il y a deux vues <b>forms</b> ligne 13 et <b>infos</b> ligne 24,
+  </li>
+  <li>ligne 14 : la balise <b>header</b> définit l&#x27;entête d&#x27;une vue,
+  </li>
+  <li>ligne 15 : la balise <b>content</b> définit le contenu d&#x27;une vue,
+  </li>
+  <li>ligne 16 : la vue <b>forms</b> contient un formulaire JSF,
+  </li>
+  <li>ligne 18 : ce formulaire sera validé par un bouton Primefaces classique. Le formulaire sera posté au modèle [Form] et sera traité par la méthode <i>[Form].valider</i>. Cette méthode fera son travail. Nous verrons qu&#x27;elle demande l&#x27;affichage de la vue <b>infos</b>. Auparavant cette vue aura été mise à jour par l&#x27;appel AJAX (attribut <b>update</b>),
+  </li>
+  <li>ligne 26 : on pourra passer de la vue <b>infos</b> à la vue <b>forms</b> avec un bouton. On notera la forme de l&#x27;attribut <b>href</b> [<span style="color: #7f007f">href</span><span style="color: #000000">=</span><i><span style="color: #2a00ff">&quot;#forms?reverse=true&quot;</span></i>]. La notation <b>#forms</b> désigne la vue <b>forms</b>. Le paramètre <i>reverse=true</i> demande un retour en arrière. J&#x27;ai repris cet attribut de la démo. Lorsqu&#x27;on l&#x27;enlève, on ne voit aucune différence sur un simulateur... Peut-être y-en-a-t-il une sur de vrais smartphones,
+  </li>
+  <li>on notera enfin l&#x27;utilisation de la bibliothèque Primefaces mobile ligne 7.
+  </li>
 </ul>
+
 <p>Même si elle apporte des nouveautés, cette page PFM est tout à fait compréhensible. Il en est de même pour son modèle [Form.java].</p>
 <p><a id="refheading1267451553644564"></a></p>
 <h3 id="855-le-modele-formjava">8.5.5. Le modèle [Form.java]</h3>
