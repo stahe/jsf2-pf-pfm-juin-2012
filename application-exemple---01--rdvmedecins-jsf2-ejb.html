@@ -1246,8 +1246,8 @@
 
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000005320000011FBD2CB0B7.png" style="display:inline-block; margin:4px;width:17.595cm;height:3.798cm;" class="odt-zoomable" data-zoom-src="images/10000000000005320000011FBD2CB0B7.png" /></td></tr></table>
 
-<p><a id="vuesappliweb"></a>
-<a id="refheading73502604163464"></a></p>
+<p><a id="refheading73502604163464"></a>
+<a id="vuesappliweb"></a></p>
 <h2 id="32-fonctionnement-de-lapplication">3.2. Fonctionnement de l&#x27;application</h2>
 <p>Nous appellerons [RdvMedecins] l&#x27;application. Nous présentons ci-dessous des copies d&#x27;écran de son fonctionnement.</p>
 <p>La page d&#x27;accueil de l&#x27;application est la suivante :</p>
@@ -1359,8 +1359,8 @@
 </code></pre></div>
 <p>Si une ligne de la table[RV] a la valeur (JOUR1, ID_CRENEAU1) pour les colonnes (JOUR, ID_CRENEAU), cette valeur ne peut se retrouver nulle part ailleurs. Sinon, cela signifierait que deux RV ont été pris au même moment pour le même médecin. D&#x27;un point de vue programmation Java, le pilote JDBC de la base lance une <em>SQLException</em> lorsque ce cas se produit.</p>
 <p>La ligne d&#x27;<em>id</em> égal à 3 (cf [1] ci-dessus) signifie qu&#x27;un RV a été pris pour le créneau n° 20 et le client n° 4 le 23/08/2006. La table [CRENEAUX] nous apprend que le créneau n° 20 correspond au créneau horaire 16 h 20 - 16 h 40 et appartient au médecin n° 1 (Mme Marie PELISSIER). La table [CLIENTS] nous apprend que le client n° 4 est Melle Brigitte BISTROU.</p>
-<p><a id="refheading73516604163464"></a>
-<a id="creation-bd"></a></p>
+<p><a id="creation-bd"></a>
+<a id="refheading73516604163464"></a></p>
 <h3 id="335-generation-de-la-base">3.3.5. Génération de la base</h3>
 <p>Pour créer les tables et les remplir on pourra utiliser le script [dbrdvmedecins2.sql] qu&#x27;on trouvera sur le site des exemples. Avec [WampServer] (cf paragraphe <a href="introduction.html#wampserver">1.3.3</a>), on pourra procéder comme suit :</p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000038B000001D61A612CA3.png" style="display:inline-block; margin:4px;width:12cm;height:6.218cm;" class="odt-zoomable" data-zoom-src="images/100000000000038B000001D61A612CA3.png" /></td></tr></table>
@@ -1407,8 +1407,8 @@
 </ul>
 
 <p>Par la suite, nous ne reviendrons plus sur cette base. Mais le lecteur est invité à suivre son évolution au fil des programmes surtout lorsque ça ne marche pas.</p>
-<p><a id="generationautomatique"></a>
-<a id="refheading73522604163464"></a></p>
+<p><a id="refheading73522604163464"></a>
+<a id="generationautomatique"></a></p>
 <h2 id="34-les-couches-dao-et-jpa">3.4. Les couches [DAO] et [JPA]</h2>
 <p>Revenons à l&#x27;architecture que nous devons construire :</p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004F000000113130952B3.png" style="display:inline-block; margin:4px;width:16.722cm;height:3.639cm;" class="odt-zoomable" data-zoom-src="images/10000000000004F000000113130952B3.png" /></td></tr></table>
@@ -1427,8 +1427,8 @@
 
 <p>Nous construisons maintenant le projet Maven des couches [DAO] et [JPA].</p>
 <p><strong>Note</strong> : la compréhension des couches [métier], [DAO], [JPA] nécessite des connaissances en Java EE. Pour cela, on pourra lire [<strong>ref7</strong>] (cf paragraphe <a href="#references-2">3</a>).</p>
-<p><a id="maven-ejb-dao"></a>
-<a id="refheading74289604163464"></a></p>
+<p><a id="refheading74289604163464"></a>
+<a id="maven-ejb-dao"></a></p>
 <h3 id="341-le-projet-netbeans">3.4.1. Le projet Netbeans</h3>
 <p>C&#x27;est le suivant :</p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004D20000014E497A4EA8.png" style="display:inline-block; margin:4px;width:16.325cm;height:4.419cm;" class="odt-zoomable" data-zoom-src="images/10000000000004D20000014E497A4EA8.png" /></td></tr></table>
@@ -1456,8 +1456,8 @@
 
 <p>Avec Netbeans, il est possible de générer automatiquement la couche [JPA] et la couche [EJB] qui contrôle l&#x27;accès aux entités JPA générées. Il est intéressant de connaître ces méthodes de génération automatique car le code généré donne de précieuses indications sur la façon d&#x27;écrire des entités JPA ou le code EJB qui les utilise.</p>
 <p>Nous décrivons maintenant certains de ces outils de génération automatique. Pour comprendre le code généré, il faut avoir de bonnes notions sur les entités JPA [<strong>ref8</strong>] et les EJB [<strong>ref7</strong>] (cf paragraphe <a href="#references-2">3</a>).</p>
-<p><a id="refheading74293604163464"></a>
-<a id="connexionnetbeans"></a></p>
+<p><a id="connexionnetbeans"></a>
+<a id="refheading74293604163464"></a></p>
 <h4 id="3421-creation-dune-connexion-netbeans-a-la-base-de-donnees">3.4.2.1. Création d&#x27;une connexion Netbeans à la base de données</h4>
 <ul>
   <li>lancer le SGBD MySQL 5 afin que la BD soit disponible,
@@ -2659,8 +2659,8 @@
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000003F1000002083DD109B4.png" style="display:inline-block; margin:4px;width:13.349cm;height:6.879cm;" class="odt-zoomable" data-zoom-src="images/10000000000003F1000002083DD109B4.png" /></td></tr></table>
 
 <p>Le dossier où mettre le pilote JDBC de MySQL est &lt;Domains folder&gt;[1]/domain1/lib/ext [2]. Ce pilote est disponible à l&#x27;URL [http://www.mysql.fr/downloads/connector/j/]. Une fois celui-ci installé, il faut relancer le serveur Glassfish pour qu&#x27;il prenne en compte cette nouvelle bibliothèque.</p>
-<p><a id="deploiement-ejb1"></a>
-<a id="refheading73534604163464"></a></p>
+<p><a id="refheading73534604163464"></a>
+<a id="deploiement-ejb1"></a></p>
 <h3 id="346-deploiement-de-lejb-de-la-couche-dao">3.4.6. Déploiement de l&#x27;EJB de la couche [DAO]</h3>
 <p>Revenons à l&#x27;architecture construite pour le moment :</p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004EB0000011C09BABED1.png" style="display:inline-block; margin:4px;width:16.656cm;height:3.757cm;" class="odt-zoomable" data-zoom-src="images/10000000000004EB0000011C09BABED1.png" /></td></tr></table>
