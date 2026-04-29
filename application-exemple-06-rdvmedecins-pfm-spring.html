@@ -141,9 +141,9 @@
     
     
     
-    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="purple"  aria-label="Passer au mode sombre"  type="radio" name="__palette" id="__palette_0">
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="purple"  aria-label="Passer en mode sombre"  type="radio" name="__palette" id="__palette_0">
     
-      <label class="md-header__button md-icon" title="Passer au mode sombre" for="__palette_1" hidden>
+      <label class="md-header__button md-icon" title="Passer en mode sombre" for="__palette_1" hidden>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
       </label>
     
@@ -151,9 +151,9 @@
     
     
     
-    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="purple"  aria-label="Passer au mode clair"  type="radio" name="__palette" id="__palette_1">
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="purple"  aria-label="Passer en mode clair"  type="radio" name="__palette" id="__palette_1">
     
-      <label class="md-header__button md-icon" title="Passer au mode clair" for="__palette_0" hidden>
+      <label class="md-header__button md-icon" title="Passer en mode clair" for="__palette_0" hidden>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
       </label>
     
@@ -706,7 +706,7 @@
 <p><a id="refheading105125100051761"></a></p>
 <h2 id="101-le-portage">10.1. Le portage</h2>
 <p><span style="color: #000000">Nous portons maintenant l&#x27;application précédente dans un environnement Spring / Tomcat :</span></p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004E90000011A5052F9EC.png" style="display:inline-block; margin:4px;width:16.63cm;height:3.731cm;" class="odt-zoomable" data-zoom-src="images/10000000000004E90000011A5052F9EC.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004E90000011A5052F9EC.png" width="629" height="141" style="display:inline-block; margin:4px;width:16.63cm;height:3.731cm;" class="odt-zoomable" data-zoom-src="images/10000000000004E90000011A5052F9EC.png" /></td></tr></table>
 
 <p><span style="color: #000000">Nous allons nous appuyer sur deux applications déjà écrites. Nous allons utiliser :</span></p>
 <ul>
@@ -720,7 +720,7 @@
 
 <p><span style="color: #000000">Nous refaisons là un travail analogue à celui qui avait été fait pour porter l&#x27;application JSF2 / EJB / Glassfish dans un environnement JSF2 / Spring Tomcat. Aussi donnerons-nous moins d&#x27;explications. Le lecteur peut, s&#x27;il en est besoin, se reporter à ce portage.</span></p>
 <p><span style="color: #000000">Nous mettons tous les projets nécessaires au portage dans un nouveau dossier [rdvmedecins-pfm-spring] [1] :</span></p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000050E0000012E8297FB7D.png" style="display:inline-block; margin:4px;width:17.119cm;height:3.995cm;" class="odt-zoomable" data-zoom-src="images/100000000000050E0000012E8297FB7D.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000050E0000012E8297FB7D.png" width="647" height="151" style="display:inline-block; margin:4px;width:17.119cm;height:3.995cm;" class="odt-zoomable" data-zoom-src="images/100000000000050E0000012E8297FB7D.png" /></td></tr></table>
 
 <ul>
   <li><span style="color: #000000">[mv-rdvmedecins-spring-dao-jpa] : les couches [DAO] et [JPA] de la version 02 JSF / Spring,</span>
@@ -742,97 +742,97 @@
 </ul>
 
 <p><span style="color: #000000">Le projet [web] évolue comme suit :</span></p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000002010000018764250CA2.png" style="display:inline-block; margin:4px;width:6.787cm;height:5.173cm;" class="odt-zoomable" data-zoom-src="images/10000000000002010000018764250CA2.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000002010000018764250CA2.png" width="257" height="196" style="display:inline-block; margin:4px;width:6.787cm;height:5.173cm;" class="odt-zoomable" data-zoom-src="images/10000000000002010000018764250CA2.png" /></td></tr></table>
 
 <p><span style="color: #000000">Le fichier [pom.xml] de la couche [web] a désormais les dépendances suivantes :</span></p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-xml">
-<span class="odt-code-line"><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">dependencies</span><span style="color:#008080">&gt;</span></span>
-<span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">dependency</span><span style="color:#008080">&gt;</span></span>
-<span class="odt-code-line"><span style="color:#000000">      </span><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">groupId</span><span style="color:#008080">&gt;</span><span style="color:#000000">org.primefaces</span><span style="color:#008080">&lt;/</span><span style="color:#3f7f7f">groupId</span><span style="color:#008080">&gt;</span></span>
-<span class="odt-code-line"><span style="color:#000000">      </span><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">artifactId</span><span style="color:#008080">&gt;</span><span style="color:#000000">primefaces</span><span style="color:#008080">&lt;/</span><span style="color:#3f7f7f">artifactId</span><span style="color:#008080">&gt;</span></span>
-<span class="odt-code-line"><span style="color:#000000">      </span><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">version</span><span style="color:#008080">&gt;</span><span style="color:#000000">3.2</span><span style="color:#008080">&lt;/</span><span style="color:#3f7f7f">version</span><span style="color:#008080">&gt;</span></span>
-<span class="odt-code-line"><span style="color:#000000">      </span><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">type</span><span style="color:#008080">&gt;</span><span style="color:#000000">jar</span><span style="color:#008080">&lt;/</span><span style="color:#3f7f7f">type</span><span style="color:#008080">&gt;</span></span>
-<span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#008080">&lt;/</span><span style="color:#3f7f7f">dependency</span><span style="color:#008080">&gt;</span></span>
-<span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">dependency</span><span style="color:#008080">&gt;</span></span>
-<span class="odt-code-line"><span style="color:#000000">      </span><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">groupId</span><span style="color:#008080">&gt;</span><span style="color:#000000">org.primefaces</span><span style="color:#008080">&lt;/</span><span style="color:#3f7f7f">groupId</span><span style="color:#008080">&gt;</span></span>
-<span class="odt-code-line"><span style="color:#000000">      </span><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">artifactId</span><span style="color:#008080">&gt;</span><span style="color:#000000">mobile</span><span style="color:#008080">&lt;/</span><span style="color:#3f7f7f">artifactId</span><span style="color:#008080">&gt;</span></span>
-<span class="odt-code-line"><span style="color:#000000">      </span><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">version</span><span style="color:#008080">&gt;</span><span style="color:#000000">0.9.1</span><span style="color:#008080">&lt;/</span><span style="color:#3f7f7f">version</span><span style="color:#008080">&gt;</span></span>
-<span class="odt-code-line"><span style="color:#000000">      </span><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">type</span><span style="color:#008080">&gt;</span><span style="color:#000000">jar</span><span style="color:#008080">&lt;/</span><span style="color:#3f7f7f">type</span><span style="color:#008080">&gt;</span></span>
-<span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#008080">&lt;/</span><span style="color:#3f7f7f">dependency</span><span style="color:#008080">&gt;</span></span>
-<span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">dependency</span><span style="color:#008080">&gt;</span></span>
-<span class="odt-code-line"><span style="color:#000000">      </span><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">groupId</span><span style="color:#008080">&gt;</span><span style="color:#000000">com.sun.faces</span><span style="color:#008080">&lt;/</span><span style="color:#3f7f7f">groupId</span><span style="color:#008080">&gt;</span></span>
-<span class="odt-code-line"><span style="color:#000000">      </span><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">artifactId</span><span style="color:#008080">&gt;</span><span style="color:#000000">jsf-api</span><span style="color:#008080">&lt;/</span><span style="color:#3f7f7f">artifactId</span><span style="color:#008080">&gt;</span></span>
-<span class="odt-code-line"><span style="color:#000000">      </span><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">version</span><span style="color:#008080">&gt;</span><span style="color:#000000">2.1.8</span><span style="color:#008080">&lt;/</span><span style="color:#3f7f7f">version</span><span style="color:#008080">&gt;</span></span>
-<span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#008080">&lt;/</span><span style="color:#3f7f7f">dependency</span><span style="color:#008080">&gt;</span></span>
-<span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">dependency</span><span style="color:#008080">&gt;</span></span>
-<span class="odt-code-line"><span style="color:#000000">      </span><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">groupId</span><span style="color:#008080">&gt;</span><span style="color:#000000">com.sun.faces</span><span style="color:#008080">&lt;/</span><span style="color:#3f7f7f">groupId</span><span style="color:#008080">&gt;</span></span>
-<span class="odt-code-line"><span style="color:#000000">      </span><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">artifactId</span><span style="color:#008080">&gt;</span><span style="color:#000000">jsf-impl</span><span style="color:#008080">&lt;/</span><span style="color:#3f7f7f">artifactId</span><span style="color:#008080">&gt;</span></span>
-<span class="odt-code-line"><span style="color:#000000">      </span><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">version</span><span style="color:#008080">&gt;</span><span style="color:#000000">2.1.8</span><span style="color:#008080">&lt;/</span><span style="color:#3f7f7f">version</span><span style="color:#008080">&gt;</span></span>
-<span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#008080">&lt;/</span><span style="color:#3f7f7f">dependency</span><span style="color:#008080">&gt;</span></span>
-<span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">dependency</span><span style="color:#008080">&gt;</span></span>
-<span class="odt-code-line"><span style="color:#000000">      </span><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">groupId</span><span style="color:#008080">&gt;</span><span style="color:#000000">${project.groupId}</span><span style="color:#008080">&lt;/</span><span style="color:#3f7f7f">groupId</span><span style="color:#008080">&gt;</span></span>
-<span class="odt-code-line"><span style="color:#000000">      </span><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">artifactId</span><span style="color:#008080">&gt;</span><span style="color:#000000">mv-rdvmedecins-spring-dao-jpa</span><span style="color:#008080">&lt;/</span><span style="color:#3f7f7f">artifactId</span><span style="color:#008080">&gt;</span></span>
-<span class="odt-code-line"><span style="color:#000000">      </span><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">version</span><span style="color:#008080">&gt;</span><span style="color:#000000">${project.version}</span><span style="color:#008080">&lt;/</span><span style="color:#3f7f7f">version</span><span style="color:#008080">&gt;</span></span>
-<span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#008080">&lt;/</span><span style="color:#3f7f7f">dependency</span><span style="color:#008080">&gt;</span></span>
-<span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">dependency</span><span style="color:#008080">&gt;</span></span>
-<span class="odt-code-line"><span style="color:#000000">      </span><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">groupId</span><span style="color:#008080">&gt;</span><span style="color:#000000">${project.groupId}</span><span style="color:#008080">&lt;/</span><span style="color:#3f7f7f">groupId</span><span style="color:#008080">&gt;</span></span>
-<span class="odt-code-line"><span style="color:#000000">      </span><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">artifactId</span><span style="color:#008080">&gt;</span><span style="color:#000000">mv-rdvmedecins-spring-metier</span><span style="color:#008080">&lt;/</span><span style="color:#3f7f7f">artifactId</span><span style="color:#008080">&gt;</span></span>
-<span class="odt-code-line"><span style="color:#000000">      </span><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">version</span><span style="color:#008080">&gt;</span><span style="color:#000000">${project.version}</span><span style="color:#008080">&lt;/</span><span style="color:#3f7f7f">version</span><span style="color:#008080">&gt;</span></span>
-<span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#008080">&lt;/</span><span style="color:#3f7f7f">dependency</span><span style="color:#008080">&gt;</span></span>
-<span class="odt-code-line"><span style="color:#000000">  </span><span style="color:#008080">&lt;/</span><span style="color:#3f7f7f">dependencies</span><span style="color:#008080">&gt;</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">dependencies</span><span style="color:#008080">&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">dependency</span><span style="color:#008080">&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">      </span><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">groupId</span><span style="color:#008080">&gt;</span><span style="color:#000000">org.primefaces</span><span style="color:#008080">&lt;/</span><span style="color:#3f7f7f">groupId</span><span style="color:#008080">&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">      </span><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">artifactId</span><span style="color:#008080">&gt;</span><span style="color:#000000">primefaces</span><span style="color:#008080">&lt;/</span><span style="color:#3f7f7f">artifactId</span><span style="color:#008080">&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">      </span><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">version</span><span style="color:#008080">&gt;</span><span style="color:#000000">3.2</span><span style="color:#008080">&lt;/</span><span style="color:#3f7f7f">version</span><span style="color:#008080">&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">      </span><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">type</span><span style="color:#008080">&gt;</span><span style="color:#000000">jar</span><span style="color:#008080">&lt;/</span><span style="color:#3f7f7f">type</span><span style="color:#008080">&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#008080">&lt;/</span><span style="color:#3f7f7f">dependency</span><span style="color:#008080">&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">dependency</span><span style="color:#008080">&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">      </span><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">groupId</span><span style="color:#008080">&gt;</span><span style="color:#000000">org.primefaces</span><span style="color:#008080">&lt;/</span><span style="color:#3f7f7f">groupId</span><span style="color:#008080">&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">      </span><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">artifactId</span><span style="color:#008080">&gt;</span><span style="color:#000000">mobile</span><span style="color:#008080">&lt;/</span><span style="color:#3f7f7f">artifactId</span><span style="color:#008080">&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">      </span><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">version</span><span style="color:#008080">&gt;</span><span style="color:#000000">0.9.1</span><span style="color:#008080">&lt;/</span><span style="color:#3f7f7f">version</span><span style="color:#008080">&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">      </span><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">type</span><span style="color:#008080">&gt;</span><span style="color:#000000">jar</span><span style="color:#008080">&lt;/</span><span style="color:#3f7f7f">type</span><span style="color:#008080">&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#008080">&lt;/</span><span style="color:#3f7f7f">dependency</span><span style="color:#008080">&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">dependency</span><span style="color:#008080">&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">      </span><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">groupId</span><span style="color:#008080">&gt;</span><span style="color:#000000">com.sun.faces</span><span style="color:#008080">&lt;/</span><span style="color:#3f7f7f">groupId</span><span style="color:#008080">&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">      </span><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">artifactId</span><span style="color:#008080">&gt;</span><span style="color:#000000">jsf-api</span><span style="color:#008080">&lt;/</span><span style="color:#3f7f7f">artifactId</span><span style="color:#008080">&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">      </span><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">version</span><span style="color:#008080">&gt;</span><span style="color:#000000">2.1.8</span><span style="color:#008080">&lt;/</span><span style="color:#3f7f7f">version</span><span style="color:#008080">&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#008080">&lt;/</span><span style="color:#3f7f7f">dependency</span><span style="color:#008080">&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">dependency</span><span style="color:#008080">&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">      </span><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">groupId</span><span style="color:#008080">&gt;</span><span style="color:#000000">com.sun.faces</span><span style="color:#008080">&lt;/</span><span style="color:#3f7f7f">groupId</span><span style="color:#008080">&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">      </span><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">artifactId</span><span style="color:#008080">&gt;</span><span style="color:#000000">jsf-impl</span><span style="color:#008080">&lt;/</span><span style="color:#3f7f7f">artifactId</span><span style="color:#008080">&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">      </span><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">version</span><span style="color:#008080">&gt;</span><span style="color:#000000">2.1.8</span><span style="color:#008080">&lt;/</span><span style="color:#3f7f7f">version</span><span style="color:#008080">&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#008080">&lt;/</span><span style="color:#3f7f7f">dependency</span><span style="color:#008080">&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">dependency</span><span style="color:#008080">&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">      </span><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">groupId</span><span style="color:#008080">&gt;</span><span style="color:#000000">${project.groupId}</span><span style="color:#008080">&lt;/</span><span style="color:#3f7f7f">groupId</span><span style="color:#008080">&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">      </span><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">artifactId</span><span style="color:#008080">&gt;</span><span style="color:#000000">mv-rdvmedecins-spring-dao-jpa</span><span style="color:#008080">&lt;/</span><span style="color:#3f7f7f">artifactId</span><span style="color:#008080">&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">      </span><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">version</span><span style="color:#008080">&gt;</span><span style="color:#000000">${project.version}</span><span style="color:#008080">&lt;/</span><span style="color:#3f7f7f">version</span><span style="color:#008080">&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#008080">&lt;/</span><span style="color:#3f7f7f">dependency</span><span style="color:#008080">&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">dependency</span><span style="color:#008080">&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">      </span><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">groupId</span><span style="color:#008080">&gt;</span><span style="color:#000000">${project.groupId}</span><span style="color:#008080">&lt;/</span><span style="color:#3f7f7f">groupId</span><span style="color:#008080">&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">      </span><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">artifactId</span><span style="color:#008080">&gt;</span><span style="color:#000000">mv-rdvmedecins-spring-metier</span><span style="color:#008080">&lt;/</span><span style="color:#3f7f7f">artifactId</span><span style="color:#008080">&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">      </span><span style="color:#008080">&lt;</span><span style="color:#3f7f7f">version</span><span style="color:#008080">&gt;</span><span style="color:#000000">${project.version}</span><span style="color:#008080">&lt;/</span><span style="color:#3f7f7f">version</span><span style="color:#008080">&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#008080">&lt;/</span><span style="color:#3f7f7f">dependency</span><span style="color:#008080">&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="color:#008080">&lt;/</span><span style="color:#3f7f7f">dependencies</span><span style="color:#008080">&gt;</span></span></span>
 </code></pre></div>
 
 <p><span style="color: #000000">Des erreurs apparaissent. Elles sont dues aux références EJB de la couche [web]. Etudions d&#x27;abord le bean [Application] :</span></p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000481000002522F8AF1C3.png" style="display:inline-block; margin:4px;width:15.254cm;height:7.858cm;" class="odt-zoomable" data-zoom-src="images/1000000000000481000002522F8AF1C3.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000481000002522F8AF1C3.png" width="577" height="297" style="display:inline-block; margin:4px;width:15.254cm;height:7.858cm;" class="odt-zoomable" data-zoom-src="images/1000000000000481000002522F8AF1C3.png" /></td></tr></table>
 
 <p><span style="color: #000000">Nous enlevons toutes les lignes erronées à cause de paquetages manquants, nous renommons [IMetier] (c&#x27;est son nom dans la couche [métier] Spring) l&#x27;interface [IMetierLocal] et nous utilisons Spring pour l&#x27;instancier :</span></p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-java">
-<span class="odt-code-line"><span style="font-weight:bold;color:#7f0055">package</span><span style="color:#000000"> beans;</span></span>
-<span class="odt-code-line"></span>
-<span class="odt-code-line"><span style="font-weight:bold;color:#7f0055">import</span><span style="color:#000000"> java.util.ArrayList;</span></span>
-<span class="odt-code-line"><span style="font-weight:bold;color:#7f0055">import</span><span style="color:#000000"> java.util.List;</span></span>
-<span class="odt-code-line"><span style="font-weight:bold;color:#7f0055">import</span><span style="color:#000000"> org.springframework.context.ApplicationContext;</span></span>
-<span class="odt-code-line"><span style="font-weight:bold;color:#7f0055">import</span><span style="color:#000000"> org.springframework.context.support.ClassPathXmlApplicationContext;</span></span>
-<span class="odt-code-line"><span style="font-weight:bold;color:#7f0055">import</span><span style="color:#000000"> rdvmedecins.metier.service.IMetier;</span></span>
-<span class="odt-code-line"></span>
-<span class="odt-code-line"><span style="font-weight:bold;color:#7f0055">public</span><span style="color:#000000"> </span><span style="font-weight:bold;color:#7f0055">class</span><span style="color:#000000"> Application {</span></span>
-<span class="odt-code-line"></span>
-<span class="odt-code-line"><span style="color:#000000">  </span><span style="color:#3f7f5f">// couche métier</span></span>
-<span class="odt-code-line"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">private</span><span style="color:#000000"> IMetier metier;</span></span>
-<span class="odt-code-line"><span style="color:#000000">  </span><span style="color:#3f7f5f">// erreurs</span></span>
-<span class="odt-code-line"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">private</span><span style="color:#000000"> List&lt;Erreur&gt; erreurs = </span><span style="font-weight:bold;color:#7f0055">new</span><span style="color:#000000"> ArrayList&lt;Erreur&gt;();</span></span>
-<span class="odt-code-line"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">private</span><span style="color:#000000"> Boolean erreur = </span><span style="font-weight:bold;color:#7f0055">false</span><span style="color:#000000">;</span></span>
-<span class="odt-code-line"></span>
-<span class="odt-code-line"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">public</span><span style="color:#000000"> Application() {</span></span>
-<span class="odt-code-line"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">try</span><span style="color:#000000"> {</span></span>
-<span class="odt-code-line"><span style="color:#000000">      </span><span style="color:#3f7f5f">// instanciation couche [métier]</span></span>
-<span class="odt-code-line"><span style="color:#000000">      ApplicationContext ctx = </span><span style="font-weight:bold;color:#7f0055">new</span><span style="color:#000000"> ClassPathXmlApplicationContext(</span><span style="color:#2a00ff">&quot;spring-config-metier-dao.xml&quot;</span><span style="color:#000000">);</span></span>
-<span class="odt-code-line"><span style="color:#000000">      metier = (IMetier) ctx.getBean(</span><span style="color:#2a00ff">&quot;metier&quot;</span><span style="color:#000000">);</span></span>
-<span class="odt-code-line"><span style="color:#000000">    } </span><span style="font-weight:bold;color:#7f0055">catch</span><span style="color:#000000"> (Throwable th) {</span></span>
-<span class="odt-code-line"><span style="color:#000000">      </span><span style="color:#3f7f5f">// on note l&#x27;erreur</span></span>
-<span class="odt-code-line"><span style="color:#000000">      erreur = </span><span style="font-weight:bold;color:#7f0055">true</span><span style="color:#000000">;</span></span>
-<span class="odt-code-line"><span style="color:#000000">      erreurs.add(</span><span style="font-weight:bold;color:#7f0055">new</span><span style="color:#000000"> Erreur(th.getClass().getName(), th.getMessage()));</span></span>
-<span class="odt-code-line"><span style="color:#000000">      </span><span style="font-weight:bold;color:#7f0055">while</span><span style="color:#000000"> (th.getCause() != </span><span style="font-weight:bold;color:#7f0055">null</span><span style="color:#000000">) {</span></span>
-<span class="odt-code-line">        th = th.getCause();</span>
-<span class="odt-code-line"><span style="color:#000000">        erreurs.add(</span><span style="font-weight:bold;color:#7f0055">new</span><span style="color:#000000"> Erreur(th.getClass().getName(), th.getMessage()));</span></span>
-<span class="odt-code-line">      }</span>
-<span class="odt-code-line"><span style="color:#000000">      </span><span style="font-weight:bold;color:#7f0055">return</span><span style="color:#000000">;</span></span>
-<span class="odt-code-line">    }</span>
-<span class="odt-code-line">  }</span>
-<span class="odt-code-line"></span>
-<span class="odt-code-line"><span style="color:#000000">  </span><span style="color:#3f7f5f">// getters</span></span>
-<span class="odt-code-line"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">public</span><span style="color:#000000"> Boolean getErreur() {</span></span>
-<span class="odt-code-line"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">return</span><span style="color:#000000"> erreur;</span></span>
-<span class="odt-code-line">  }</span>
-<span class="odt-code-line"></span>
-<span class="odt-code-line"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">public</span><span style="color:#000000"> List&lt;Erreur&gt; getErreurs() {</span></span>
-<span class="odt-code-line"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">return</span><span style="color:#000000"> erreurs;</span></span>
-<span class="odt-code-line">  }</span>
-<span class="odt-code-line"></span>
-<span class="odt-code-line"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">public</span><span style="color:#000000"> IMetier getMetier() {</span></span>
-<span class="odt-code-line"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">return</span><span style="color:#000000"> metier;</span></span>
-<span class="odt-code-line">  }</span>
-<span class="odt-code-line">}</span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">package</span><span style="color:#000000"> beans;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">import</span><span style="color:#000000"> java.util.ArrayList;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">import</span><span style="color:#000000"> java.util.List;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">import</span><span style="color:#000000"> org.springframework.context.ApplicationContext;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">import</span><span style="color:#000000"> org.springframework.context.support.ClassPathXmlApplicationContext;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">import</span><span style="color:#000000"> rdvmedecins.metier.service.IMetier;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">public</span><span style="color:#000000"> </span><span style="font-weight:bold;color:#7f0055">class</span><span style="color:#000000"> Application {</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// couche métier</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">private</span><span style="color:#000000"> IMetier metier;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// erreurs</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">private</span><span style="color:#000000"> List&lt;Erreur&gt; erreurs = </span><span style="font-weight:bold;color:#7f0055">new</span><span style="color:#000000"> ArrayList&lt;Erreur&gt;();</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">private</span><span style="color:#000000"> Boolean erreur = </span><span style="font-weight:bold;color:#7f0055">false</span><span style="color:#000000">;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">public</span><span style="color:#000000"> Application() {</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">try</span><span style="color:#000000"> {</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">      <span style="color:#000000">// instanciation couche [métier]</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">      ApplicationContext ctx = </span><span style="font-weight:bold;color:#7f0055">new</span><span style="color:#000000"> ClassPathXmlApplicationContext(</span><span style="color:#2a00ff">&quot;spring-config-metier-dao.xml&quot;</span><span style="color:#000000">);</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">      metier = (IMetier) ctx.getBean(</span><span style="color:#2a00ff">&quot;metier&quot;</span><span style="color:#000000">);</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    } </span><span style="font-weight:bold;color:#7f0055">catch</span><span style="color:#000000"> (Throwable th) {</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">      <span style="color:#000000">// on note l&#x27;erreur</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">      erreur = </span><span style="font-weight:bold;color:#7f0055">true</span><span style="color:#000000">;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">      erreurs.add(</span><span style="font-weight:bold;color:#7f0055">new</span><span style="color:#000000"> Erreur(th.getClass().getName(), th.getMessage()));</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">      </span><span style="font-weight:bold;color:#7f0055">while</span><span style="color:#000000"> (th.getCause() != </span><span style="font-weight:bold;color:#7f0055">null</span><span style="color:#000000">) {</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">        th = th.getCause();</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">        erreurs.add(</span><span style="font-weight:bold;color:#7f0055">new</span><span style="color:#000000"> Erreur(th.getClass().getName(), th.getMessage()));</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">      }</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">      </span><span style="font-weight:bold;color:#7f0055">return</span><span style="color:#000000">;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    }</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  }</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// getters</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">public</span><span style="color:#000000"> Boolean getErreur() {</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">return</span><span style="color:#000000"> erreur;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  }</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">public</span><span style="color:#000000"> List&lt;Erreur&gt; getErreurs() {</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">return</span><span style="color:#000000"> erreurs;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  }</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">public</span><span style="color:#000000"> IMetier getMetier() {</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">return</span><span style="color:#000000"> metier;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  }</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
 </code></pre></div>
 
 <ul>
@@ -840,7 +840,7 @@
   </li>
 </ul>
 
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000003420000014064DB3365.png" style="display:inline-block; margin:4px;width:11.033cm;height:4.233cm;" class="odt-zoomable" data-zoom-src="images/10000000000003420000014064DB3365.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000003420000014064DB3365.png" width="417" height="160" style="display:inline-block; margin:4px;width:11.033cm;height:4.233cm;" class="odt-zoomable" data-zoom-src="images/10000000000003420000014064DB3365.png" /></td></tr></table>
 
 <ul>
   <li><span style="color: #000000">lignes 22-31 : nous gérons une éventuelle exception et mémorisons sa pile dans le champ de la ligne 14.</span>
@@ -848,84 +848,84 @@
 </ul>
 
 <p><span style="color: #000000">Ceci fait, le bean [Application] n&#x27;a plus d&#x27;erreurs. Regardons maintenant le bean [Form] [1], [2] :</span></p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004A0000002A4FC54EC56.png" style="display:inline-block; margin:4px;width:15.663cm;height:8.943cm;" class="odt-zoomable" data-zoom-src="images/10000000000004A0000002A4FC54EC56.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004A0000002A4FC54EC56.png" width="592" height="338" style="display:inline-block; margin:4px;width:15.663cm;height:8.943cm;" class="odt-zoomable" data-zoom-src="images/10000000000004A0000002A4FC54EC56.png" /></td></tr></table>
 
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000000D1000000A837612899.png" style="display:inline-block; margin:4px;width:3.87cm;height:3.11cm;" class="odt-zoomable" data-zoom-src="images/10000000000000D1000000A837612899.png" /><img src="images/10000000000000C9000000B71BBC6695.png" style="display:inline-block; margin:4px;width:3.72cm;height:3.39cm;" class="odt-zoomable" data-zoom-src="images/10000000000000C9000000B71BBC6695.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000000D1000000A837612899.png" width="146" height="118" style="display:inline-block; margin:4px;width:3.87cm;height:3.11cm;" class="odt-zoomable" data-zoom-src="images/10000000000000D1000000A837612899.png" /><img src="images/10000000000000C9000000B71BBC6695.png" width="141" height="128" style="display:inline-block; margin:4px;width:3.72cm;height:3.39cm;" class="odt-zoomable" data-zoom-src="images/10000000000000C9000000B71BBC6695.png" /></td></tr></table>
 
 <p><span style="color: #000000">Nous supprimons toutes les lignes erronées (import et annotations) à cause de paquetages manquants et renommons [IMetier] l&#x27;interface [ImetierLocal]. Cela suffit pour éliminer toutes les erreurs [3].</span></p>
 <p><span style="color: #000000">Par ailleurs, il faut ajouter dans le code du bean [Form], le getter et le setter du champ </span></p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-text">
-<span class="odt-code-line"><span style="color:#000000">  </span><span style="color:#3f7f5f">// bean Application</span></span>
-<span class="odt-code-line"><span style="font-weight:bold;color:#7f0055">private</span><span style="color:#000000"> Application application;</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// bean Application</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">private</span><span style="color:#000000"> Application application;</span></span></span>
 </code></pre></div>
 
 <p><span style="color: #000000">Certaines des annotations supprimées dans les beans [Application] et [Form] déclaraient les classes comme étant des beans avec une certaine portée. Désormais, cette configuration est faite dans le fichier [faces-config.xml] [4] suivant :</span></p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-xml">
-<span class="odt-code-line">&lt;?xml version=&#x27;1.0&#x27; encoding=&#x27;UTF-8&#x27;?&gt;</span>
-<span class="odt-code-line"></span>
-<span class="odt-code-line"><span style="color:#800080">&lt;!--</span><span style="font-style:italic;color:#008000"> =========== FULL CONFIGURATION FILE ================================== </span><span style="color:#800080">--&gt;</span></span>
-<span class="odt-code-line"></span>
-<span class="odt-code-line"><span style="color:#800080">&lt;faces-config</span><span style="font-style:italic;color:#008080"> </span><span style="color:#808000">version</span><span style="color:#800080">=&quot;</span><span style="color:#0000ff">2.0</span><span style="color:#800080">&quot;</span></span>
-<span class="odt-code-line"><span style="font-style:italic;color:#008080">              </span><span style="color:#808000">xmlns</span><span style="color:#800080">=&quot;</span><span style="color:#000080">http://java.sun.com/xml/ns/javaee</span><span style="color:#800080">&quot;</span><span style="font-style:italic;color:#008080"> </span></span>
-<span class="odt-code-line"><span style="font-style:italic;color:#008080">              </span><span style="color:#808000">xmlns:xsi</span><span style="color:#800080">=&quot;</span><span style="color:#000080">http://www.w3.org/2001/XMLSchema-instance</span><span style="color:#800080">&quot;</span><span style="font-style:italic;color:#008080"> </span></span>
-<span class="odt-code-line"><span style="font-style:italic;color:#008080">              </span><span style="color:#808000">xsi:schemaLocation</span><span style="color:#800080">=&quot;</span><span style="color:#0000ff">http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-facesconfig_2_0.xsd</span><span style="color:#800080">&quot;&gt;</span></span>
-<span class="odt-code-line"></span>
-<span class="odt-code-line"><span style="color:#000000">  </span><span style="color:#800080">&lt;application&gt;</span></span>
-<span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#800080">&lt;!--</span><span style="font-style:italic;color:#008000"> le fichier des messages </span><span style="color:#800080">--&gt;</span></span>
-<span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#800080">&lt;resource-bundle&gt;</span></span>
-<span class="odt-code-line"><span style="color:#000000">      </span><span style="color:#800080">&lt;base-name&gt;</span></span>
-<span class="odt-code-line">        messages</span>
-<span class="odt-code-line"><span style="color:#000000">      </span><span style="color:#800080">&lt;/base-name&gt;</span></span>
-<span class="odt-code-line"><span style="color:#000000">      </span><span style="color:#800080">&lt;var&gt;</span><span style="color:#000000">msg</span><span style="color:#800080">&lt;/var&gt;</span></span>
-<span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#800080">&lt;/resource-bundle&gt;</span></span>
-<span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#800080">&lt;message-bundle&gt;</span><span style="color:#000000">messages</span><span style="color:#800080">&lt;/message-bundle&gt;</span></span>
-<span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#800080">&lt;default-render-kit-id&gt;</span><span style="color:#000000">PRIMEFACES_MOBILE</span><span style="color:#800080">&lt;/default-render-kit-id&gt;</span></span>
-<span class="odt-code-line"><span style="color:#000000">  </span><span style="color:#800080">&lt;/application&gt;</span></span>
-<span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#800080">&lt;!--</span><span style="font-style:italic;color:#008000"> le bean applicationBean </span><span style="color:#800080">--&gt;</span></span>
-<span class="odt-code-line"><span style="color:#000000">  </span><span style="color:#800080">&lt;managed-bean&gt;</span></span>
-<span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#800080">&lt;managed-bean-name&gt;</span><span style="color:#000000">applicationBean</span><span style="color:#800080">&lt;/managed-bean-name&gt;</span></span>
-<span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#800080">&lt;managed-bean-class&gt;</span><span style="color:#000000">beans.Application</span><span style="color:#800080">&lt;/managed-bean-class&gt;</span></span>
-<span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#800080">&lt;managed-bean-scope&gt;</span><span style="color:#000000">application</span><span style="color:#800080">&lt;/managed-bean-scope&gt;</span></span>
-<span class="odt-code-line"><span style="color:#000000">  </span><span style="color:#800080">&lt;/managed-bean&gt;</span></span>
-<span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#800080">&lt;!--</span><span style="font-style:italic;color:#008000"> le bean form </span><span style="color:#800080">--&gt;</span></span>
-<span class="odt-code-line"><span style="color:#000000">  </span><span style="color:#800080">&lt;managed-bean&gt;</span></span>
-<span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#800080">&lt;managed-bean-name&gt;</span><span style="color:#000000">form</span><span style="color:#800080">&lt;/managed-bean-name&gt;</span></span>
-<span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#800080">&lt;managed-bean-class&gt;</span><span style="color:#000000">beans.Form</span><span style="color:#800080">&lt;/managed-bean-class&gt;</span></span>
-<span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#800080">&lt;managed-bean-scope&gt;</span><span style="color:#000000">session</span><span style="color:#800080">&lt;/managed-bean-scope&gt;</span></span>
-<span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#800080">&lt;managed-property&gt;</span></span>
-<span class="odt-code-line"><span style="color:#000000">      </span><span style="color:#800080">&lt;property-name&gt;</span><span style="color:#000000">application</span><span style="color:#800080">&lt;/property-name&gt;</span></span>
-<span class="odt-code-line"><span style="color:#000000">      </span><span style="color:#800080">&lt;value&gt;</span><span style="color:#000000">#{applicationBean}</span><span style="color:#800080">&lt;/value&gt;</span></span>
-<span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#800080">&lt;/managed-property&gt;</span></span>
-<span class="odt-code-line"><span style="color:#000000">  </span><span style="color:#800080">&lt;/managed-bean&gt;</span></span>
-<span class="odt-code-line">&lt;/faces-config&gt;</span>
+<span class="odt-code-line"><span class="odt-code-line-content">&lt;?xml version=&#x27;1.0&#x27; encoding=&#x27;UTF-8&#x27;?&gt;</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#800080">&lt;!-- =========== FULL CONFIGURATION FILE ================================== --&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#800080">&lt;faces-config</span><span style="font-style:italic;color:#008080"> </span><span style="color:#808000">version</span><span style="color:#800080">=&quot;</span><span style="color:#0000ff">2.0</span><span style="color:#800080">&quot;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="font-style:italic;color:#008080">              </span><span style="color:#808000">xmlns</span><span style="color:#800080">=&quot;</span><span style="color:#000080">http://java.sun.com/xml/ns/javaee</span><span style="color:#800080">&quot;</span><span style="font-style:italic;color:#008080"> </span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="font-style:italic;color:#008080">              </span><span style="color:#808000">xmlns:xsi</span><span style="color:#800080">=&quot;</span><span style="color:#000080">http://www.w3.org/2001/XMLSchema-instance</span><span style="color:#800080">&quot;</span><span style="font-style:italic;color:#008080"> </span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="font-style:italic;color:#008080">              </span><span style="color:#808000">xsi:schemaLocation</span><span style="color:#800080">=&quot;</span><span style="color:#0000ff">http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-facesconfig_2_0.xsd</span><span style="color:#800080">&quot;&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="color:#800080">&lt;application&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#000000">&lt;!-- le fichier des messages --&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#800080">&lt;resource-bundle&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">      </span><span style="color:#800080">&lt;base-name&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">        messages</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">      </span><span style="color:#800080">&lt;/base-name&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">      </span><span style="color:#800080">&lt;var&gt;</span><span style="color:#000000">msg</span><span style="color:#800080">&lt;/var&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#800080">&lt;/resource-bundle&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#800080">&lt;message-bundle&gt;</span><span style="color:#000000">messages</span><span style="color:#800080">&lt;/message-bundle&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#800080">&lt;default-render-kit-id&gt;</span><span style="color:#000000">PRIMEFACES_MOBILE</span><span style="color:#800080">&lt;/default-render-kit-id&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="color:#800080">&lt;/application&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#000000">&lt;!-- le bean applicationBean --&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="color:#800080">&lt;managed-bean&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#800080">&lt;managed-bean-name&gt;</span><span style="color:#000000">applicationBean</span><span style="color:#800080">&lt;/managed-bean-name&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#800080">&lt;managed-bean-class&gt;</span><span style="color:#000000">beans.Application</span><span style="color:#800080">&lt;/managed-bean-class&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#800080">&lt;managed-bean-scope&gt;</span><span style="color:#000000">application</span><span style="color:#800080">&lt;/managed-bean-scope&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="color:#800080">&lt;/managed-bean&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#000000">&lt;!-- le bean form --&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="color:#800080">&lt;managed-bean&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#800080">&lt;managed-bean-name&gt;</span><span style="color:#000000">form</span><span style="color:#800080">&lt;/managed-bean-name&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#800080">&lt;managed-bean-class&gt;</span><span style="color:#000000">beans.Form</span><span style="color:#800080">&lt;/managed-bean-class&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#800080">&lt;managed-bean-scope&gt;</span><span style="color:#000000">session</span><span style="color:#800080">&lt;/managed-bean-scope&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#800080">&lt;managed-property&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">      </span><span style="color:#800080">&lt;property-name&gt;</span><span style="color:#000000">application</span><span style="color:#800080">&lt;/property-name&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">      </span><span style="color:#800080">&lt;value&gt;</span><span style="color:#000000">#{applicationBean}</span><span style="color:#800080">&lt;/value&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#800080">&lt;/managed-property&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="color:#800080">&lt;/managed-bean&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">&lt;/faces-config&gt;</span></span>
 </code></pre></div>
 
 <p><span style="color: #000000">Le portage est terminé. Nous pouvons tenter d&#x27;exécuter l&#x27;application web.</span></p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000173000002DF769E65A0.png" style="display:inline-block; margin:4px;width:4.911cm;height:9.721cm;" class="odt-zoomable" data-zoom-src="images/1000000000000173000002DF769E65A0.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000173000002DF769E65A0.png" width="186" height="367" style="display:inline-block; margin:4px;width:4.911cm;height:9.721cm;" class="odt-zoomable" data-zoom-src="images/1000000000000173000002DF769E65A0.png" /></td></tr></table>
 
 <p><span style="color: #000000">Nous laissons le lecteur tester cette nouvelle application. Nous pouvons l&#x27;améliorer légèrement pour gérer le cas où l&#x27;initialisation du bean [Application] a échoué. On sait que dans ce cas, les champs suivants ont été initialisés :</span></p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-text">
-<span class="odt-code-line"><span style="color:#000000">  </span><span style="color:#3f7f5f">// erreurs</span></span>
-<span class="odt-code-line"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">private</span><span style="color:#000000"> List&lt;Erreur&gt; erreurs = </span><span style="font-weight:bold;color:#7f0055">new</span><span style="color:#000000"> ArrayList&lt;Erreur&gt;();</span></span>
-<span class="odt-code-line"><span style="font-weight:bold;color:#7f0055">private</span><span style="color:#000000"> Boolean erreur = </span><span style="font-weight:bold;color:#7f0055">false</span><span style="color:#000000">;</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// erreurs</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">private</span><span style="color:#000000"> List&lt;Erreur&gt; erreurs = </span><span style="font-weight:bold;color:#7f0055">new</span><span style="color:#000000"> ArrayList&lt;Erreur&gt;();</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">private</span><span style="color:#000000"> Boolean erreur = </span><span style="font-weight:bold;color:#7f0055">false</span><span style="color:#000000">;</span></span></span>
 </code></pre></div>
 
 <p><span style="color: #000000">Ce cas peut être prévu dans la méthode </span><em><span style="color: #000000">init</span></em><span style="color: #000000"> du bean [Form] :</span></p>
 <div class="odt-code-rich" data-linenums="false" style="counter-reset: odtline 0;"><pre><code class="language-java">
-<span class="odt-code-line"><span style="color:#646464">@</span><span style="color:#000000">PostConstruct</span></span>
-<span class="odt-code-line"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">private</span><span style="color:#000000"> </span><span style="font-weight:bold;color:#7f0055">void</span><span style="color:#000000"> init() {</span></span>
-<span class="odt-code-line"></span>
-<span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#3f7f5f">// l&#x27;initialisation s&#x27;est-elle bien passée ?</span></span>
-<span class="odt-code-line"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">if</span><span style="color:#000000"> (application.getErreur()) {</span></span>
-<span class="odt-code-line"><span style="color:#000000">      </span><span style="color:#3f7f5f">// on récupère la liste des erreurs</span></span>
-<span class="odt-code-line">      erreurs = application.getErreurs();</span>
-<span class="odt-code-line"><span style="color:#000000">      </span><span style="color:#3f7f5f">// la vue des erreurs est affichée</span></span>
-<span class="odt-code-line"><span style="color:#000000">      setForms(</span><span style="font-weight:bold;color:#7f0055">false</span><span style="color:#000000">, </span><span style="font-weight:bold;color:#7f0055">false</span><span style="color:#000000">, </span><span style="font-weight:bold;color:#7f0055">true</span><span style="color:#000000">);</span></span>
-<span class="odt-code-line">    }</span>
-<span class="odt-code-line"></span>
-<span class="odt-code-line"><span style="color:#000000">    </span><span style="color:#3f7f5f">// on met les médecins et les clients en cache</span></span>
-<span class="odt-code-line">    ...</span>
-<span class="odt-code-line">  }</span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#646464">@</span><span style="color:#000000">PostConstruct</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">private</span><span style="color:#000000"> </span><span style="font-weight:bold;color:#7f0055">void</span><span style="color:#000000"> init() {</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#000000">// l&#x27;initialisation s&#x27;est-elle bien passée ?</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="font-weight:bold;color:#7f0055">if</span><span style="color:#000000"> (application.getErreur()) {</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">      <span style="color:#000000">// on récupère la liste des erreurs</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">      erreurs = application.getErreurs();</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">      <span style="color:#000000">// la vue des erreurs est affichée</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">      setForms(</span><span style="font-weight:bold;color:#7f0055">false</span><span style="color:#000000">, </span><span style="font-weight:bold;color:#7f0055">false</span><span style="color:#000000">, </span><span style="font-weight:bold;color:#7f0055">true</span><span style="color:#000000">);</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    }</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#000000">// on met les médecins et les clients en cache</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    ...</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  }</span></span>
 </code></pre></div>
 
 <ul>
@@ -938,25 +938,25 @@
 </ul>
 
 <p><span style="color: #000000">Ainsi, si on arrête le SGBD MySQL et qu&#x27;on relance l&#x27;application, on reçoit maintenant la page suivante :</span></p>
-<p><img src="images/100000000000016B000002EB7C2C41F1.png" style="width:6.72cm;height:13.831cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000016B000002EB7C2C41F1.png" /></p>
+<p><img src="images/100000000000016B000002EB7C2C41F1.png" width="254" height="523" style="width:6.72cm;height:13.831cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000016B000002EB7C2C41F1.png" /></p>
 <p><a id="refheading105127100051761"></a></p>
 <h2 id="102-conclusion">10.2. Conclusion</h2>
 <p><span style="color: #000000">Le portage de l&#x27;application Primefaces mobile/ EJB / Glassfish vers un environnement Primefaces mobile / Spring / Tomcat s&#x27;est révélé simple. Le problème de la fuite mémoire signalée dans l&#x27;étude de l&#x27;application JSF / Spring / Tomcat (paragraphe </span><span style="color: #000000"><a href="application-exemple---02-rdvmedecins-jsf2-spring.html#fuite-memoire-tomcat">4.3.5</a></span><span style="color: #000000">) demeure. On le résoudra de la même façon.</span></p>
 <p><a id="refheading105129100051761"></a></p>
 <h2 id="103-tests-avec-eclipse">10.3. Tests avec Eclipse</h2>
 <p><span style="color: #000000">Nous importons les projets Maven dans Eclipse [1] :</span></p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000005080000011B990B062E.png" style="display:inline-block; margin:4px;width:17.039cm;height:3.745cm;" class="odt-zoomable" data-zoom-src="images/10000000000005080000011B990B062E.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000005080000011B990B062E.png" width="644" height="142" style="display:inline-block; margin:4px;width:17.039cm;height:3.745cm;" class="odt-zoomable" data-zoom-src="images/10000000000005080000011B990B062E.png" /></td></tr></table>
 
 <p><span style="color: #000000">Nous exécutons le projet web [2].</span></p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000504000001923996856D.png" style="display:inline-block; margin:4px;width:16.986cm;height:5.318cm;" class="odt-zoomable" data-zoom-src="images/1000000000000504000001923996856D.png" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000504000001923996856D.png" width="642" height="201" style="display:inline-block; margin:4px;width:16.986cm;height:5.318cm;" class="odt-zoomable" data-zoom-src="images/1000000000000504000001923996856D.png" /></td></tr></table>
 
 <p><span style="color: #000000">Nous choisissons le serveur Tomcat [3]. La page d&#x27;accueil de l&#x27;application est alors affichée dans le navigateur interne d&#x27;Eclipse [4].</span></p>
 <p><a id="refheading6290511854047529"></a></p>
 <h2 id="104-tests-avec-mobile">10.4. Tests avec mobile</h2>
 <p><span style="color: #000000">Pour tester l&#x27;application sur un mobile, on procèdera comme il a été indiqué au paragraphe <a href="introduction-a-primefaces-mobile.html#tests-avec-vrai-smartphone">8.5.6</a>. Voici des photos de l&#x27;application :</span></p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000059B0000097C3912D09A.jpg" style="display:inline-block; margin:4px;width:7.59cm;height:12.85cm;" class="odt-zoomable" data-zoom-src="images/100000000000059B0000097C3912D09A.jpg" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000005D40000097B0617DC08.jpg" style="display:inline-block; margin:4px;width:7.9cm;height:12.839cm;" class="odt-zoomable" data-zoom-src="images/10000000000005D40000097B0617DC08.jpg" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000059B0000097C3912D09A.jpg" width="287" height="486" style="display:inline-block; margin:4px;width:7.59cm;height:12.85cm;" class="odt-zoomable" data-zoom-src="images/100000000000059B0000097C3912D09A.jpg" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000005D40000097B0617DC08.jpg" width="299" height="485" style="display:inline-block; margin:4px;width:7.9cm;height:12.839cm;" class="odt-zoomable" data-zoom-src="images/10000000000005D40000097B0617DC08.jpg" /></td></tr></table>
 
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000607000009B4A299E3EF.jpg" style="display:inline-block; margin:4px;width:8.17cm;height:13.139cm;" class="odt-zoomable" data-zoom-src="images/1000000000000607000009B4A299E3EF.jpg" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000005B0000009757E64FA99.jpg" style="display:inline-block; margin:4px;width:7.699cm;height:12.809cm;" class="odt-zoomable" data-zoom-src="images/10000000000005B0000009757E64FA99.jpg" /></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000607000009B4A299E3EF.jpg" width="309" height="497" style="display:inline-block; margin:4px;width:8.17cm;height:13.139cm;" class="odt-zoomable" data-zoom-src="images/1000000000000607000009B4A299E3EF.jpg" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000005B0000009757E64FA99.jpg" width="291" height="484" style="display:inline-block; margin:4px;width:7.699cm;height:12.809cm;" class="odt-zoomable" data-zoom-src="images/10000000000005B0000009757E64FA99.jpg" /></td></tr></table>
 
 
 
@@ -992,13 +992,14 @@
     <div class="md-footer-meta__inner">
 
       <div>
-        <a href="https://tahe.developpez.com" target="_blank">
-          https://tahe.developpez.com
+        <a href="https://stahe.github.io" target="_blank">
+          https://stahe.github.io
         </a>
         <br>
-        Ce cours-tutoriel écrit par <strong>Serge Tahé</strong> est mis à disposition du public selon les termes de la
-        <em>Licence Creative Commons Attribution – Pas d’Utilisation Commerciale –
-        Partage dans les Mêmes Conditions 3.0 non transposé</em>.
+        Ce cours-tutoriel rédigé par <strong>Serge Tahé</strong> est mis à la disposition du public selon les termes de la
+        <em>Licence Creative Commons Attribution – Pas d'utilisation commerciale –
+        Partage dans les mêmes conditions 3.0 non modifiée</em>.
+
       </div>
 
     </div>
